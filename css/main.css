@@ -48,8 +48,8 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #section01 .noticeSlideBox .control button{position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.18); width: 2.21vw; height: 2.21vw;}
 #section01 .noticeSlideBox .control button.prev{left:0;}
 #section01 .noticeSlideBox .control button.next{right:0;}
-#section01 .noticeSlideBox .control button.prev::before{background: url(../images/main/arrow_icon01.svg)no-repeat center;}
-#section01 .noticeSlideBox .control button.next::before{background: url(../images/main/arrow_icon02.svg)no-repeat center;}
+#section01 .noticeSlideBox .control button.prev::before{background: url(../images/main/arrow_icon01.svg)no-repeat center; background-size: contain;}
+#section01 .noticeSlideBox .control button.next::before{background: url(../images/main/arrow_icon02.svg)no-repeat center; background-size: contain;}
 #section01 .noticeSlideBox .control button::before{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 0.73vw; height: 1.04vw; }
 
 /* section02 */
@@ -59,14 +59,14 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #section02 .infoLinkList{display: flex; gap: 0 1.74vw; align-items: flex-end; height: 14.22vw;}
 #section02 .infoLinkList li:nth-child(1) a{width: 15.36vw; height: 14.22vw; border-radius: 1.69vw;  background: linear-gradient(to bottom, #3162B7 30%,#fff 30% 100%); z-index: 1;}
 #section02 .infoLinkList li:nth-child(1) a::after{width: 100%; height: 12.06vw; content: ''; position: absolute; bottom: 0; right: 0; background: url(../images/main/link_bg01.svg)no-repeat center; z-index: -1; background-size: cover;}
-#section02 .infoLinkList li:nth-child(1) a::before{ content: ''; width: 8.10vw; height: 7.29vw; position: absolute; left:1.56vw; bottom: 0; background: url(../images/main/link_img01.svg)no-repeat center; background-size: cover;}
+#section02 .infoLinkList li:nth-child(1) a::before{ content: ''; width: 8.10vw; height: 7.29vw; position: absolute; left:1.56vw; bottom: 0; background: url(../images/main/link_img01.svg)no-repeat center; background-size: contain;}
 #section02 .infoLinkList li a{position: relative; display: block; padding: 1.56vw 0 0 1.74vw;}
 #section02 .infoLinkList li a h2{margin-bottom: 0.13vw; color: #fff; font-size: 1.04vw;}
 #section02 .infoLinkList li a p{font-family: 'Pretendard', sans-serif; font-size: 0.73vw; color: #DFE7EE; font-weight: 600; line-height: 1.8;}
 #section02 .infoLinkList li a .view{position: absolute; bottom: 0; right:0; width: 2.50vw; height: 2.50vw; border-radius: 50%; background-color: #000;}
 #section02 .infoLinkList li a .view::after{width: 0.55vw; height: 0.60vw; content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/main/arrow_icon03.svg)no-repeat center; background-size: cover;}
 #section02 .infoLinkList li:nth-child(2) a{width: 16.04vw; height: 12.73vw; background: url(../images/main/link_bg02.svg)no-repeat center; background-size: cover;}
-#section02 .infoLinkList li:nth-child(2) a::before{content: ''; width: 3.78vw; height: 3.91vw; position: absolute; left:1.74vw; bottom: 1.30vw; background: url(../images/main/link_img02.svg)no-repeat center; background-size: cover;}
+#section02 .infoLinkList li:nth-child(2) a::before{content: ''; width: 3.78vw; height: 3.91vw; position: absolute; left:1.74vw; bottom: 1.30vw; background: url(../images/main/link_img02.svg)no-repeat center; background-size: contain;}
 #section02 .infoLinkList li:nth-child(2) a h2{color: #3262B7;}
 #section02 .infoLinkList li:nth-child(2) a p{color: #4B4B4B; font-weight: 600;}
 #section02 .noticeBox .title{margin-bottom: 1.41vw;}
@@ -107,8 +107,8 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #section03 .linkList li a h3{font-size: 0.76vw; color: #464C58; text-align: center;}
 #section03 .linkList li a::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 0.91vw; }
 #section03 .linkList li a::before{content: ''; width: 4.51vw; height: 3.91vw; position: absolute; bottom: 0; right: -0.39vw; background: url(../images/main/icon06.svg)no-repeat center; z-index: -1;}
-#section03 .linkList li:nth-child(1) a::after{width: 2.11vw; height: 2.24vw; background: url(../images/main/icon05.svg) no-repeat center; background-size: cover;}
-#section03 .linkList li:nth-child(2) a::after{width: 2.55vw; height: 2.24vw; background: url(../images/main/icon04.svg) no-repeat center; background-size: cover;}
-#section03 .linkList li:nth-child(3) a::after{width: 2.27vw; height: 2.24vw; background: url(../images/main/icon03.svg) no-repeat center; background-size: cover;}
+#section03 .linkList li:nth-child(1) a::after{width: 2.11vw; height: 2.24vw; background: url(../images/main/icon05.svg) no-repeat center; background-size: contain;}
+#section03 .linkList li:nth-child(2) a::after{width: 2.55vw; height: 2.24vw; background: url(../images/main/icon04.svg) no-repeat center; background-size: contain;}
+#section03 .linkList li:nth-child(3) a::after{width: 2.27vw; height: 2.24vw; background: url(../images/main/icon03.svg) no-repeat center; background-size: contain;}
 #section03 .videoBox{margin-top: 0.52vw; width: 100%; height: 18.57vw;}
 #section03 .videoBox iframe{ width: 100%; height: 100%;}
