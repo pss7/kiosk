@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-#wrap{width: 100.00vw; margin: 0 auto; display: flex; justify-content: center; padding: 3.39vw; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover;}
-
+#wrap{position: relative; width: 100vw; margin: 0 auto; display: flex; justify-content: center; padding: 3.39vw; background: linear-gradient(to bottom, #F7FFFF 45%, white 45%); z-index: 1
+  ;}
+#wrap::after{content: ''; height: 32.60vw; position: absolute; top:0; left:0; right: 0; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover; z-index: -1;}
 /* 공통 */
 .title h2{color: #202020; font-size: 1.41vw;}
 .title h2 strong{color: #42AAFF;}
@@ -106,7 +107,7 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #section03 .linkList li a{position: relative; padding-top: 3.91vw; display: block; width: 7.92vw; height: 5.63vw; border: 0.08vw solid #DDE3F0; line-height: 1; border-radius: 1.04vw; overflow: hidden;}
 #section03 .linkList li a h3{font-size: 0.76vw; color: #464C58; text-align: center;}
 #section03 .linkList li a::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 0.91vw; }
-#section03 .linkList li a::before{content: ''; width: 4.51vw; height: 3.91vw; position: absolute; bottom: 0; right: -0.39vw; background: url(../images/main/icon06.svg)no-repeat center; z-index: -1;}
+#section03 .linkList li a::before{content: ''; width: 4.51vw; height: 3.91vw; position: absolute; bottom: 0; right: -0.39vw; background: url(../images/main/icon06.svg)no-repeat center; background-size: contain; z-index: -1;}
 #section03 .linkList li:nth-child(1) a::after{width: 2.11vw; height: 2.24vw; background: url(../images/main/icon05.svg) no-repeat center; background-size: contain;}
 #section03 .linkList li:nth-child(2) a::after{width: 2.55vw; height: 2.24vw; background: url(../images/main/icon04.svg) no-repeat center; background-size: contain;}
 #section03 .linkList li:nth-child(3) a::after{width: 2.27vw; height: 2.24vw; background: url(../images/main/icon03.svg) no-repeat center; background-size: contain;}
