@@ -1,12 +1,14 @@
 
 $(function () {
 
-  $(window).load(function () {
+  $(window).on('load', function () {
     setInterval(function () {
-      const $el = $('.animation');
-      $el.removeClass('effect');
-      void $el[0].offsetWidth;
-      $el.addClass('effect');
+      $('.animation').each(function () {
+        const $el = $(this);
+        $el.removeClass('effect');
+        void this.offsetWidth;
+        $el.addClass('effect');
+      });
     }, 12000);
   });
 
