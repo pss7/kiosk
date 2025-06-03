@@ -1,6 +1,15 @@
 
 $(function () {
 
+  $(window).load(function () {
+    setInterval(function () {
+      const $el = $('.animation');
+      $el.removeClass('effect');
+      void $el[0].offsetWidth;
+      $el.addClass('effect');
+    }, 12000);
+  });
+
   $(".slickWrap .slick").slick({
     variableWidth: false,
     autoplay: true,
@@ -18,6 +27,7 @@ $(function () {
     prevArrow: $('#section01 .prev'),
     nextArrow: $('#section01 .next'),
   });
+
 
 
 });
