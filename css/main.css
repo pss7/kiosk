@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-#wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; display: flex; justify-content: center; padding: 130px;  background: linear-gradient(to bottom, #F7FFFF 45%, white 45%); z-index: 1;}
+#wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; display: flex; justify-content: center; padding: 130px;  background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%);
+z-index: 1;}
 #wrap::after{content: ''; height: 1252px; position: absolute; top:0; left:0; right: 0; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover; z-index: -1;}
 
 /* 공통 */
