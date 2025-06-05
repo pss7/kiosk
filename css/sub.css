@@ -6,22 +6,25 @@
 #sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;}
 .contentWrap{flex:1;}
 
-/* header */
+/* 헤더 */
 #header{flex-shrink: 0; padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
 #header h2{padding-top: 15px; color: #fff; font-size: 62px;}
 #header .prev{width: 53px; height: 76px; background: url(../images/common/arrow_icon.svg)no-repeat center;}
 #header .home{width: 77px; height: 76px; background: url(../images/common/home_icon.svg)no-repeat center;}
 
-/* footer */
+/* 푸터 */
 #footer{flex-shrink: 0; height: 187px; display: flex; align-items: center; border-top: 1px solid #C2C2C2;}
-#footer .logoBox{flex-shrink: 0; padding: 50px 0; width: 693px; height: 188px; border-right: 1px solid #C2C2C2;}
+#footer .logoBox{flex-shrink: 0; padding: 54px 0; width: 693px; height: 100%; border-right: 1px solid #C2C2C2;}
 #footer .logoBox h1{display: flex; justify-content: center; align-items: center; gap: 0 20px;}
 #footer .logoBox h1 span{padding-top: 10px; font-size: 36px; color: #434451;}
 #footer nav{width: 100%;}
+#footer nav,
+#footer nav .depth,
+#footer nav .depth li h2{height: 100%;}
 #footer nav .depth {display: flex;}
 #footer nav .depth li{flex:1; border-right: 1px solid #C2C2C2;}
 #footer nav .depth li:last-child{border-right: 0;}
-#footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 188px; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s;}
+#footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 100%; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s;}
 #footer nav .depth li h2 a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background: linear-gradient(to right, #63ACDA, #BE7086); transition: all .5s; z-index: -1;}
 #footer nav .depth li h2 a:hover span,
 #footer nav .depth li h2 a:active span{color: #fff;}
@@ -81,7 +84,7 @@
 #footer nav .depth li:nth-child(5) h2 a:hover span::before,
 #footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
-/* aside */
+/* 왼쪽영역 */
 aside{width: 693px; border-right: 1px solid #C2C2C2; z-index: 1;}
 aside nav{position: relative;margin-bottom: 117px;}
 aside nav::after{width: 584px; height: 491px; content: ''; position: absolute; right:0; bottom: -491px; background: url(../images/sub/bg_icon03.svg)no-repeat center; z-index: -1;}
@@ -91,3 +94,6 @@ aside nav .infoList li a:hover,
 aside nav .infoList li a:active{background-color: #4580EE; color: #fff;}
 aside nav .infoList li a:hover:after,
 aside nav .infoList li a:active:after{opacity: 1; overflow: visible;}
+
+/* 시정알림 */
+.notificationBox{}

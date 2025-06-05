@@ -3,7 +3,7 @@
 #wrap{background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%); z-index: 1;}
 #wrap::after{content: ''; height: 1252px; position: absolute; top:0; left:0; right: 0; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover; z-index: -1;}
 
-/* common */
+/* 공통 */
 .title h2{color: #202020; font-size: 54px;}
 .title h2 strong{color: #42AAFF;}
 a.view{padding: 19px 0 0 42px; width: 168px; height: 64px; border-radius: 50px; background-color: #F4F5F6; z-index: 1;}
@@ -32,7 +32,7 @@ a.view:active span{color: #fff;}
 }
 
 
-/* section01 */
+/* 영역01 */
 #section01{display: flex; gap: 0 114px; margin-bottom: 91px;}
 #section01 .noticeBox{display: flex; gap: 0 30px;}
 #section01 .noticeBox h2{position: relative; display: flex; gap: 0 15px; margin-bottom: 35px; font-size: 34px; color: #3F4260;}
@@ -57,7 +57,7 @@ a.view:active span{color: #fff;}
 #section01 .noticeSlideBox .control button.next::before{background: url(../images/main/arrow_icon02.svg)no-repeat center;}
 #section01 .noticeSlideBox .control button::before{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 28px; height: 40px; }
 
-/* section02 */
+/* 영역02 */
 #section02{display: flex; gap: 0 119px; margin-bottom: 60px;}
 #section02 .noticeBox{position: relative;}
 #section02 .noticeBox a.view{position: absolute; top:22px; right:0;}
@@ -70,12 +70,6 @@ a.view:active span{color: #fff;}
 #section02 .infoLinkList li a p{font-family: 'Pretendard', sans-serif; font-size: 28px; color: #DFE7EE; font-weight: 600; line-height: 1.8;}
 #section02 .infoLinkList li a .view{position: absolute; bottom: 0; right:0; width: 96px; height: 96px; border-radius: 50%; background-color: #000;}
 #section02 .infoLinkList li a .view::after{width: 21px; height: 23px; content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/main/arrow_icon03.svg)no-repeat center; background-size: contain; animation: arrowMove 2s infinite ease-in-out; }
-
-
-
-
-
-
 
 @keyframes arrowMove {
   0% {
@@ -123,7 +117,7 @@ a.view:active span{color: #fff;}
 #section02 .noticeBox .noticeList li a .textBox h3{margin-bottom: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 32px; color: #33393F;}
 #section02 .noticeBox .noticeList li a .textBox p{font-weight: 500; color: #616161; font-size: 30px; font-family: 'Pretendard', sans-serif; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
-/* section03 */
+/* 영역03 */
 #section03{display: flex;}
 #section03 .noticeBox{position: relative; margin-right: 106px;}
 #section03 .noticeBox a.view{position: absolute; top:5px; right:0;}

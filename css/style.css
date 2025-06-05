@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-/* common */
+/* 공통 */
 #wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; padding: 130px;}
-.contentBox{height: 100%; display: flex; justify-content: center;}
+.layoutBox{height: 100%; display: flex; justify-content: center;}
 
 /* aside */
 aside{flex-shrink: 0; /*width: 19.25%;*/ width: 733px;}
