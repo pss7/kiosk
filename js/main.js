@@ -9,7 +9,7 @@ $(function () {
         void this.offsetWidth;
         $el.addClass('effect');
       });
-    }, 12000);
+    }, 60000);
   });
 
   $(".slickWrap .slick").slick({
