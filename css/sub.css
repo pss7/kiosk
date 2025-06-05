@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#wrap{padding: 0;}
+#sub{display: flex; align-items: center; justify-content: center; width: 100%;}
+
+/* header */
+#header{padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
+#header h2{padding-top: 15px; color: #fff; font-size: 62px;}
+#header .prev{width: 53px; height: 76px; background: url(../images/common/arrow_icon.svg)no-repeat center;}
+#header .home{width: 77px; height: 76px; background: url(../images/common/home_icon.svg)no-repeat center;}
+
+/* footer */
+#footer{display: flex; align-items: center; border-top: 1px solid #C2C2C2;}
+#footer .logoBox{flex-shrink: 0; padding: 50px 0; width: 693px; height: 188px; border-right: 1px solid #C2C2C2;}
+#footer .logoBox h1{display: flex; justify-content: center; align-items: center; gap: 0 20px;}
+#footer .logoBox h1 span{padding-top: 10px; font-size: 36px; color: #434451;}
+#footer nav{width: 100%;}
+#footer nav .depth {display: flex;}
+#footer nav .depth li{flex:1; border-right: 1px solid #C2C2C2;}
+#footer nav .depth li:last-child{border-right: 0;}
+#footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 188px; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s;}
+#footer nav .depth li h2 a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background: linear-gradient(to right, #63ACDA, #BE7086); transition: all .5s; z-index: -1;}
+#footer nav .depth li h2 a:hover span,
+#footer nav .depth li h2 a:active span{color: #fff;}
+#footer nav .depth li h2 a:hover::before,
+#footer nav .depth li h2 a:active::before{width: 100%;}
+
+
+
+
+#footer nav .depth li h2 a span{display: flex; align-items: center; justify-content: center; gap: 0 50px; font-size: 47px; color: #585151;}
+#footer nav .depth li h2 a span::before{content: ''; margin-top: -10px;  display: inline-block;
+  animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;}
+#footer nav .depth li:nth-child(1) h2 a span::before{content: ''; width: 72px; height: 66px; background: url(../images/common/icon01.svg)no-repeat center; animation-name: effect01;}
+#footer nav .depth li:nth-child(2) h2 a span::before{content: ''; width: 70px; height: 50px; background: url(../images/common/icon02.svg)no-repeat center; animation-name: effect02;}
+#footer nav .depth li:nth-child(3) h2 a span::before{content: ''; width: 70px; height: 66px; background: url(../images/common/icon03.svg)no-repeat center; animation-name: effect03; transform-origin: top center;}
+#footer nav .depth li:nth-child(4) h2 a span::before{content: ''; width: 70px; height: 66px; background: url(../images/common/icon04.svg)no-repeat center; animation-name: effect04;}
+#footer nav .depth li:nth-child(5) h2 a span::before{content: ''; width: 70px; height: 83px; background: url(../images/common/icon05.svg)no-repeat center; animation-name: effect05;}
+
+@keyframes effect01 {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+@keyframes effect02 {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes effect03 {
+  0% { transform: rotate(0); }
+  15% { transform: rotate(25deg); }
+  30% { transform: rotate(-20deg); }
+  45% { transform: rotate(15deg); }
+  60% { transform: rotate(-10deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0); }
+}
+
+@keyframes effect04 {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes effect05 {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.3); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.3); }
+  70% { transform: scale(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#footer nav .depth li:nth-child(1) h2 a:hover span::before{background: url(../images/common/icon_hover01.svg)no-repeat center;}
+#footer nav .depth li:nth-child(2) h2 a:hover span::before{background: url(../images/common/icon_hover02.svg)no-repeat center;}
+#footer nav .depth li:nth-child(3) h2 a:hover span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
+#footer nav .depth li:nth-child(4) h2 a:hover span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
+#footer nav .depth li:nth-child(5) h2 a:hover span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
+
+
+
+
+
+
+
+/* aside */
+aside{padding-bottom: 67px; width: 693px; border-right: 1px solid #C2C2C2;}
+aside nav{margin-bottom: 117px;}
+aside nav .infoList li a{position: relative; padding: 67px 0; display: block; height: 193px; text-align: center; font-size: 47px; color: #585151; border-bottom: 1px solid #C2C2C2; z-index: 1; transition: all .5s;}
+aside nav .infoList li a:after{opacity: 0; content: ''; width: 45px; height: 53px; position: absolute; top: 50%; transform: translateY(-50%); right:-43px; background: url(../images/sub/arrow_icon.svg)no-repeat center; transition: all .5s; overflow: hidden;}
+aside nav .infoList li a:hover,
+aside nav .infoList li a:active{background-color: #4580EE; color: #fff;}
+aside nav .infoList li a:hover:after,
+aside nav .infoList li a:active:after{opacity: 1; overflow: visible;}

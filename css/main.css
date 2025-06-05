@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-#wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; display: flex; justify-content: center; padding: 130px;  background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%); z-index: 1;}
+#wrap{background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%); z-index: 1;}
 #wrap::after{content: ''; height: 1252px; position: absolute; top:0; left:0; right: 0; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover; z-index: -1;}
 
-/* 공통 */
+/* common */
 .title h2{color: #202020; font-size: 54px;}
 .title h2 strong{color: #42AAFF;}
 a.view{padding: 19px 0 0 42px; width: 168px; height: 64px; border-radius: 50px; background-color: #F4F5F6; z-index: 1;}
@@ -29,40 +29,6 @@ a.view:active span{color: #fff;}
   }
 }
 
-/* aside */
-aside{flex-shrink: 0; /*width: 19.25%;*/ width: 733px;}
-aside .logoBox{margin-bottom: 421px;}
-aside .logoBox h1 img{display: block; margin: 0 auto;}
-aside .titleBox{margin-bottom: 122px;}
-aside .titleBox h1{font-size: 64px; text-align: center; color: #5C5C5C; line-height: 1.3;}
-aside .titleBox h1 strong{display: block; margin-bottom: 10px; }
-aside .titleBox h1 strong em{ display: inline-block; font-size: 110px; color: #009FE3;}
-aside .titleBox h1 em{ display: inline-block; color: #5C5C5C;}
-aside .titleBox h1 em:nth-child(1){animation-delay: .3s;}
-aside .titleBox h1 em:nth-child(2){animation-delay: .35s;}
-aside .titleBox h1 em:nth-child(3){animation-delay: .4s;}
-aside .titleBox h1 em:nth-child(4){animation-delay: .45s;}
-aside .titleBox h1 em:nth-child(5){animation-delay: .5s;}
-aside .titleBox h1 em:nth-child(6){animation-delay: .55s;}
-aside .titleBox h1 em:nth-child(7){animation-delay: .6s;}
-aside .titleBox h1 em:nth-child(8){animation-delay: .65s;}
-aside .titleBox h1 em:nth-child(9){animation-delay: .7s;}
-aside .titleBox h1 em:nth-child(10){animation-delay: .75s;}
-aside .titleBox h1 em:nth-child(11){animation-delay: .8s;}
-aside .titleBox h1 em:nth-child(12){animation-delay: .85s;}
-aside .titleBox h1 em:nth-child(13){animation-delay: .9s;}
-aside .titleBox h1 em:nth-child(14){animation-delay: .95s;}
-aside .weatherInfoBox01{margin-bottom: 100px; font-family: 'Pretendard', sans-serif;}
-aside .weatherInfoBox01 .top img{display: block; margin: 0 auto 20px;}
-aside .weatherInfoBox01 .date{margin-bottom: 26px; display: block; font-size: 34px; color: #4D4D4D; text-align: center;}
-aside .weatherInfoBox01 .infoText{display: block; font-size: 40px; font-weight: 500; color: #4D4D4D; text-align: center;}
-aside .weatherInfoBox02{padding: 10px 20px 10px 45px; gap: 56px 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; width: 547px; height: 243px; margin: 0 auto; border: 1px solid #D1DDED; border-radius: 40px; background-color: #FBFDFF;}
-aside .weatherInfoBox02 .box{width: 100%; display: flex;  align-items: center; flex-wrap: wrap;  font-family: 'Pretendard', sans-serif;}
-aside .weatherInfoBox02 .box .state01{min-width: 198px; font-size: 34px; color: #434343; font-weight: 500; text-align: left;}
-aside .weatherInfoBox02 .box em{margin-right: 50px; font-size: 34px; color: #434343;}
-aside .weatherInfoBox02 .box .state02{font-size: 34px; font-weight: 500;}
-aside .weatherInfoBox02 .box .state02.good{color: #0178FF;}
-aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 
 /* section01 */
 #section01{display: flex; gap: 0 114px; margin-bottom: 91px;}
