@@ -24,10 +24,6 @@
 #footer nav .depth li h2 a:active span{color: #fff;}
 #footer nav .depth li h2 a:hover::before,
 #footer nav .depth li h2 a:active::before{width: 100%;}
-
-
-
-
 #footer nav .depth li h2 a span{display: flex; align-items: center; justify-content: center; gap: 0 50px; font-size: 47px; color: #585151;}
 #footer nav .depth li h2 a span::before{content: ''; margin-top: -10px;  display: inline-block;
   animation-duration: 2s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;}
@@ -71,31 +67,16 @@
   70% { transform: scale(1); }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#footer nav .depth li:nth-child(1) h2 a:hover span::before{background: url(../images/common/icon_hover01.svg)no-repeat center;}
-#footer nav .depth li:nth-child(2) h2 a:hover span::before{background: url(../images/common/icon_hover02.svg)no-repeat center;}
-#footer nav .depth li:nth-child(3) h2 a:hover span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
-#footer nav .depth li:nth-child(4) h2 a:hover span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
-#footer nav .depth li:nth-child(5) h2 a:hover span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
-
-
-
-
-
-
+#footer nav .depth li:nth-child(1) h2 a:hover span::before,
+#footer nav .depth li:nth-child(1) h2 a:active span::before{background: url(../images/common/icon_hover01.svg)no-repeat center;}
+#footer nav .depth li:nth-child(2) h2 a:hover span::before,
+#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover02.svg)no-repeat center;}
+#footer nav .depth li:nth-child(3) h2 a:hover span::before,
+#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
+#footer nav .depth li:nth-child(4) h2 a:hover span::before,
+#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
+#footer nav .depth li:nth-child(5) h2 a:hover span::before,
+#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
 /* aside */
 aside{padding-bottom: 67px; width: 693px; border-right: 1px solid #C2C2C2;}

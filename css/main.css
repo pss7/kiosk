@@ -10,6 +10,8 @@ a.view{padding: 19px 0 0 42px; width: 168px; height: 64px; border-radius: 50px; 
 a.view span{display: flex; align-items: center; gap: 0 6px; font-size: 20px; color: #535353;}
 a.view span::after{content: ''; margin-top: -5px; width: 19px; height: 19px; background: url(../images/main/plus_icon.svg)no-repeat center;}
 a.view::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background-color: #000; transition: all .5s; border-radius: 50px; z-index: -1;}
+a.view:hover span::after,
+a.view:active span::after{background: url(../images/main/plus_hover_icon.svg)no-repeat center;}
 a.view:hover::before,
 a.view:active::before{width: 100%;}
 a.view:hover span,
