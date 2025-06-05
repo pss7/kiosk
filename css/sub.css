@@ -33,6 +33,8 @@
 #footer nav .depth li h2 a span{display: flex; align-items: center; justify-content: center; gap: 0 50px; font-size: 47px; color: #585151;}
 #footer nav .depth li h2 a span::before{content: ''; margin-top: -10px;  display: inline-block;
   animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;}
+#footer nav .depth li h2 a.active{background: linear-gradient(to right, #63ACDA, #BE7086);}
+#footer nav .depth li h2 a.active span{color: #fff;}
 #footer nav .depth li:nth-child(1) h2 a span::before{content: ''; width: 72px; height: 66px; background: url(../images/common/icon01.svg)no-repeat center; animation-name: effect01;}
 #footer nav .depth li:nth-child(2) h2 a span::before{content: ''; width: 70px; height: 50px; background: url(../images/common/icon02.svg)no-repeat center; animation-name: effect02;}
 #footer nav .depth li:nth-child(3) h2 a span::before{content: ''; width: 70px; height: 66px; background: url(../images/common/icon03.svg)no-repeat center; animation-name: effect03; transform-origin: top center;}
@@ -75,14 +77,19 @@
 
 #footer nav .depth li:nth-child(1) h2 a:hover span::before,
 #footer nav .depth li:nth-child(1) h2 a:active span::before{background: url(../images/common/icon_hover01.svg)no-repeat center;}
+#footer nav .depth li:nth-child(1) h2 a.active span::before{background: url(../images/common/icon_hover01.svg)no-repeat center;}
 #footer nav .depth li:nth-child(2) h2 a:hover span::before,
 #footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover02.svg)no-repeat center;}
+#footer nav .depth li:nth-child(2) h2 a.active span::before{background: url(../images/common/icon_hover02.svg)no-repeat center;}
 #footer nav .depth li:nth-child(3) h2 a:hover span::before,
-#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
+#footer nav .depth li:nth-child(3) h2 a:active span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
+#footer nav .depth li:nth-child(3) h2 a.active span::before{background: url(../images/common/icon_hover03.svg)no-repeat center;}
 #footer nav .depth li:nth-child(4) h2 a:hover span::before,
-#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
+#footer nav .depth li:nth-child(4) h2 a:active span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
+#footer nav .depth li:nth-child(4) h2 a.active span::before{background: url(../images/common/icon_hover04.svg)no-repeat center;}
 #footer nav .depth li:nth-child(5) h2 a:hover span::before,
-#footer nav .depth li:nth-child(2) h2 a:active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
+#footer nav .depth li:nth-child(5) h2 a:active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
+#footer nav .depth li:nth-child(5) h2 a.active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
 /* 왼쪽영역 */
 aside{width: 693px; border-right: 1px solid #C2C2C2; z-index: 1;}
@@ -96,4 +103,4 @@ aside nav .infoList li a:hover:after,
 aside nav .infoList li a:active:after{opacity: 1; overflow: visible;}
 
 /* 시정알림 */
-.notificationBox{}
+.notificationBox{padding: 90px 120px 64px;}
