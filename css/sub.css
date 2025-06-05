@@ -26,10 +26,10 @@
 #footer nav .depth li:last-child{border-right: 0;}
 #footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 100%; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s;}
 #footer nav .depth li h2 a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background: linear-gradient(to right, #63ACDA, #BE7086); transition: all .5s; z-index: -1;}
-#footer nav .depth li h2 a:hover span,
-#footer nav .depth li h2 a:active span{color: #fff;}
-#footer nav .depth li h2 a:hover::before,
-#footer nav .depth li h2 a:active::before{width: 100%;}
+#footer nav .depth li h2 a:not(.active):hover span,
+#footer nav .depth li h2 a:not(.active):active span{color: #fff;}
+#footer nav .depth li h2 a:not(.active):hover::before,
+#footer nav .depth li h2 a:not(.active):active::before{width: 100%;}
 #footer nav .depth li h2 a span{display: flex; align-items: center; justify-content: center; gap: 0 50px; font-size: 47px; color: #585151;}
 #footer nav .depth li h2 a span::before{content: ''; margin-top: -10px;  display: inline-block;
   animation-duration: 3s; animation-iteration-count: infinite; animation-timing-function: ease-in-out;}
