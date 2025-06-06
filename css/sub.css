@@ -101,6 +101,49 @@ aside nav .infoList li a:hover,
 aside nav .infoList li a:active{background-color: #4580EE; color: #fff;}
 aside nav .infoList li a:hover:after,
 aside nav .infoList li a:active:after{opacity: 1; overflow: visible;}
+aside nav .infoList li a.active{background-color: #4580EE; color: #fff;}
+aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 /* 시정알림 */
 .notificationBox{padding: 90px 120px 64px;}
+.notificationBox .notificationContentBox{display: flex; border-top: 5px solid #4E81A6; border-bottom: 1px solid #4E81A6;}
+.notificationBox .notificationListBox{display: flex; flex-direction: column; width: 996px;}
+.notificationBox .notificationListBox a{flex: 1; padding: 56px 66px 0 49px; display: block; height: 266px; border: 1px solid #4E81A6; border-width: 0 1px 1px 0; background-color: #F7F7F8; transition: all .5s;}
+.notificationBox .notificationListBox a:last-child{border-bottom: 0;}
+.notificationBox .notificationListBox a h3{position: relative; padding-left: 52px; gap: 0 32px; margin-bottom: 60px; font-size: 42px; color: #6D7686; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all .5s;}
+.notificationBox .notificationListBox a h3::before{content: ''; position: absolute; top:6px; left:0; width: 28px; height: 28px; border-radius: 7px; background-color: #A3BDD2; transition: all .5s;}
+.notificationBox .notificationListBox a .date{padding-left: 52px; display: block; font-size: 30px; color: #BBBBBB;}
+.notificationBox .notificationListBox a:hover,
+.notificationBox .notificationListBox a:active{background-color: #fff;}
+.notificationBox .notificationListBox a:hover h3,
+.notificationBox .notificationListBox a:active h3{color: #4580EE;}
+.notificationBox .notificationListBox a:hover h3::before,
+.notificationBox .notificationListBox a:active h3::before{background-color: #93CEFF;}
+.notificationBox .notificationDetailBox{flex: 1; padding: 0 47px;}
+.notificationBox .notificationDetailBox .notificationDetail{display: flex; flex-direction: column;}
+.notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; min-height: 203px; border-bottom: 1px solid #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .topBox h3{font-size: 54px; color: #000;}
+.notificationBox .notificationDetailBox .notificationDetail .topBox .date{margin-top: 12px; font-size: 36px; color: #BBB;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1251px; overflow-y: auto; font-size: 18px;}
+
+
+
+/* 전체 스크롤바 영역 */
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar {width: 66px; height: 66px;}
+
+/* 스크롤바 트랙 (배경) */
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-track{background: #E2E2E2;}
+
+/* 스크롤바 핸들 (움직이는 부분) */
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-thumb {background: #B2B2B2; border-radius: 50px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button{height: 65px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:decrement {background: #3C3939 url('../images/sub/arrow_icon02.svg') no-repeat center;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:increment{background: #3C3939 url('../images/sub/arrow_icon01.svg') no-repeat center;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox img{display: block; margin: 0 auto 50px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox p{font-size: 26px;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox{display: flex; border: 1px solid #4E81A6; border-width: 1px 0 0 0;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box{height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box:last-child{border-right: 0;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span{padding-top: 20px; flex-shrink: 0; position: relative; width: 240px; font-size: 40px; color: #7285A3; text-align: center;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span::after{content: ''; position: absolute; top:-2px; right:0; width: 1px; height: 88px; background-color: #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 170px 0 60px; font-size: 40px; color: #363636;} 
