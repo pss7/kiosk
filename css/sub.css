@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 #wrap{display: flex; flex-direction: column; padding: 0;}
-#sub{position: relative; display: flex; align-items: center; justify-content: center; width: 100%;}
-#sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
-#sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;}
-.contentWrap{flex:1;}
+#sub{flex: 1; /*position: relative; display: flex; align-items: flex-start;*/ /*justify-content: center;*/ width: 100%; height: 100%;}
+/* #sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
+#sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;} */
+.contentWrap{width: 100%; height: 100%;}
 
 /* 헤더 */
 #header{flex-shrink: 0; padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
@@ -92,9 +92,10 @@
 #footer nav .depth li:nth-child(5) h2 a.active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
 /* 왼쪽영역 */
-aside{width: 693px; border-right: 1px solid #C2C2C2; z-index: 1;}
-aside nav{position: relative;margin-bottom: 117px;}
-aside nav::after{width: 584px; height: 491px; content: ''; position: absolute; right:0; bottom: -491px; background: url(../images/sub/bg_icon03.svg)no-repeat center; z-index: -1;}
+aside{padding-bottom: 67px; display: flex; flex-direction: column; width: 693px; border-right: 1px solid #C2C2C2; z-index: 1;}
+aside nav{flex: 1; position: relative;margin-bottom: 117px;}
+aside nav .infoList{position: relative;}
+aside nav .infoList::after{width: 584px; height: 491px; content: ''; position: absolute; right:0; bottom: -491px; background: url(../images/sub/bg_icon03.svg)no-repeat center; z-index: -1;}
 aside nav .infoList li a{position: relative; padding: 67px 0; display: block; height: 193px; text-align: center; font-size: 47px; color: #585151; border-bottom: 1px solid #C2C2C2; z-index: 1; transition: all .5s;}
 aside nav .infoList li a:after{opacity: 0; content: ''; width: 45px; height: 53px; position: absolute; top: 50%; transform: translateY(-50%); right:-43px; background: url(../images/sub/arrow_icon.svg)no-repeat center; transition: all .5s; overflow: hidden;}
 aside nav .infoList li a:hover,
@@ -147,3 +148,36 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box span{padding-top: 20px; flex-shrink: 0; position: relative; width: 240px; font-size: 40px; color: #7285A3; text-align: center;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box span::after{content: ''; position: absolute; top:-2px; right:0; width: 1px; height: 88px; background-color: #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 170px 0 60px; font-size: 40px; color: #363636;} 
+
+/* 내곁에춘천 */
+.chuncheonBox{padding: 130px 111px 124px;}
+.tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
+.tabMenu li{flex: 1; text-align: center;}
+.tabMenu li .tabBtn{padding: 32px 0; width: 100%; color: #666; font-size: 48px; border-bottom: 1px solid #000;}
+.tabMenu li .tabBtn.active{position: relative; color: #447BD3; border-bottom: 0;}
+.tabMenu li .tabBtn.active::before{content: ''; position: absolute; left:0; bottom: -2px; right:0; height: 5px; background-color: #447BD3;}
+.tabContent{padding: 0 60px;}
+.tabContentList{display: flex; flex-wrap: wrap; gap: 0 40px;}
+.tabContentList li{width: 528px; margin-bottom: 40px;}
+.tabContentList li a{position: relative; display: block; height: 538px;}
+.tabContentList li a .imgBox{height: 250px; border-radius: 40px 40px 0 0; overflow: hidden;}
+.tabContentList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
+.tabContentList li a:hover .imgBox img,
+.tabContentList li a:active .imgBox img{transform: scale(1.3);}
+.tabContentList li a .textBox{height: 288px; padding: 33px 46px 0; border: 1px solid #AAB4C5; border-radius:  0 0 40px 40px;} 
+.tabContentList li a .textBox h3{margin-bottom: 5px; font-size: 40px; color: #28498F; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.tabContentList li a .textBox p{font-size: 34px; font-weight: 500; color: #333; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.tabContentList li a .textBox .view{padding-top: 12px; display: flex; justify-content: space-between; align-items: center; margin-top: 32px; height: 100px; color: #333; font-size: 28px; border-top: 1px solid #AAB4C5;}
+.tabContentList li a .textBox .view::after{content: ''; margin-top: -5px; width: 45px; height: 45px; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
+.tabContentList li a .like{width: 87px; height: 94px; position: absolute; top:-32px; left:46px; background: url(../images/sub/like.svg)no-repeat center;}
+.paginationBox {margin: 60px 0 30px; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.paginationBox .pageLink{padding-top: 8px; position: relative; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; color: #fff; border-radius: 50px; background-color: #2D3D3A; font-size: 24px;}
+.paginationBox .pageLink.pageLinkPrev{margin-right: 20px;}
+.paginationBox .pageLink.pageLinkNext{margin-left: 20px;}
+.paginationBox .pageLink.pageLinkPrev,
+.paginationBox .pageLink.pageLinkNext{padding: 0; background:0!important;}
+.paginationBox .pageLink.active{background-color: #5CBBFF;}
+.paginationBox .pageLinkPrev::after,
+.paginationBox .pageLinkNext::after {content: ''; width: 44px; height: 32px; position: absolute; top: 54%; left:50%; transform: translate(-50%, -50%);}
+.paginationBox .pageLinkPrev::after { background: url(../images/sub/arrow_icon04.svg)no-repeat center; background-size: cover;}
+.paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
