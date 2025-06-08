@@ -19,18 +19,6 @@ a.view:active span{color: #fff;}
 #section01.effect{animation-delay: 1s;}
 #section02.effect{animation-delay: 1.5s;}
 #section03.effect{animation-delay: 2s;}
-.effect{animation: effect 5s both;}
-@keyframes effect {
-  0% {
-    opacity: 0;
-    transform: translateY(60px);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 
 /* 영역01 */
 #section01{display: flex; gap: 0 114px; margin-bottom: 91px;}

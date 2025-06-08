@@ -3,8 +3,20 @@
 /* 공통 */
 #wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; padding: 130px;}
 .layoutBox{height: 100%; display: flex; justify-content: center;}
+.effect{animation: effect 5s both;}
+@keyframes effect {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-/* aside */
+
+/* 왼쪽영역 */
 aside{flex-shrink: 0; /*width: 19.25%;*/ width: 733px;}
 aside .logoBox{margin-bottom: 421px;}
 aside .logoBox h1 img{display: block; margin: 0 auto;}
