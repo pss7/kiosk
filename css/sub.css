@@ -150,12 +150,17 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 170px 0 60px; font-size: 40px; color: #363636;} 
 
 /* 내곁에춘천 */
-.chuncheonBox{padding: 130px 111px 124px;}
+.chuncheonBox{padding: 130px 111px;}
 .tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
 .tabMenu li{flex: 1; text-align: center;}
-.tabMenu li .tabBtn{padding: 32px 0; width: 100%; color: #666; font-size: 48px; border-bottom: 1px solid #000;}
-.tabMenu li .tabBtn.active{position: relative; color: #447BD3; border-bottom: 0;}
+.tabMenu li .tabBtn{position: relative; padding: 32px 0; width: 100%; color: #666; font-size: 48px; border-bottom: 1px solid #000;}
+.tabMenu li .tabBtn.active{color: #447BD3; border-bottom: 0;}
 .tabMenu li .tabBtn.active::before{content: ''; position: absolute; left:0; bottom: -2px; right:0; height: 5px; background-color: #447BD3;}
+.tabMenu li .tabBtn::after{content: ''; position: absolute; left:0; bottom: -2px; width: 0; height: 5px; transition: all .5s; background-color: #447BD3;}
+.tabMenu li .tabBtn:hover,
+.tabMenu li .tabBtn:active{color: #447BD3; border-bottom: 0;}
+.tabMenu li .tabBtn:hover::after,
+.tabMenu li .tabBtn:active::after{width: 100%;}
 .tabContent{padding: 0 60px;}
 .tabContentList{display: flex; flex-wrap: wrap; gap: 0 40px;}
 .tabContentList li{width: 528px; margin-bottom: 40px;}
@@ -181,3 +186,17 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .paginationBox .pageLinkNext::after {content: ''; width: 44px; height: 32px; position: absolute; top: 54%; left:50%; transform: translate(-50%, -50%);}
 .paginationBox .pageLinkPrev::after { background: url(../images/sub/arrow_icon04.svg)no-repeat center; background-size: cover;}
 .paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
+
+/* 행복알리미 */
+.happyBox{padding: 120px 111px;}
+.noticeList{display: flex; flex-wrap: wrap; gap: 0 80px;}
+.noticeList li{margin-bottom: 68px;}
+.noticeList li a{display: block; width: 521px;}
+.noticeList li a:hover .imgBox,
+.noticeList li a:active .imgBox{box-shadow: 10px 10px 20px rgba(0,0,0,.35);}
+.noticeList li a:hover .imgBox img,
+.noticeList li a:active .imgBox img{transform: scale(1.3);}
+.noticeList li a .imgBox{margin-bottom: 56px; height: 484px; border-radius: 40px; overflow: hidden; transition: all 1s;}
+.noticeList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
+.noticeList li a .textBox h3{margin-bottom: 20px; font-size: 40px; color: #28498F; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.noticeList li a .textBox .date{display: block; font-size: 36px; color: #333;}
