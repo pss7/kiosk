@@ -63,3 +63,34 @@ aside .weatherInfoBox02 .box .state02{font-size: 34px; font-weight: 500;}
 aside .weatherInfoBox02 .box .state02.good{color: #0178FF;}
 aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 
+/* 모달 */
+#modalWrap {position: fixed; inset: 0; display: flex; justify-content: center; align-items: center; z-index: 9999; animation: fadeInBg 0.3s ease-in-out; background: rgba(255,255,255,0.65); backdrop-filter: blur(10px);}
+#modalWrap .modalContent {position: relative; padding: 64px 80px; width: 3000px; background: #ffffff; border-radius: 24px; box-shadow: 0 12px 32px rgba(66, 170, 255, 0.3); font-family: 'Pretendard', sans-serif; color: #222;   animation: slideFadeIn 0.4s ease-out; border: 2px solid #e3f2fd;}
+#modalWrap .modalContent h2{margin-bottom: 40px; padding-bottom: 20px; display: flex; align-items: center; gap: 16px; font-weight: 700; font-size: 64px; border-bottom: 4px solid #cbe9ff; color: #0077cc;}
+#modalWrap .modalContent h2::before {content: "🏷️"; font-size: 64px;}
+#modalWrap .closeBtn {position: absolute; top: 40px; right: 60px;
+  width: 80px; height: 80px; border-radius: 50%; text-align: center; transition: all 0.25s ease;
+  box-shadow: 0 0 16px rgba(66,170,255,0.5); color: #fff; font-size: 64px; background: #42aaff; font-family: 'Pretendard', sans-serif;}
+#modalWrap .closeBtn:hover {background: #5bbcff; transform: scale(1.1) rotate(90deg);}
+#modalWrap .closeBtn em {position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); line-height: 1;}
+#modalWrap .tableBox {overflow-x: auto;}
+#modalWrap .infoTable { width: 100%; border-collapse: collapse; border-radius: 24px; overflow: hidden;
+  background: #f9fbfd; box-shadow: 0 6px 16px rgba(66, 170, 255, 0.1); font-size: 42px;}
+#modalWrap .infoTable thead {background: linear-gradient(90deg, #42aaff, #66c2ff); color: white;}
+#modalWrap .infoTable th,
+#modalWrap .infoTable td { padding: 40px 24px 36px; text-align: center; font-size: 42px; white-space: nowrap;}
+#modalWrap .infoTable th {font-weight: 700;}
+#modalWrap .infoTable td {background-color: #ffffff; color: #333; border-bottom: 2px solid #eef5fc;
+}
+#modalWrap .infoTable td:nth-child(2)::before {content: "📞 ";}
+#modalWrap .infoTable td:nth-child(3)::before {content: "🛠 ";}
+
+@keyframes fadeInBg {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideFadeIn {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
