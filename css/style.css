@@ -21,6 +21,18 @@ aside .logoBox{ margin-bottom: 302px;}
 aside .logoBox h1 img{display: block; width: 400px; height: 394px; margin: 0 auto;}
 aside .titleBox{margin-bottom: 71px;}
 aside .titleBox img{display: block; margin: 0 auto;}
+aside .titleBox img.img01{animation: rotateEffectStyle02 1.3s alternate infinite;}
+@keyframes rotateEffectStyle02 {
+  
+  0%{
+    transform: rotate(-10deg);
+  }
+
+  100%{
+    transform: rotate(10deg);
+  }
+
+}
 aside .titleBox h1{font-size: 64px; text-align: center; color: #5C5C5C; line-height: 1.3;}
 aside .titleBox h1 strong{display: block; margin-bottom: 10px; }
 aside .titleBox h1 strong em{ display: inline-block; font-size: 110px; color: #009FE3;}
