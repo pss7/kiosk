@@ -78,7 +78,7 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
   background: #f9fbfd; box-shadow: 0 6px 16px rgba(66, 170, 255, 0.1); font-size: 42px;}
 #modalWrap .infoTable thead {background: linear-gradient(90deg, #42aaff, #66c2ff); color: white;}
 #modalWrap .infoTable th,
-#modalWrap .infoTable td { padding: 40px 24px 36px; text-align: center; font-size: 42px; white-space: nowrap;}
+#modalWrap .infoTable td { padding: 45px 100px 36px; text-align: center; font-size: 42px; white-space: nowrap;}
 #modalWrap .infoTable th {font-weight: 700;}
 #modalWrap .infoTable td {background-color: #ffffff; color: #333; border-bottom: 2px solid #eef5fc;
 }
