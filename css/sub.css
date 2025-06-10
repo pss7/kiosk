@@ -16,7 +16,7 @@ aside .weatherInfoBox02.effect{animation: none;}
 
 /* 푸터 */
 #footer{flex-shrink: 0; height: 187px; display: flex; align-items: center; border-top: 1px solid #C2C2C2;}
-#footer .logoBox{flex-shrink: 0; padding: 54px 0; width: 693px; height: 100%; border-right: 1px solid #C2C2C2;}
+#footer .logoBox{flex-shrink: 0; padding: 54px 0; width: 683px; height: 100%; border-right: 1px solid #C2C2C2;}
 #footer .logoBox h1{display: flex; justify-content: center; align-items: center; gap: 0 20px;}
 #footer .logoBox h1 span{padding-top: 10px; font-size: 36px; color: #434451;}
 #footer nav{width: 100%;}
@@ -94,7 +94,7 @@ aside .weatherInfoBox02.effect{animation: none;}
 #footer nav .depth li:nth-child(5) h2 a.active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
 /* 왼쪽영역 */
-aside{padding-bottom: 67px; display: flex; flex-direction: column; width: 693px; border-right: 1px solid #C2C2C2; z-index: 1;}
+aside{padding-bottom: 67px; display: flex; flex-direction: column; width: 683px; border-right: 1px solid #C2C2C2; z-index: 1;}
 aside nav{flex: 1; position: relative;margin-bottom: 117px;}
 aside nav .infoList{position: relative;}
 aside nav .infoList::after{width: 584px; height: 491px; content: ''; position: absolute; right:0; bottom: -491px; background: url(../images/sub/bg_icon03.svg)no-repeat center; z-index: -1;}
@@ -110,7 +110,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 /* 시정알림 */
 .notificationBox{padding: 90px 120px 64px;}
 .notificationBox .notificationContentBox{display: flex; border-top: 5px solid #4E81A6; border-bottom: 1px solid #4E81A6;}
-.notificationBox .notificationListBox{display: flex; flex-direction: column; width: 996px;}
+.notificationBox .notificationListBox{display: flex; flex-direction: column; width: 829px;}
 .notificationBox .notificationListBox a{flex: 1; padding: 56px 66px 0 49px; display: block; height: 266px; border: 1px solid #4E81A6; border-width: 0 1px 1px 0; background-color: #F7F7F8; transition: all .5s;}
 .notificationBox .notificationListBox a:last-child{border-bottom: 0;}
 .notificationBox .notificationListBox a h3{position: relative; padding-left: 52px; gap: 0 32px; margin-bottom: 60px; font-size: 42px; color: #6D7686; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all .5s;}
@@ -147,12 +147,12 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox{display: flex; border: 1px solid #4E81A6; border-width: 1px 0 0 0;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box{height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box:last-child{border-right: 0;}
-.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span{padding-top: 20px; flex-shrink: 0; position: relative; width: 240px; font-size: 40px; color: #7285A3; text-align: center;}
-.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span::after{content: ''; position: absolute; top:-2px; right:0; width: 1px; height: 88px; background-color: #4E81A6;}
-.notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 170px 0 60px; font-size: 40px; color: #363636;} 
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span{padding-top: 20px; flex-shrink: 0; position: relative; width: 200px; font-size: 34px; color: #7285A3; text-align: center;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box span::after{content: ''; position: absolute; top:-6px; right:0; width: 1px; height: 88px; background-color: #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 58px 0 60px; font-size: 36px; color: #363636;} 
 
 /* 내곁에춘천 */
-.chuncheonBox{padding: 130px 111px; background: url(../images/sub/bg.svg)no-repeat top; }
+.chuncheonBox{height: 100%; padding: 130px 111px; background: url(../images/sub/bg.svg)no-repeat top; }
 .tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
 .tabMenu li{flex: 1; text-align: center;}
 .tabMenu li .tabBtn{position: relative; padding: 32px 0; width: 100%; color: #666; font-size: 48px; border-bottom: 1px solid #000;}
@@ -188,6 +188,39 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .paginationBox .pageLinkNext::after {content: ''; width: 44px; height: 32px; position: absolute; top: 54%; left:50%; transform: translate(-50%, -50%);}
 .paginationBox .pageLinkPrev::after { background: url(../images/sub/arrow_icon04.svg)no-repeat center; background-size: cover;}
 .paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
+
+/* 내곁에춘천 - 상세 */
+.chuncheonViewBox{padding: 120px 126px 86px; height: 100%;}
+.chuncheonViewBox .topTitleBox{padding-bottom: 46px; display: flex; align-items: flex-end; gap: 0 51px; margin-bottom: 75px; border-bottom: 1px solid #000000;}
+.chuncheonViewBox .topTitleBox h3{ text-align: center; font-size: 62px; color: #28498F; line-height: 1;}
+.chuncheonViewBox .topTitleBox p{text-align: center; font-size: 40px; font-weight: 500;  font-family: 'Pretendard', sans-serif;}
+.chuncheonViewBox .layoutBox{display: flex; gap: 0 103px;}
+.chuncheonViewBox .leftBox{width: 1768px; flex-shrink: 0;}
+.chuncheonViewBox .rightBox{flex: 1;}
+.chuncheonViewBox .slickBox{position: relative;}
+.chuncheonViewBox .slickBox button{width: 116px; height: 120px; position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.55);}
+.chuncheonViewBox .slickBox button.prev{left:0;}
+.chuncheonViewBox .slickBox button.next{right:0;}
+.chuncheonViewBox .slickBox button::after{width: 38px; height: 54px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.chuncheonViewBox .slickBox button.prev::after{background: url(../images/sub/arrow_icon06.svg)no-repeat center;}
+.chuncheonViewBox .slickBox button.next::after{background: url(../images/sub/arrow_icon07.svg)no-repeat center;}
+.chuncheonViewBox .slideBox .slide{height: 1356px;}
+.chuncheonViewBox .slideBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonViewBox .textBox{margin-bottom: 30px; }
+.chuncheonViewBox .textBox .top{margin-bottom: 30px;padding-bottom: 10px;}
+.chuncheonViewBox .textBox .top h4{gap: 0 28px; display: flex; align-content: center;  position: relative; font-size: 40px;}
+.chuncheonViewBox .textBox .top h4::before{margin-top: -7px; width: 52px; height: 52px; content: ''; background: url(../images/sub/icon02.svg)no-repeat center;}
+.chuncheonViewBox .textBox .top .btn{display: flex; align-items: center; gap: 0 20px; padding: 0 20px 0 30px; height: 60px; border-radius: 6px; border: 1px solid #C2C2C2; font-family: 'Pretendard', sans-serif; font-size: 26px; font-weight: 500;} 
+.chuncheonViewBox .textBox .top .btn::before{content: ''; width: 32px; height: 32px; background: url(../images/sub/icon01.svg)no-repeat center; background-size: contain;}
+.chuncheonViewBox .textBox .list li{display: flex; align-items: center; gap: 0 0;}
+.chuncheonViewBox .textBox .list li{margin-bottom: 30px;}
+.chuncheonViewBox .textBox .list li span{flex-shrink: 0; width: 260px; font-size: 36px; font-weight: 700; color: #345A8C;}
+.chuncheonViewBox .textBox .list li em{font-size: 36px;  font-weight: 500; color: #515151;}
+.chuncheonViewBox .textBox .list li .infoText{height: 314px; padding: 30px 40px; font-size: 36px; font-weight: 500; overflow-y: auto; border: 1px solid #ababab; border-radius: 10px; color: #515151;}
+.chuncheonViewBox .mapBox{margin-bottom: 50px; height: 340px; border-radius: 50px; overflow: hidden; border: 1px solid #ABABAB;}
+.chuncheonViewBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonViewBox .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
+.chuncheonViewBox .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 
 /* 행복알리미 */
 .happyBox{padding: 120px 111px;}
@@ -244,3 +277,29 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .orgInfoBox .orgChartList > li > a{padding: 30px 0; display: block; width: 500px; height: 102px; border-radius: 40px 40px 0 0; text-align: center; font-size: 38px; background-color: #7B8192; color: #fff; text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);}
 .orgInfoBox .orgLink li{margin-bottom: 9px;}
 .orgInfoBox .orgLink li a{padding: 40px 0; display: block; width: 500px; height: 124px; border-radius: 20px; background-color: #7B8192; font-size: 38px; color: #fff; text-align: center;}
+.orgInfoBox .orgChartListType02{position: relative;}
+.orgInfoBox .orgChartListType02::before{content: ''; position: absolute; top:0; left:50%; bottom: 0; width: 1px; background-color: #6C6C6C; z-index: -1;}
+.orgInfoBox .orgChartListType02 > li{display: flex; flex-direction: column;}
+.orgInfoBox .orgChartListType02 > li > a{display: block; padding: 39px 0; width: 366px;
+    height: 118px; margin: 0 auto; background-color: #1FA6B2; font-size: 38px; color: #fff;
+    border-radius: 40px 0 40px 0;text-align: center; order: 2;}
+.orgInfoBox .orgChartListType03 > li{display: flex; flex-direction: column; margin-bottom: 72px;}
+.orgInfoBox .orgChartListType03 > li > a{order: 2; display: block; padding: 39px 0; width: 366px;
+    height: 118px; margin: 0 auto; background-color: #526DB8; font-size: 38px; color: #fff;
+    border-radius: 40px 0 40px 0;text-align: center;}
+.orgInfoBox .orgChartListType04{position: relative; display: flex; gap: 0 155px; margin-bottom: 207px;}
+.orgInfoBox .orgChartListType04::before{content: ''; position: absolute; left: 50%;
+    transform: translateX(-50%); bottom: -77px; width: 85.1%; height: 1px; background-color: #6C6C6C;}
+.orgInfoBox .orgChartListType04 > li{position: relative;}
+.orgInfoBox .orgChartListType04 > li > a{position: relative; padding: 34px 0; display: block; width: 367px; height: 118px; border: 2px solid #266AD6; border-radius: 40px 0; font-size: 38px; color: #266AD6; text-align: center; background-color: #fff; transition: all 1s; z-index: 1;} 
+.orgInfoBox .orgChartListType04 > li > a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; transition: all .5s; background-color: #266AD6; z-index: -1; border-radius: 40px 0;}
+.orgInfoBox .orgChartListType04 > li > a:hover,
+.orgInfoBox .orgChartListType04 > li > a:active{color: #fff;}
+.orgInfoBox .orgChartListType04 > li > a:hover::before,
+.orgInfoBox .orgChartListType04 > li > a:active::before{width: 100%;}
+.orgInfoBox .orgChartListType04 > li::after{content: ''; position: absolute; bottom: -77px;
+    left: 50%; width: 1px; height: 77px; background-color: #6C6C6C;}
+.orgInfoBox .orgChartListType04 > li:first-child:before{display: none; content: ''; position: absolute;
+    bottom: -77px; left: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
+.orgInfoBox .orgChartListType04 > li:last-child:before{display: none; content: ''; position: absolute;
+    bottom: -77px; right: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
