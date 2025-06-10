@@ -285,13 +285,55 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .orgInfoBox .orgChartList06 li{position: relative; display: flex; gap: 0 25px;}
 .orgInfoBox .orgChartList06 li::before{content: ''; margin-top: 26px; width: 13px; height: 13px; background-color: #7A7A7A;}
 .orgInfoBox .orgChartList06 li a{padding: 13px 0; font-size: 34px; color: #7B8192;}
-.orgInfoBox .orgBox{display: flex; gap: 0 70px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
-.orgInfoBox .orgBox .orgChartList06{padding: 25px 20px 15px 68px;}
-.orgInfoBox .orgChartList{display: flex; gap: 0 70px;}
-.orgInfoBox .orgChartList > li{display: flex; flex-direction: column;}
-.orgInfoBox .orgChartList > li > a{padding: 30px 0; display: block; width: 500px; height: 102px; border-radius: 40px 40px 0 0; text-align: center; font-size: 38px; background-color: #7B8192; color: #fff; text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);}
+
+
+
+
+
+
+
+
+
+
+
+.orgInfoBox .orgChartList.icon{margin-left: 140px;}
+.orgInfoBox .orgChartList.icon > li{position: relative;}
+.orgInfoBox .orgChartList.icon > li::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:-475px;}
+.orgInfoBox .orgChartList.icon > li:nth-child(1):before{width: 406px; height: 470px; background: url(../images/sub/building_img01.svg)no-repeat center;}
+.orgInfoBox .orgChartList.icon > li:nth-child(2)::before{width: 359px; height: 470px; background: url(../images/sub/building_img02.svg)no-repeat center;}
+
+
+
+
+.orgInfoBox .orgChartListType01 .orgChartList06{border-top: 0!important; border-radius: 0 0 6px 6px!important;}
+.orgInfoBox .orgChartListType01 > li{width: 881px; /* display: flex; flex-direction: column;*/ margin-bottom: 179px;}
+.orgInfoBox .orgChartListType01 > li > a{height: 120px; padding: 38px 0; display: block; border-radius: 40px 40px 0 0; text-align: center; font-size: 38px; background-color: #575C6A; color: #fff; text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);}
+.orgInfoBox .orgChartListType01 .orgChartList06{padding: 30px!important; align-items: flex-start; display: flex; flex-wrap: wrap; gap: 20px; flex: 1; padding: 38px 20px 38px 68px; border: 1px solid #8699A8; background-color: #fff;}
+.orgInfoBox .orgChartListType01 .orgChartList06 li a{display: block; padding: 40px 0; width: 398px; height: 125px; font-size: 34px; color: #7B8192; background-color: #fafafa; text-align: center; border-radius: 10px; border: 1px solid #8699A8;}
+.orgInfoBox .orgChartListType01 .orgChartList06 li::before{display: none;}
+
+
+
+
+
+
+.orgInfoBox .orgLayoutBox{display: flex; gap: 0 148px;}
+.orgInfoBox .orgLayoutBox .orgChartList{display: flex; gap: 0 148px}
+
+
+
+.orgInfoBox .orgBox{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.orgInfoBox .orgChartList06{padding: 25px 20px 15px 68px;}
+
+
+
+
+
+
+
+
 .orgInfoBox .orgLink li{margin-bottom: 9px;}
-.orgInfoBox .orgLink li a{padding: 40px 0; display: block; width: 500px; height: 124px; border-radius: 20px; background-color: #7B8192; font-size: 38px; color: #fff; text-align: center;}
+.orgInfoBox .orgLink li a{padding: 49px 0; display: block; width: 500px; height: 140px; border-radius: 20px; background-color: #575C6A; font-size: 38px; color: #fff; text-align: center;}
 .orgInfoBox .orgChartListType02{position: relative;}
 .orgInfoBox .orgChartListType02::before{content: ''; position: absolute; top:0; left:50%; bottom: 0; width: 1px; background-color: #6C6C6C; z-index: -1;}
 .orgInfoBox .orgChartListType02 > li{display: flex; flex-direction: column;}
