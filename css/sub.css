@@ -245,12 +245,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .happyViewBox .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
 .happyViewBox .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 
-
-
-
-
-
-
 /* 조직안내 */
 .orgInfoBox{opacity: 0; height: 100%; position: relative; padding: 96px 226px 67px; background: url(../images/sub/bg02.svg) no-repeat center bottom; overflow: hidden;}
 .orgInfoBox::after{width: 1191px; height: 1001px; content: ''; position: absolute; top:-50px; right:-50px; transform: translate(100%, -100%) rotate(15deg); background: url(../images/sub/bg_icon04.svg)no-repeat right top; z-index: -1; transition: all 1s .3s;}
@@ -262,17 +256,48 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .orgInfoBox .orgChartList02::after{content: ''; position: absolute; top: 50%; right:0; width: 357px; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartList02::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); right:357px; width: 1px; height: 132px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartList02 li{position: relative; margin-bottom: 22px;}
-.orgInfoBox .orgChartList02 li::after{content: ''; position: absolute; top: 50%; right:357px; width: 116px; height: 1px; background-color: #6C6C6C;}
+.orgInfoBox .orgChartList02 li::after{content: ''; position: absolute; top: 50%; right:357px; width: 120px; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartList02 li:nth-child(1)::after{top: 53%;}
 .orgInfoBox .orgChartList02 li:nth-child(2)::after{top: 47%;}
-.orgInfoBox .orgChartList02 li a{padding: 39px 0; display: block; width: 366px; height: 118px; font-size: 38px; color: #fff; background-color: #1FA6B2; border-radius: 40px 0 40px 0; text-align: center;}
+.orgInfoBox .orgChartList02 li a{padding: 39px 0; display: block; width: 366px; height: 118px; background-color: #1FA6B2; border-radius: 40px 0 40px 0; text-align: center;}
+.orgInfoBox .orgChartListType02 > li > a span,
+.orgInfoBox .orgChartListType03 > li > a span,
+.orgInfoBox .orgLink li a span,
+.orgInfoBox .orgChartListType01 > li > a span,
+.orgInfoBox .orgChartList05 > li > a span,
+.orgInfoBox .orgChartList03 > li > a span,
+.orgInfoBox .orgChartList04 li a span,
+.orgInfoBox .orgChartList02 li a span{position: relative; font-size: 38px; color: #fff; }
+.orgInfoBox .orgChartListType02 > li > a span::before,
+.orgInfoBox .orgChartListType03 > li > a span::before,
+.orgInfoBox .orgLink li a span::before,
+.orgInfoBox .orgChartListType01 > li > a span::before,
+.orgInfoBox .orgChartList05 > li > a span::before,
+.orgInfoBox .orgChartList03 > li > a span::before,
+.orgInfoBox .orgChartList04 li a span::before,
+.orgInfoBox .orgChartList02 li a span::before{content: ''; position: absolute; left:0; bottom: 0; width: 0; height: 5px; background-color: #fff; transition: all .5s;}
+.orgInfoBox .orgChartListType02 > li > a:hover span::before,
+.orgInfoBox .orgChartListType02 > li > a:active span::before,
+.orgInfoBox .orgChartListType03 > li > a:hover span::before,
+.orgInfoBox .orgChartListType03 > li > a:active span::before,
+.orgInfoBox .orgLink li a:hover span::before,
+.orgInfoBox .orgLink li a:active span::before,
+.orgInfoBox .orgChartListType01 > li > a:hover span::before,
+.orgInfoBox .orgChartListType01 > li > a:active span::before,
+.orgInfoBox .orgChartList05 > li > a:hover span::before,
+.orgInfoBox .orgChartList05 > li > a:active span::before,
+.orgInfoBox .orgChartList04 li a:hover span::before,
+.orgInfoBox .orgChartList04 li a:active span::before,
+.orgInfoBox .orgChartList03 li a:hover span::before,
+.orgInfoBox .orgChartList03 li a:active span::before,
+.orgInfoBox .orgChartList02 li a:hover span::before,
+.orgInfoBox .orgChartList02 li a:active span::before{width: 100%;}
 .orgInfoBox .orgChartList03 > li > a{position: relative; padding: 39px 0; display: block; width: 366px; height: 118px; margin: 0 auto; background-color: #526DB8; font-size: 38px; color: #fff; border-radius: 40px 0 40px 0; text-align: center; z-index: 99;}
 .orgInfoBox .orgChartList04{margin-top: -346px; margin-bottom: 68px; margin-left: auto; position: relative; width: 50%; padding-right: 508px; display: flex; flex-direction: column; align-items: flex-end;}
 .orgInfoBox .orgChartList04::after{content: ''; position: absolute; bottom: 167px; left: 0; width: 357px; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartList04::before{content: ''; position: absolute; top:61px; bottom: 81px; left: 357px; width: 1px; background-color: #6C6C6C;} 
 .orgInfoBox .orgChartList04 li{position: relative; margin-bottom: 22px;}
-.orgInfoBox .orgChartList04 li::before{content: ''; position: absolute; top: 50%; left: -117px; width: 116px; height: 1px;
-    background-color: #6C6C6C;}
+.orgInfoBox .orgChartList04 li::before{content: ''; position: absolute; top: 50%; left: -122px; width: 122px; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartList04 li a{display: block; padding: 39px 0; width: 366px; height: 118px; font-size: 38px; color: #fff; border-radius: 40px 0 40px 0; text-align: center; background-color: #32AA68;}
 .orgInfoBox .orgChartList05{padding-top: 77px; position: relative; display: flex; justify-content: space-between; gap: 0 36px;}
 .orgInfoBox .orgChartList05 > li{display: flex; flex-direction: column; position: relative;}
@@ -283,8 +308,12 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .orgInfoBox .orgChartList05 > li > a{padding: 30px 0; display: block; width: 414px; height: 102px; border-radius: 40px 40px 0 0; text-align: center; font-size: 38px; background-color: #575C6A; color: #fff; text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);}
 .orgInfoBox .orgChartList06{flex: 1; padding: 38px 20px 38px 68px; border: 1px solid #8699A8; background-color: #fff;}
 .orgInfoBox .orgChartList06 li{position: relative; display: flex; gap: 0 25px;}
-.orgInfoBox .orgChartList06 li::before{content: ''; margin-top: 26px; width: 13px; height: 13px; background-color: #7A7A7A;}
-.orgInfoBox .orgChartList06 li a{padding: 13px 0; font-size: 34px; color: #7B8192;}
+.orgInfoBox .orgChartList06 li::before{content: ''; margin-top: 26px; width: 13px; height: 13px; background-color: #7A7A7A; transition: all .5s;}
+.orgInfoBox .orgChartList06 li a{padding: 13px 0; font-size: 34px; color: #7B8192; transition: all .5s;}
+.orgInfoBox .orgChartList06 li:hover a,
+.orgInfoBox .orgChartList06 li:active a{ color: #000;}
+.orgInfoBox .orgChartList06 li:hover::before,
+.orgInfoBox .orgChartList06 li:active::before{background-color: #333;}
 .orgInfoBox .orgChartList.icon{margin-left: 140px;}
 .orgInfoBox .orgChartList.icon > li{position: relative;}
 .orgInfoBox .orgChartList.icon > li::before{content: ''; position: absolute; top: 50%; transform: translateY(-50%); left:-475px;}
@@ -294,7 +323,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .orgInfoBox .orgChartListType01 > li{width: 881px; /* display: flex; flex-direction: column;*/ margin-bottom: 179px;}
 .orgInfoBox .orgChartListType01 > li > a{height: 120px; padding: 38px 0; display: block; border-radius: 40px 40px 0 0; text-align: center; font-size: 38px; background-color: #575C6A; color: #fff; text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);}
 .orgInfoBox .orgChartListType01 .orgChartList06{padding: 30px!important; align-items: flex-start; display: flex; flex-wrap: wrap; gap: 20px; flex: 1; padding: 38px 20px 38px 68px; border: 1px solid #8699A8; background-color: #fff;}
-.orgInfoBox .orgChartListType01 .orgChartList06 li a{display: block; padding: 40px 0; width: 398px; height: 125px; font-size: 34px; color: #7B8192; background-color: #fafafa; text-align: center; border-radius: 10px; border: 1px solid #8699A8;}
+.orgInfoBox .orgChartListType01 .orgChartList06 li a{display: block; padding: 40px 0; width: 398px; height: 125px; font-size: 34px; color: #7B8192; background-color: #fafafa; text-align: center; border-radius: 10px; border: 1px solid #8699A8; transition: all .5s;}
+.orgInfoBox .orgChartListType01 .orgChartList06 li a:hover,
+.orgInfoBox .orgChartListType01 .orgChartList06 li a:active{background-color: #575C6A; color: #fff;}
 .orgInfoBox .orgChartListType01 .orgChartList06 li::before{display: none;}
 .orgInfoBox .orgLayoutBox{display: flex; gap: 0 148px;}
 .orgInfoBox .orgLayoutBox .orgChartList{display: flex; gap: 0 148px}
