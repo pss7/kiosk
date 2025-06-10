@@ -50,12 +50,17 @@ a.view:active span{color: #fff;}
 #section02 .noticeBox{position: relative;}
 #section02 .noticeBox a.view{position: absolute; top:22px; right:0;}
 #section02 .infoLinkList{display: flex; gap: 0 67px; align-items: flex-end; height: 546px;}
-#section02 .infoLinkList li:nth-child(1) a{width: 590px; height: 546px; border-radius: 65px;  background: linear-gradient(to bottom, #3162B7 30%,#fff 30% 100%); z-index: 1;}
-#section02 .infoLinkList li:nth-child(1) a::after{width: 100%; height: 463px; content: ''; position: absolute; bottom: 0; right: 0; background: url(../images/main/link_bg01.svg)no-repeat center; z-index: -1;}
+#section02 .infoLinkList li:nth-child(1) a{width: 590px; height: 546px; border-radius: 65px; background: url(../images/main/link_bg01.svg)no-repeat center; background-size: cover; z-index: 1;} 
+#section02 .infoLinkList li:nth-child(1) a:hover,
+#section02 .infoLinkList li:nth-child(1) a:active{background: url(../images/main/link_hover_bg01.svg)no-repeat center; background-size: cover;}
+#section02 .infoLinkList li:nth-child(1) a:hover h2,
+#section02 .infoLinkList li:nth-child(1) a:active h2{color:#3262B7;}
+#section02 .infoLinkList li:nth-child(1) a:hover p,
+#section02 .infoLinkList li:nth-child(1) a:active p{color: #4B4B4B;}
 #section02 .infoLinkList li:nth-child(1) a::before{ content: ''; width: 311px; height: 280px; position: absolute; left:60px; bottom: 0; background: url(../images/main/link_img01.svg)no-repeat center;}
-#section02 .infoLinkList li a{position: relative; display: block; padding: 60px 0 0 67px;}
-#section02 .infoLinkList li a h2{margin-bottom: 5px; color: #fff; font-size: 40px;}
-#section02 .infoLinkList li a p{font-family: 'Pretendard', sans-serif; font-size: 28px; color: #DFE7EE; font-weight: 600; line-height: 1.8;}
+#section02 .infoLinkList li a{position: relative; display: block; padding: 60px 0 0 67px; transition: all .5s;}
+#section02 .infoLinkList li a h2{margin-bottom: 5px; color: #fff; font-size: 40px; transition: all .5s;}
+#section02 .infoLinkList li a p{font-family: 'Pretendard', sans-serif; font-size: 28px; color: #DFE7EE; font-weight: 600; line-height: 1.8; transition: all .5s;}
 #section02 .infoLinkList li a .view{position: absolute; bottom: 0; right:0; width: 96px; height: 96px; border-radius: 50%; background-color: #000;}
 #section02 .infoLinkList li a .view::after{width: 21px; height: 23px; content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/main/arrow_icon03.svg)no-repeat center; background-size: contain; animation: arrowMove 2s infinite ease-in-out; }
 
@@ -71,10 +76,16 @@ a.view:active span{color: #fff;}
   }
 }
 
-#section02 .infoLinkList li:nth-child(2) a{width: 616px; height: 489px; background: url(../images/main/link_bg02.svg)no-repeat center;}
+#section02 .infoLinkList li:nth-child(2) a{width: 616px; height: 489px; background: url(../images/main/link_bg02.svg)no-repeat center; background-size: contain;}
 #section02 .infoLinkList li:nth-child(2) a::before{content: ''; width: 145px; height: 150px; position: absolute; left:67px; bottom: 50px; background: url(../images/main/link_img02.svg)no-repeat center;}
 #section02 .infoLinkList li:nth-child(2) a h2{color: #3262B7;}
 #section02 .infoLinkList li:nth-child(2) a p{color: #4B4B4B; font-weight: 600;}
+#section02 .infoLinkList li:nth-child(2) a:hover,
+#section02 .infoLinkList li:nth-child(2) a:active{background: url(../images/main/link_hover_bg02.svg)no-repeat center; background-size: contain;}
+#section02 .infoLinkList li:nth-child(2) a:hover h2,
+#section02 .infoLinkList li:nth-child(2) a:active h2{color:#fff;}
+#section02 .infoLinkList li:nth-child(2) a:hover p,
+#section02 .infoLinkList li:nth-child(2) a:active p{color: #DFE7EE;}
 #section02 .noticeBox .title{margin-bottom: 54px;}
 #section02 .noticeBox .title h2{display: inline-block; position: relative; padding-right: 189px;}
 #section02 .noticeBox .title h2::after{content: ''; position: absolute; right: 0; top:-63px; width: 149px; height: 153px; background: url(../images/main/icon01.svg)no-repeat center; animation: rotateEffectStyle01 1.3s alternate infinite;}
