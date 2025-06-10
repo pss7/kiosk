@@ -190,7 +190,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
 
 /* 내곁에춘천 - 상세 */
-.chuncheonViewBox{padding: 120px 126px 86px; height: 100%;}
+.chuncheonViewBox{position: relative; padding: 120px 126px 86px; height: 100%;}
+.chuncheonViewBox::after{width: 936px; height: 786px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon05.svg)no-repeat center; z-index: -1;}
 .chuncheonViewBox .topTitleBox{padding-bottom: 46px; display: flex; align-items: flex-end; gap: 0 51px; margin-bottom: 75px; border-bottom: 1px solid #000000;}
 .chuncheonViewBox .topTitleBox h3{ text-align: center; font-size: 62px; color: #28498F; line-height: 1;}
 .chuncheonViewBox .topTitleBox p{text-align: center; font-size: 40px; font-weight: 500;  font-family: 'Pretendard', sans-serif;}
