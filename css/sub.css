@@ -5,6 +5,8 @@
 /* #sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
 #sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;} */
 .contentWrap{width: 100%; height: 100%;}
+aside{position: relative;}
+aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
 aside .weatherInfoBox01.effect,
 aside .weatherInfoBox02.effect{animation: none;}
 
@@ -127,7 +129,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; min-height: 203px; border-bottom: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox h3{font-size: 54px; color: #000;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox .date{margin-top: 12px; font-size: 36px; color: #BBB;}
-.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1251px; overflow-y: auto; font-size: 18px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1244px; overflow-y: auto; font-size: 18px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar {width: 66px; height: 66px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-track{background: #E2E2E2;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-thumb {background: #B2B2B2; border-radius: 50px;}
@@ -144,7 +146,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box em{flex-shrink: 0; padding:20px 58px 0 60px; font-size: 36px; color: #363636;} 
 
 /* 내곁에춘천 */
-.chuncheonBox{height: 100%; padding: 130px 111px; background: url(../images/sub/bg.svg)no-repeat top; }
+.chuncheonBox{height: 100%; padding: 130px 111px 90px; background: url(../images/sub/bg.svg)no-repeat top; }
+.chuncheonBox .paginationBox{margin: 60px auto 30px;}
 .tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
 .tabMenu li{flex: 1; text-align: center;}
 .tabMenu li .tabBtn{position: relative; padding: 32px 0; width: 100%; color: #666; font-size: 48px; border-bottom: 1px solid #000;}
@@ -169,7 +172,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .tabContentList li a .textBox .view{padding-top: 12px; display: flex; justify-content: space-between; align-items: center; margin-top: 32px; height: 100px; color: #333; font-size: 28px; border-top: 1px solid #AAB4C5;}
 .tabContentList li a .textBox .view::after{content: ''; margin-top: -5px; width: 45px; height: 45px; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
 .tabContentList li a .like{width: 87px; height: 94px; position: absolute; top:-32px; left:46px; background: url(../images/sub/like.svg)no-repeat center;}
-.paginationBox {margin: 60px 0 30px; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.paginationBox {margin: 30px 0; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
 .paginationBox .pageLink{padding-top: 8px; position: relative; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; color: #fff; border-radius: 50px; background-color: #2D3D3A; font-size: 24px;}
 .paginationBox .pageLink.pageLinkPrev{margin-right: 20px;}
 .paginationBox .pageLink.pageLinkNext{margin-left: 20px;}
@@ -182,9 +185,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
 
 /* 내곁에춘천 - 상세 */
-.chuncheonViewBox{position: relative; padding: 120px 126px 86px; height: 100%;}
+.chuncheonViewBox{position: relative; padding: 120px 126px 50px; height: 100%;}
 .chuncheonViewBox::after{width: 936px; height: 786px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon05.svg)no-repeat center; z-index: -1;}
-.chuncheonViewBox .topTitleBox{padding-bottom: 46px; display: flex; align-items: flex-end; gap: 0 51px; margin-bottom: 75px; border-bottom: 1px solid #000000;}
+.chuncheonViewBox .topTitleBox{padding-bottom: 38px; display: flex; align-items: flex-end; gap: 0 51px; margin-bottom: 60px; border-bottom: 1px solid #000000;}
 .chuncheonViewBox .topTitleBox h3{ text-align: center; font-size: 62px; color: #28498F; line-height: 1;}
 .chuncheonViewBox .topTitleBox p{text-align: center; font-size: 40px; font-weight: 500;  font-family: 'Pretendard', sans-serif;}
 .chuncheonViewBox .layoutBox{display: flex; gap: 0 103px;}
@@ -200,23 +203,23 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonViewBox .slideBox .slide{height: 1356px;}
 .chuncheonViewBox .slideBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonViewBox .textBox{margin-bottom: 30px; }
-.chuncheonViewBox .textBox .top{margin-bottom: 30px;padding-bottom: 10px;}
+.chuncheonViewBox .textBox .top{margin-bottom: 15px;padding-bottom: 10px;}
 .chuncheonViewBox .textBox .top h4{gap: 0 28px; display: flex; align-content: center;  position: relative; font-size: 40px;}
-.chuncheonViewBox .textBox .top h4::before{margin-top: -7px; width: 52px; height: 52px; content: ''; background: url(../images/sub/icon02.svg)no-repeat center;}
+.chuncheonViewBox .textBox .top h4::before{margin-top: -3px; width: 52px; height: 52px; content: ''; background: url(../images/sub/icon02.svg)no-repeat center;}
 .chuncheonViewBox .textBox .top .btn{display: flex; align-items: center; gap: 0 20px; padding: 0 20px 0 30px; height: 60px; border-radius: 6px; border: 1px solid #C2C2C2; font-family: 'Pretendard', sans-serif; font-size: 26px; font-weight: 500;} 
 .chuncheonViewBox .textBox .top .btn::before{content: ''; width: 32px; height: 32px; background: url(../images/sub/icon01.svg)no-repeat center; background-size: contain;}
 .chuncheonViewBox .textBox .list li{display: flex; align-items: center; gap: 0 0;}
-.chuncheonViewBox .textBox .list li{margin-bottom: 30px;}
-.chuncheonViewBox .textBox .list li span{flex-shrink: 0; width: 260px; font-size: 36px; font-weight: 700; color: #345A8C;}
-.chuncheonViewBox .textBox .list li em{font-size: 36px;  font-weight: 500; color: #515151;}
-.chuncheonViewBox .textBox .list li .infoText{height: 314px; padding: 30px 40px; font-size: 36px; font-weight: 500; overflow-y: auto; border: 1px solid #ababab; border-radius: 10px; color: #515151;}
-.chuncheonViewBox .mapBox{margin-bottom: 50px; height: 340px; border-radius: 50px; overflow: hidden; border: 1px solid #ABABAB;}
+.chuncheonViewBox .textBox .list li{margin-bottom: 22px;}
+.chuncheonViewBox .textBox .list li span{flex-shrink: 0; width: 260px; font-size: 26px; font-weight: 700; color: #345A8C;}
+.chuncheonViewBox .textBox .list li em{font-size: 26px;  font-weight: 500; color: #515151;}
+.chuncheonViewBox .textBox .list li .infoText{height: 314px; padding: 30px 40px; font-size: 26px; font-weight: 500; overflow-y: auto; border: 1px solid #ababab; border-radius: 10px; color: #515151;}
+.chuncheonViewBox .mapBox{margin-bottom: 50px; height: 340px; border-radius: 20px; overflow: hidden; border: 1px solid #ABABAB;}
 .chuncheonViewBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonViewBox .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
 .chuncheonViewBox .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 
 /* 행복알리미 */
-.happyBox{padding: 120px 111px;}
+.happyBox{padding: 120px 111px 0;}
 .noticeList{display: flex; flex-wrap: wrap; gap: 0 80px;}
 .noticeList li{margin-bottom: 68px;}
 .noticeList li a{display: block; width: 521px;}
