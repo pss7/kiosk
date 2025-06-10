@@ -17,8 +17,8 @@
 
 /* 왼쪽영역 */
 aside{flex-shrink: 0; /*width: 19.25%;*/ width: 733px;}
-aside .logoBox{margin-bottom: 279px;}
-aside .logoBox h1 img{display: block; margin: 0 auto;}
+aside .logoBox{ margin-bottom: 302px;}
+aside .logoBox h1 img{display: block; width: 400px; height: 394px; margin: 0 auto;}
 aside .titleBox{margin-bottom: 71px;}
 aside .titleBox img{display: block; margin: 0 auto;}
 aside .titleBox h1{font-size: 64px; text-align: center; color: #5C5C5C; line-height: 1.3;}

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-#wrap{padding: 107px 0 136px; background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%); z-index: 1;}
+#wrap{padding: 107px 0; background: linear-gradient(to bottom, #F7FFFF 40%, #F7FFFF 45%, white 55%); z-index: 1;}
 #wrap::after{content: ''; height: 1252px; position: absolute; top:0; left:0; right: 0; background: url(../images/main/main_bg.svg)no-repeat center; background-size: cover; z-index: -1;}
 
 /* 공통 */
@@ -46,7 +46,7 @@ a.view:active span{color: #fff;}
 #section01 .noticeSlideBox .control button::before{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 28px; height: 40px; }
 
 /* 영역02 */
-#section02{display: flex; gap: 0 119px; margin-bottom: 60px;}
+#section02{display: flex; gap: 0 119px; margin-bottom: 93px;}
 #section02 .noticeBox{position: relative;}
 #section02 .noticeBox a.view{position: absolute; top:22px; right:0;}
 #section02 .infoLinkList{display: flex; gap: 0 67px; align-items: flex-end; height: 546px;}
