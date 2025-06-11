@@ -369,3 +369,24 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
     bottom: -77px; left: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartListType04 > li:last-child:before{display: none; content: ''; position: absolute;
     bottom: -77px; right: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
+
+/* 청사안내 */
+.cityHallGuideBox{height: 100%; display: flex;}
+.cityHallGuideBox .leftBox{padding: 180px 0 0 146px; display: flex; flex-direction: column; width: 894px;}
+.cityHallGuideBox .leftBox::before{width: 751px; height: 729px; content: ''; position: absolute; top:0; left:0; background: url(../images/sub/bg_icon06.svg)no-repeat center; z-index: -1;}
+.cityHallGuideBox .infoTextBox{position: relative; }
+.cityHallGuideBox .infoTextBox span{display: block; font-size: 120px; color: #25477D;}
+.cityHallGuideBox .infoTextBox h3{margin-bottom: 20px; font-size: 96px; color: #4580EE;}
+.cityHallGuideBox .infoTextBox p{font-size: 32px; color: #4D4D4D; font-weight: 600; font-family: 'Pretendard', sans-serif;}
+.cityHallGuideBox .infoImgBox{margin-top: auto; }
+.cityHallGuideBox .infoImgBox p{position: relative; display: inline-block; color: #50596B; font-size: 24px; text-align: center;}
+.cityHallGuideBox .infoImgBox p::before{content: '“'; margin-bottom: -42px; display: block; font-size: 96px; line-height: 1; text-align: left;}
+.cityHallGuideBox .infoImgBox img{display: block;}
+.cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
+.cityHallGuideBox aside{ width: 246px; background-color: #24252E;}
+.cityHallGuideBox aside .guideMapList01 > li > .btn{display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; text-align: center;}
+.cityHallGuideBox aside .guideMapList02{padding: 40px 0; background-color: #393A45;}
+.cityHallGuideBox aside .guideMapList02 > li{margin-bottom: 12px;}
+.cityHallGuideBox aside .guideMapList02 > li > .btn{display: block; width: 100%; height: 100px; text-align: center; }
+.cityHallGuideBox aside .guideMapList02 > li > .btn span{font-size: 28px; color: #fff;}
+.cityHallGuideBox aside .guideMapList02 > li > .btn.active span{display: block; margin: 0 auto; width: 100px; height: 100px; line-height: 106px; border-radius: 50px; background-color: #4580EE;}
