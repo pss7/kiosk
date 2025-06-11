@@ -377,7 +377,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .infoTextBox{position: relative; }
 .cityHallGuideBox .infoTextBox span{display: block; font-size: 120px; color: #25477D;}
 .cityHallGuideBox .infoTextBox h3{margin-bottom: 20px; font-size: 96px; color: #4580EE;}
-.cityHallGuideBox .infoTextBox p{font-size: 32px; color: #4D4D4D; font-weight: 600; font-family: 'Pretendard', sans-serif;}
+.cityHallGuideBox .infoTextBox p{font-size: 32px; color: #4D4D4D; font-weight: 600; font-family: 'Pretendard', sans-serif; word-break: keep-all;}
 .cityHallGuideBox .infoImgBox{margin-top: auto; }
 .cityHallGuideBox .infoImgBox p{position: relative; display: inline-block; color: #50596B; font-size: 24px; text-align: center;}
 .cityHallGuideBox .infoImgBox p::before{content: '“'; margin-bottom: -42px; display: block; font-size: 96px; line-height: 1; text-align: left;}
