@@ -197,9 +197,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .tabMenu li .tabBtn.active{color: #45A1E3;}
 .chuncheonBox02 .tabMenu li .tabBtn.active::after{bottom: 80px; left: auto; right:0; width: 104px; height: 103px; background: url(../images/sub/heart_icon.svg)no-repeat center;}
 .chuncheonBox02 .tabMenu li .tabBtn::before{position: absolute; left:0; bottom: 0; width: 119px; background-color: #222222; right: auto;}
-/* .chuncheonBox02 .slideTabContentBox{width: 64.6%;} */
 .chuncheonBox02 .slideTabContent .slide.active{width: 930px; height: 946px; border-radius: 0 0 300px 0; overflow: hidden; box-shadow: -50px 80px 90px rgba(0,0,0,1);}
-/* .chuncheonBox02 .slideTabContent .slick-list{padding: 0 0 170px 170px; } */
 .chuncheonBox02 .slideTabContent .slide{margin-right: 99px; position: relative; width: 558px; height: 671px; transition: all 1s;}
 .chuncheonBox02 .slideTabContent .slide .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
 .chuncheonBox02 .slideTabContent .slide .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
