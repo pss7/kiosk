@@ -151,7 +151,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox .paginationBox{margin: 60px auto 30px;}
 .tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
 .tabMenu li{flex: 1; text-align: center;}
-
 .tabContent{padding: 0 60px;}
 .tabContentList{display: flex; flex-wrap: wrap; gap: 0 40px;}
 .tabContentList li{width: 528px; margin-bottom: 40px;}
@@ -208,16 +207,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideTabContent .slide .textBox .number{display: block; font-size: 130px; color: rgba(255,255,255,.8);}
 .chuncheonBox02 .slideTabContent .slick-track{ display: flex; position: static; margin: 0;}
 
-
-
-
-
-
-
-
-
 /* 내곁에춘천 - 춘천시대표축제 */
-.chuncheonBox03{position: relative; padding: 120px 300px 117px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
+.chuncheonBox03{position: relative; padding: 120px 300px 115px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
 .chuncheonBox03::after{content: ''; width: 751px; height: 292px; position: absolute; bottom: 0; right:0; background: url(../images/sub/bg03.svg)no-repeat center; z-index: -1;}
 .chuncheonBox03 .tabContent{padding: 0;}
 .chuncheonBox03 .tabMenu li .tabBtn{ font-size: 64px; color: #AFAFAF; transition: all .5s;}
