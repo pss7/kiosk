@@ -208,7 +208,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideTabContent .slick-track{ display: flex; position: static; margin: 0;}
 
 /* 내곁에춘천 - 춘천시대표축제 */
-.chuncheonBox03{position: relative; padding: 120px 300px 115px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
+.chuncheonBox03{position: relative; padding: 120px 0 115px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
+.chuncheonBox03 .tabContentBox{padding: 0 300px;}
 .chuncheonBox03::after{content: ''; width: 751px; height: 292px; position: absolute; bottom: 0; right:0; background: url(../images/sub/bg03.svg)no-repeat center; z-index: -1;}
 .chuncheonBox03 .tabContent{padding: 0;}
 .chuncheonBox03 .tabMenu li .tabBtn{ font-size: 64px; color: #AFAFAF; transition: all .5s;}
