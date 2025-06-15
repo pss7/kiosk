@@ -120,4 +120,33 @@ $(function () {
   });
 
 
+
+  $(".cityHallGuideBox .guideMapBox .guideMapImage").hide();
+  $(".cityHallGuideBox .guideMapBox .guideMapImage").last().show();
+
+  $(".cityHallGuideBox .guideMapList02 > li").click(function () {
+
+    $(".cityHallGuideBox .guideMapList02 > li").children().removeClass("active");
+    $(this).children().addClass('active');
+
+    const idx = $(this).index();
+
+    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
+    $('.cityHallGuideBox .guideMapBox .guideMapImage').eq(idx).show();
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

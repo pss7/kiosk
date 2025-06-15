@@ -539,6 +539,10 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .infoImgBox p::before{content: '“'; margin-bottom: -42px; display: block; font-size: 96px; line-height: 1; text-align: left;}
 .cityHallGuideBox .infoImgBox img{display: block;}
 .cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
+.cityHallGuideBox .guideMapBox .guideMapTabContentBox{height: 100%;}
+
+
+
 
 
 
