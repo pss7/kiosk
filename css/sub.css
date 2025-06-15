@@ -577,7 +577,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 
 .cityHallGuideBox aside{ width: 246px; background-color: #24252E;}
-.cityHallGuideBox aside .guideMapList01 > li > .btn{display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; text-align: center;}
+.cityHallGuideBox aside .guideMapList01 > li > .btn{position: relative; display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; text-align: center;}
 .cityHallGuideBox aside .guideMapList01 > li > .btn::after{width: 30px; height: 17px; content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -16px; background: url(../images/sub/icon03.svg)no-repeat center;}
 .cityHallGuideBox aside .guideMapList02{padding: 40px 0; background-color: #393A45;}
 .cityHallGuideBox aside .guideMapList02 > li{margin-bottom: 12px;}
