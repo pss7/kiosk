@@ -4,7 +4,7 @@
 #sub{flex: 1; /*position: relative; display: flex; align-items: flex-start;*/ /*justify-content: center;*/ width: 100%; height: 100%;}
 /* #sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
 #sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;} */
-.contentWrap{ width: 3157px; height: 100%;}
+.contentWrap{ min-width: 3157px; height: 100%;}
 aside{position: relative;}
 aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
 aside .weatherInfoBox01.effect,
@@ -96,7 +96,7 @@ aside .weatherInfoBox02.effect{animation: none;}
 #footer nav .depth li:nth-child(5) h2 a.active span::before{background: url(../images/common/icon_hover05.svg)no-repeat center;}
 
 /* 왼쪽영역 */
-aside{display: flex; flex-direction: column; width: 683px; border-right: 1px solid #C2C2C2; z-index: 1;}
+aside{display: flex; flex-direction: column; width: 683px; border-right: 1px solid #C2C2C2; z-index: 99;}
 aside nav{flex: 1; position: relative;margin-bottom: 117px;}
 aside nav .infoList{position: relative;}
 aside nav .infoList::after{width: 584px; height: 491px; content: ''; position: absolute; right:0; bottom: -491px; background: url(../images/sub/bg_icon03.svg)no-repeat center; z-index: -1;}
