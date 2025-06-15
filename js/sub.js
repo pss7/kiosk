@@ -122,7 +122,7 @@ $(function () {
 
 
   $(".cityHallGuideBox .guideMapBox .guideMapImage").hide();
-  $(".cityHallGuideBox .guideMapBox .show").last().show();
+  $(".cityHallGuideBox .guideMapBox .guideMapImage").last().show();
 
   $(".cityHallGuideBox .guideMapList02 > li").click(function () {
 
