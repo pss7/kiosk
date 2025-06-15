@@ -27,75 +27,80 @@ $(function () {
 
 
 
-  $(".chuncheonBox02 .slickWrap .slick").slick({
+  // $(".chuncheonBox02 .slickWrap .slick").slick({
+  //   autoplay: false,
+  //   arrows: true,
+  //   prevArrow: ('.img_slide_box .control .prev'),
+  //   nextArrow: ('.img_slide_box .control .next'),
+  //   variableWidth: true,
+  //   accessibility: false,
+  //   dots: false,
+  //   draggable: true,
+  //   infinite: false,
+  //   slidesToScroll: 1,
+  //   zIndex: 100,
+  //   pauseOnHover: false,
+  //   speed: 1500,
+  // });
+  // $('.chuncheonBox02 .slickWrap .slick-current').addClass('active');
+  // $('.chuncheonBox02 .slickWrap').on('afterChange', function (init, event, slick, currentSlide, nextSlide) {
+  //   $('.chuncheonBox02 .slickWrap .slide').removeClass('active');
+  //   $('.chuncheonBox02 .slickWrap .slick-current').addClass('active');
+  // });
+
+
+
+
+
+  $(".chuncheonBox03 .slideWrap .slick").slick({
     autoplay: false,
     arrows: true,
-    prevArrow: ('.img_slide_box .control .prev'),
-    nextArrow: ('.img_slide_box .control .next'),
-    variableWidth: true,
+    prevArrow: ('.chuncheonBox03 .controlBox .prevButton'),
+    nextArrow: ('.chuncheonBox03 .controlBox .nextButton'),
     accessibility: false,
     dots: false,
     draggable: true,
-    infinite: false,
+    infinite: true,
     slidesToScroll: 1,
     zIndex: 100,
     pauseOnHover: false,
     speed: 1500,
   });
-  $('.chuncheonBox02 .slickWrap .slick-current').addClass('active');
-  $('.chuncheonBox02 .slickWrap').on('afterChange', function (init, event, slick, currentSlide, nextSlide) {
-    $('.chuncheonBox02 .slickWrap .slide').removeClass('active');
-    $('.chuncheonBox02 .slickWrap .slick-current').addClass('active');
-  });
 
+$('.chuncheonBox03 .mainSlide').each(function () {
+  const $mainSlideWrap = $(this);
+  const $slideMain = $mainSlideWrap.find('.slideMain');
+  const $sliderNav = $mainSlideWrap.find('.slideNav');
+  const $thumbSlides = $sliderNav.find('.thumbSlide');
 
-
-
-
-
-
-
-
-  // $('.slideMain').slick({
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   arrows: false,
-  //   variableWidth: true,
-  //   asNavFor: '.sliderNav'
-  // });
-  // $('.sliderNav').slick({
-  //   slidesToShow: 4,
-  //   slidesToScroll: 1,
-  //   asNavFor: '.slideMain',
-  //   dots: false,
-  //   focusOnSelect: true
-  // });
-
-
-  $('.chuncheonBox03 .slideMain').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: ('.chuncheonBox03 .control .prev'),
-    nextArrow: ('.chuncheonBox03 .control .next'),
-    asNavFor: '.chuncheonBox03 .sliderNav'
-  });
-  $('.chuncheonBox03 .sliderNav').slick({
-    variableWidth: true,
-    arrows: false,
+  $sliderNav.slick({
     slidesToShow: 3,
     slidesToScroll: 1,
-    asNavFor: '.chuncheonBox03 .slideMain',
-
-    focusOnSelect: true
+    asNavFor: $slideMain,
+    variableWidth: true,
+    focusOnSelect: true,
+    arrows: false,
   });
 
+  $slideMain.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    asNavFor: $sliderNav,
+    arrows: true,
+    prevArrow: $mainSlideWrap.find('.control .prev'),
+    nextArrow: $mainSlideWrap.find('.control .next'),
+  });
 
+  $slideMain.on('afterChange', function (event, slick, currentSlide) {
+    $thumbSlides.removeClass('is-selected');
+    $thumbSlides.eq(currentSlide).addClass('is-selected');
 
+    $sliderNav.slick('slickGoTo', currentSlide);
+  });
 
-
-
-
+  $thumbSlides.removeClass('is-selected');
+  $thumbSlides.eq(0).addClass('is-selected');
+});
 
 
 
