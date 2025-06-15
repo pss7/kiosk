@@ -528,7 +528,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 /* 청사안내 */
 .cityHallGuideBox{height: 100%; display: flex;}
-.cityHallGuideBox .leftBox{padding: 180px 0 0 146px; display: flex; flex-direction: column; width: 894px;}
+.cityHallGuideBox .leftBox{flex-shrink: 0; padding: 180px 0 0 146px; display: flex; flex-direction: column; width: 894px;}
 .cityHallGuideBox .leftBox::before{width: 751px; height: 729px; content: ''; position: absolute; top:0; left:0; background: url(../images/sub/bg_icon06.svg)no-repeat center; z-index: -1;}
 .cityHallGuideBox .infoTextBox{position: relative; }
 .cityHallGuideBox .infoTextBox span{display: block; font-size: 120px; color: #25477D;}
@@ -539,8 +539,45 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .infoImgBox p::before{content: '“'; margin-bottom: -42px; display: block; font-size: 96px; line-height: 1; text-align: left;}
 .cityHallGuideBox .infoImgBox img{display: block;}
 .cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
+
+
+
+.cityHallGuideBox .guideMapBox .guideMapImage{position: relative; width: 100%; height: 100%;}
+.cityHallGuideBox .guideMapBox .guideMapImage img{display: block; width: 100%; height: 100%; object-fit: cover;}
+
+.cityHallGuideBox .guideMapBox .guideMapImage .btn{padding: 15px 35px; position: absolute; background-color: #4580EE; color: #fff; font-size: 32px; font-family: 'Pretendard', sans-serif; font-weight:600; border-radius: 10px;} 
+
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn01{top: 278px; right: 580px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn02{top: 460px; right: 1070px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn03{bottom: 319px; right: 1050px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn04{bottom: 580px; right: 1050px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn05{bottom: 705px; left: 840px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn06{bottom: 705px; left: 1080px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn07{bottom: 690px; left: 430px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn08{bottom: 690px; left: 300px;}
+
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn09{top:450px; left: 710px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn10{top:170px; left: 900px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn11{top:170px; left: 540px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn12{top:450px; left: 310px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn13{top:135px; left: 1110px;}
+
+
+
+
+.cityHallGuideBox .guideMapBox .guideMapImage .btn::after {content: ""; position: absolute;
+  top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent;
+  border-right: 20px solid transparent; border-top: 20px solid #4580EE; }
+.cityHallGuideBox .guideMapBox .guideMapImage .btn::before {content: ""; position: absolute;
+  top: calc(100% + 24px); left: 50%; transform: translateX(-50%); width: 40px; height: 40px;
+  border-radius: 50%; background: radial-gradient(circle, #4580EE 10%, rgba(69, 128, 238, 0.15) 70%);z-index: 1;
+}
+
+
+
+
 .cityHallGuideBox aside{ width: 246px; background-color: #24252E;}
-.cityHallGuideBox aside .guideMapList01 > li > .btn{position: relative; display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; text-align: center;}
+.cityHallGuideBox aside .guideMapList01 > li > .btn{display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; text-align: center;}
 .cityHallGuideBox aside .guideMapList01 > li > .btn::after{width: 30px; height: 17px; content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -16px; background: url(../images/sub/icon03.svg)no-repeat center;}
 .cityHallGuideBox aside .guideMapList02{padding: 40px 0; background-color: #393A45;}
 .cityHallGuideBox aside .guideMapList02 > li{margin-bottom: 12px;}
