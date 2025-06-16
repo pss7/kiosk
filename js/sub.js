@@ -120,13 +120,12 @@ $(function () {
   });
 
 
-
+  //청사안내
   $(".cityHallGuideBox .guideMapBox .guideMapImage").hide();
   $(".cityHallGuideBox .guideMapBox .guideMapImage").last().show();
 
   $(".cityHallGuideBox .tabInfoBox").hide();
   $(".cityHallGuideBox .tabInfoBox").last().show();
-
 
   $(".cityHallGuideBox .guideMapList02 > li").click(function () {
 
@@ -137,6 +136,10 @@ $(function () {
 
     $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
     $('.cityHallGuideBox .guideMapBox .guideMapImage').eq(idx).show();
+
+    $(".cityHallGuideBox .tabInfoBox").hide();
+    $(".cityHallGuideBox .tabInfoBox").eq(idx).show();
+
   });
 
 
