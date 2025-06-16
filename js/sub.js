@@ -124,6 +124,10 @@ $(function () {
   $(".cityHallGuideBox .guideMapBox .guideMapImage").hide();
   $(".cityHallGuideBox .guideMapBox .guideMapImage").last().show();
 
+  $(".cityHallGuideBox .tabInfoBox").hide();
+  $(".cityHallGuideBox .tabInfoBox").last().show();
+
+
   $(".cityHallGuideBox .guideMapList02 > li").click(function () {
 
     $(".cityHallGuideBox .guideMapList02 > li").children().removeClass("active");
