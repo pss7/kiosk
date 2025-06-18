@@ -1,8 +1,7 @@
 
 $(function () {
 
-
-
+  //내곁에 춘천 - 춘천시 대표 축제
   $('.festivalBox .slideWrap .slick').slick({
     autoplay: false,
     arrows: true,
@@ -62,5 +61,89 @@ $(function () {
     $thumbSlides.eq(0).addClass('is-selected');
   });
 
+  //내곁에 춘천 - 추천코스 
+  const $tabMenu = $('.courseBox .tabMenu li');
+  const $tabContents = $('.courseBox .slideTabContentBox .slideTabContent');
+  const initializedTabs = [];
+
+  $tabContents.hide().first().show();
+  $tabMenu.children().removeClass('active');
+  $tabMenu.first().children().addClass('active');
+
+  initSlick(1);
+  initializedTabs.push(1);
+
+  $tabMenu.on('click', function () {
+    const idx = $(this).index();
+    const tabIndex = idx + 1;
+
+    $tabMenu.children().removeClass('active');
+    $(this).children().addClass('active');
+
+    $tabContents.hide().eq(idx).show();
+
+    if (!initializedTabs.includes(tabIndex)) {
+      initSlick(tabIndex);
+      initializedTabs.push(tabIndex);
+    } else {
+      updateActive(tabIndex);
+    }
+  });
+
+  function initSlick(tabIndex) {
+    const $wrap = $(`.courseBox .slideTabContent0${tabIndex} .slickWrap .slick`);
+    const $infoList = $(`.courseBox .slideTabContent0${tabIndex} .slideInfoList li`);
+    const $slides = $(`.courseBox .slideTabContent0${tabIndex} .slickWrap .slide`);
+
+    if ($wrap.length === 0) return;
+
+    $wrap.slick({
+      autoplay: false,
+      arrows: true,
+      prevArrow: `.courseBox .slideTabContent0${tabIndex} .control .prev`,
+      nextArrow: `.courseBox .slideTabContent0${tabIndex} .control .next`,
+      variableWidth: true,
+      accessibility: false,
+      dots: false,
+      draggable: true,
+      infinite: true,
+      slidesToScroll: 1,
+      pauseOnHover: false,
+      speed: 1500,
+      zIndex: 100,
+    });
+
+    $infoList.removeClass('active');
+    $infoList.eq(0).addClass('active');
+    $slides.removeClass('active');
+    $wrap.find('.slick-current').addClass('active');
+
+    $wrap.on('afterChange', function (event, slick, currentSlide) {
+      $infoList.removeClass('active');
+      $infoList.eq(currentSlide).addClass('active');
+
+      $slides.removeClass('active');
+      $wrap.find('.slick-current').addClass('active');
+    });
+
+    $infoList.on('click', function () {
+      const index = $(this).index();
+      $wrap.slick('slickGoTo', index);
+    });
+  }
+
+  function updateActive(tabIndex) {
+    const $wrap = $(`.courseBox .slideTabContent0${tabIndex} .slickWrap .slick`);
+    const $infoList = $(`.courseBox .slideTabContent0${tabIndex} .slideInfoList li`);
+    const $slides = $(`.courseBox .slideTabContent0${tabIndex} .slickWrap .slide`);
+
+    const currentIndex = $wrap.slick('slickCurrentSlide');
+
+    $infoList.removeClass('active');
+    $infoList.eq(currentIndex).addClass('active');
+    $slides.removeClass('active');
+    $wrap.find('.slick-current').addClass('active');
+  }
 
 });
+

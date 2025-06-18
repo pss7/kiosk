@@ -22,35 +22,11 @@ $(function () {
     nextArrow: $('.chuncheonViewBox .next'),
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  //내곁에 춘천 - 추천코스
-
-  
+  //내곁에 춘천 - 추천코스 
   const $tabMenu = $('.chuncheonBox02 .tabMenu li');
   const $tabContents = $('.chuncheonBox02 .slideTabContentBox .slideTabContent');
   const initializedTabs = [];
 
-  // 초기 설정
   $tabContents.hide().first().show();
   $tabMenu.children().removeClass('active');
   $tabMenu.first().children().addClass('active');
@@ -71,7 +47,6 @@ $(function () {
       initSlick(tabIndex);
       initializedTabs.push(tabIndex);
     } else {
-      // 이미 초기화된 경우에도 active 클래스는 관리해줘야 함
       updateActive(tabIndex);
     }
   });
@@ -99,7 +74,6 @@ $(function () {
       zIndex: 100,
     });
 
-    // 초기 active 처리
     $infoList.removeClass('active');
     $infoList.eq(0).addClass('active');
     $slides.removeClass('active');
