@@ -654,6 +654,11 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
     bottom: -77px; left: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
 .orgInfoBox .orgChartListType04 > li:last-child:before{display: none; content: ''; position: absolute;
     bottom: -77px; right: 50%; width: 50%; height: 1px; background-color: #6C6C6C;}
+.orgInfoBox .orgLayoutBox .orgChartListStyle{margin-top: 260px; gap: 0 549px;}
+.orgInfoBox .orgLayoutBox .orgChartListStyle > li::before{top:101px;}
+.orgInfoBox .orgLayoutBox .orgChartListStyle.icon{margin-left: 279px;}
+.orgInfoBox .orgLayoutBox .orgChartListStyle.icon > li:nth-child(1):before{left:-320px; width: 310px; height: 430px; background-size: contain;}
+.orgInfoBox .orgLayoutBox .orgChartListStyle.icon > li:nth-child(2)::before{left: -390px; width: 328px; height: 430px; background-size: contain;}
 
 /* 청사안내 */
 .cityHallGuideBox{height: 100%; display: flex;}
