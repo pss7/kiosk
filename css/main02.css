@@ -82,14 +82,14 @@ main.type02::after{display: none;}
 .alarmBox .noticeList li a .date{position: absolute; top:54%; right:30px; transform: translateY(-50%); font-size: 20px; color: #BBBBBB;}
 .alarmBox .noticeInfoText{display: block; margin-bottom: 22px; font-size: 20px; color: #272424; text-align: center;}
 .alarmBox .noticeInfoText strong{color: #009FE3;}
-.alarmBox .viewTopBox{padding-bottom: 36px; display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
-.alarmBox .viewTopBox .noticeInfoText{font-size: 32px; color: #F8215E;}
-.alarmBox .viewTopBox  h3{font-size: 32px; color: #272424; text-align: center;}
-.alarmBox .viewTopBox .layoutBox{display: flex; gap: 0 10px;}
-.alarmBox .viewTopBox .date{display: block; text-align: center; font-size: 20px; color: #BBBBBB;}
-.alarmBox .viewContentBox{margin:0 0 50px; padding: 48px 50px 20px; height: 1021px; overflow-y: auto; border: 1px solid #223F69; border-width: 1px 0;}
-.alarmBox .viewContentBox p{font-size: 30px;}
-.alarmBox .viewContentBox img{display: block; margin: 0 auto 29px;}
+.viewTopBox{padding-bottom: 36px; display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
+.viewTopBox .noticeInfoText{font-size: 32px; color: #F8215E;}
+.viewTopBox  h3{font-size: 32px; color: #272424; text-align: center;}
+.viewTopBox .layoutBox{display: flex; gap: 0 10px;}
+.viewTopBox .date{display: block; text-align: center; font-size: 20px; color: #BBBBBB;}
+.viewContentBox{margin:0 0 50px; padding: 48px 50px 20px; height: 1021px; overflow-y: auto; border: 1px solid #223F69; border-width: 1px 0;}
+.viewContentBox p{font-size: 30px;}
+.viewContentBox img{display: block; margin: 0 auto 29px;}
 
 /* 탭 */
 .tab{margin-bottom: 50px; padding: 8px; height: 100px; display: flex; justify-content: center;  background-color: #E9ECF6; border-radius: 100px;}
