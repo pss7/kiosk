@@ -80,7 +80,7 @@ main.type02::after{display: none;}
 .alarmBox .noticeList li a .noticeText{flex-shrink: 0; margin-right: 30px; font-size: 28px; color: #F8215E;}
 .alarmBox .noticeList li a p{font-size: 28px; color: #272424; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .alarmBox .noticeList li a .date{position: absolute; top:54%; right:30px; transform: translateY(-50%); font-size: 20px; color: #BBBBBB;}
-.alarmBox .noticeInfoText{display: block; margin-bottom: 22px; font-size: 20px; color: #272424; text-align: center;}
+.alarmBox .noticeInfoText{display: block; margin-bottom: 22px; font-size: 20px; color: #272424;}
 .alarmBox .noticeInfoText strong{color: #009FE3;}
 .viewTopBox{padding-bottom: 36px; display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
 .viewTopBox .noticeInfoText{font-size: 32px; color: #F8215E;}
