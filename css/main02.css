@@ -88,11 +88,6 @@ main.type02::after{display: none;}
 .btn{display: block; margin: 40px auto 60px; width: 300px; height: 80px; line-height: 90px; color: #fff; background-color: #363636; text-align: center; font-size: 30px;}
 
 /* 탭 */
-.tab02{display: flex; margin-bottom: 70px;}
-.tab02 li{flex: 1;}
-.tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
-.tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
-.tab02 li .tabBtn.active{color: #447BD3;}
 .tab{margin-bottom: 50px; padding: 8px; height: 100px; display: flex; justify-content: center;  background-color: #E9ECF6; border-radius: 100px;}
 .tab li{flex: 1;}
 .tab li .tabBtn{position: relative; padding-top: 11px; display: block; width: 100%; height: 100%; border-radius: 100px; font-size: 32px; color: #fff; text-align: center; color: #7A8094; z-index: 1; transition: all .5s;}
@@ -124,7 +119,7 @@ main.type02::after{display: none;}
 .linkBox a:not(.active):nth-child(2):active span::before{background: url(../images/common/icon_hover04.svg) no-repeat center; background-size: contain;}
 
 /* 행복알리미 */
-.happyBox .viewContentBox{height: 1265px; margin: 0 40px 50px;}
+.happyBox .viewContentBox{height: 1259px; margin: 0 40px 50px;}
 .happyBox .paginationBox{margin: 45px auto 40px;}
 .imgListType01{display: flex; flex-wrap: wrap; gap: 30px 32px;} 
 .imgListType01 li{width: 48%;}
@@ -139,20 +134,24 @@ main.type02::after{display: none;}
 /* 내곁에춘천 - 여행지추천 */
 .chuncheonBox{height: 100%; display: flex; flex-direction: column;}
 .chuncheonBox .btn{margin-bottom: 25px;}
-.chuncheonBox > div{flex: 1;}
-.chuncheonBox .tab{margin-bottom: 108px;}
+.chuncheonBox .tab{margin-bottom: 70px;}
 .chuncheonBox .paginationBox{margin: 60px 0 67px;}
-.listBox02{margin-bottom: 118px;}
-.imgListType02{display: flex; flex-wrap: wrap; gap: 40px 20px;}
-.imgListType02 li a{width: 319px; height: 321px; display: block; border-radius: 24px; overflow: hidden; border: 1px solid #AAB4C5;}
+.chuncheonBox .tab02{display: flex; margin-bottom: 49px;}
+.chuncheonBox .tab02 li{flex: 1;}
+.chuncheonBox .tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
+.chuncheonBox .tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
+.chuncheonBox .tab02 li .tabBtn.active{color: #447BD3;}
+.imgListType02{display: flex; flex-wrap: wrap; gap: 20px;}
+.imgListType02 li{width: 49%;}
+.imgListType02 li a{width: 100%; height: 370px; display: block; border-radius: 34px; overflow: hidden; border: 1px solid #AAB4C5;}
 .imgListType02 li a .view{padding: 0 27px; display: flex; align-items: center; justify-content: space-between; height: 60px; border-top: 1px solid #AAB4C5; color: #333333;}
 .imgListType02 li a .view::after{content: ''; width: 27px; height: 27px; background: url(../images/sub/arrow_icon17.svg)no-repeat center;}
-.imgListType02 li a .imgBox{height: 149px; overflow: hidden;}
+.imgListType02 li a .imgBox{width: 100%; height: 210px; overflow: hidden;}
 .imgListType02 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.imgListType02 li a .textBox{height: 112px; padding: 24px 27px;}
+.imgListType02 li a .textBox{height: 100px; padding: 17px 27px;}
 .imgListType02 li a .textBox h3{font-size: 24px; color: #28498F;}
 .imgListType02 li a .textBox p{font-size: 20px; color: #333333; font-weight: 500; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.detailTopBox{margin-bottom: 47px; padding-bottom: 49px; border-bottom: 1px solid #223F69; text-align: center;}
+.detailTopBox{margin-bottom: 72px; padding-bottom: 49px; border-bottom: 1px solid #223F69; text-align: center;}
 .detailTopBox h3{font-size: 32px; color: #000;}
 .detailTopBox p{font-size: 20px; color: #BBB;}
 .detailImgBox{margin-bottom: 59px; height: 364px;}
