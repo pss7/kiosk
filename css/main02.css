@@ -1,11 +1,27 @@
 @charset "UTF-8";
 
+/* 공통 */
 #wrap{display: flex; flex-direction: column; width: 1080px; height: 1920px; margin: 0 auto;}
 .container{padding: 0 40px;}
 .effect{animation: effect 5s both;}
 .contentBox{height: 100%;}
+/*
 .layoutBox{height: 100%; display: flex; flex-direction: column;}
-/* .layoutBox > div{flex: 1;} */
+ .layoutBox > div{flex: 1;} */
+main{position: relative; flex: 1; padding: 47px 0 0;}
+main::after{content: ''; height: 26px; position: absolute; left:0; bottom: 0; right:0; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
+main.type02::after{display: none;}
+.paginationBox {margin: 60px 0 30px; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.paginationBox .pageLink{padding-top: 8px; position: relative; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; color: #fff; border-radius: 50px; background-color: #2D3D3A; font-size: 24px;}
+.paginationBox .pageLink.pageLinkPrev{margin-right: 20px;}
+.paginationBox .pageLink.pageLinkNext{margin-left: 20px;}
+.paginationBox .pageLink.pageLinkPrev,
+.paginationBox .pageLink.pageLinkNext{padding: 0; background:0!important;}
+.paginationBox .pageLink.active{background-color: #5CBBFF;}
+.paginationBox .pageLinkPrev::after,
+.paginationBox .pageLinkNext::after {content: ''; width: 44px; height: 32px; position: absolute; top: 54%; left:50%; transform: translate(-50%, -50%);}
+.paginationBox .pageLinkPrev::after { background: url(../images/sub/arrow_icon04.svg)no-repeat center; background-size: cover;}
+.paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
 
 @keyframes effect {
   0% {
@@ -17,6 +33,9 @@
     transform: translateY(0);
   }
 }
+
+/* 공통 - 버튼 */
+.btn{display: block; margin: 40px auto 60px; width: 300px; height: 80px; line-height: 90px; color: #fff; background-color: #363636; text-align: center; font-size: 30px;}
 
 /* 헤더 */
 #headerWrap{flex-shrink: 0;}
@@ -41,51 +60,36 @@
   
 }
 
-/* 메인 */
-main{position: relative; flex: 1; padding: 47px 0 0;}
-main::after{content: ''; height: 26px; position: absolute; left:0; bottom: 0; right:0; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
-main.type02::after{display: none;}
-.topTitleBox{position: relative; margin-bottom: 31px; display: flex; flex-direction: column; justify-content: center; padding-left: 65px; height: 300px; border-radius: 20px; overflow: hidden;}
-.topTitleBox::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main02/bg01.png)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 3s;}
- .topTitleBox.effect::after{transform: scale(1);}
-.topTitleBox h2{margin-bottom: 20px; color: #07DAFF; font-size: 32px;}
-.topTitleBox p{font-size: 54px; font-weight: 700; color: #fff; line-height: 1.2; font-family: 'Pretendard', sans-serif;}
-.noticeList li{margin-bottom: 24px;}
-.noticeList li a:hover,
-.noticeList li a:active{box-shadow: 0 10px 10px rgba(0,0,0,.2);}
-.noticeList li a:hover p,
-.noticeList li a:active p{color: #fff;}
-.noticeList li a:hover::before,
-.noticeList li a:active::before{width: 100%;}
-.noticeList li a:hover .date,
-.noticeList li a:active .date{color: #fff;}
-.noticeList li a::before{content: ''; position: absolute; top:0; left:0px; bottom: 0; width: 0; transition: all .5s; background: linear-gradient(to right, #77B8F8, #FDB7B7); z-index: -1;}
-.noticeList li a{height: 93px; padding:10px 190px 0 52px; position: relative; display: flex; align-items: center; background-color: #F7F7F8; z-index: 1; transition: all .5s;}
-.noticeList li a .noticeText{flex-shrink: 0; margin-right: 30px; font-size: 28px; color: #F8215E;}
-.noticeList li a p{font-size: 28px; color: #272424; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
-.noticeList li a .date{position: absolute; top:54%; right:30px; transform: translateY(-50%); font-size: 20px; color: #BBBBBB;}
-.noticeInfoText{display: block; margin-bottom: 22px; font-size: 20px; color: #272424;}
-.noticeInfoText strong{color: #009FE3;}
-.paginationBox {margin: 60px 0 30px; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
-.paginationBox .pageLink{padding-top: 8px; position: relative; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; color: #fff; border-radius: 50px; background-color: #2D3D3A; font-size: 24px;}
-.paginationBox .pageLink.pageLinkPrev{margin-right: 20px;}
-.paginationBox .pageLink.pageLinkNext{margin-left: 20px;}
-.paginationBox .pageLink.pageLinkPrev,
-.paginationBox .pageLink.pageLinkNext{padding: 0; background:0!important;}
-.paginationBox .pageLink.active{background-color: #5CBBFF;}
-.paginationBox .pageLinkPrev::after,
-.paginationBox .pageLinkNext::after {content: ''; width: 44px; height: 32px; position: absolute; top: 54%; left:50%; transform: translate(-50%, -50%);}
-.paginationBox .pageLinkPrev::after { background: url(../images/sub/arrow_icon04.svg)no-repeat center; background-size: cover;}
-.paginationBox .pageLinkNext::after{background: url(../images/sub/arrow_icon05.svg)no-repeat center; background-size: cover;}
-.viewTopBox{padding-bottom: 36px; display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
-.viewTopBox .noticeInfoText{font-size: 32px; color: #F8215E;}
-.viewTopBox  h3{font-size: 32px; color: #272424; text-align: center;}
-.viewTopBox .layoutBox{display: flex; gap: 0 10px;}
-.viewTopBox .date{display: block; text-align: center; font-size: 20px; color: #BBBBBB;}
-.viewContentBox{margin:0 0 50px; padding: 48px 50px 20px; height: 1021px; overflow-y: auto; border: 1px solid #223F69; border-width: 1px 0;}
-.viewContentBox p{font-size: 30px;}
-.viewContentBox img{display: block; margin: 0 auto 29px;}
-.btn{display: block; margin: 40px auto 60px; width: 300px; height: 80px; line-height: 90px; color: #fff; background-color: #363636; text-align: center; font-size: 30px;}
+/* 시정알림  */
+.alarmBox .topTitleBox{position: relative; margin-bottom: 31px; display: flex; flex-direction: column; justify-content: center; padding-left: 65px; height: 300px; border-radius: 20px; overflow: hidden;}
+.alarmBox .topTitleBox::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main02/bg01.png)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 3s;}
+.alarmBox .topTitleBox.effect::after{transform: scale(1);}
+.alarmBox .topTitleBox h2{margin-bottom: 20px; color: #07DAFF; font-size: 32px;}
+.alarmBox .topTitleBox p{font-size: 54px; font-weight: 700; color: #fff; line-height: 1.2; font-family: 'Pretendard', sans-serif;}
+.alarmBox .noticeList li{margin-bottom: 24px;}
+.alarmBox .noticeList li a:hover,
+.alarmBox .noticeList li a:active{box-shadow: 0 10px 10px rgba(0,0,0,.2);}
+.alarmBox .noticeList li a:hover p,
+.alarmBox .noticeList li a:active p{color: #fff;}
+.alarmBox .noticeList li a:hover::before,
+.alarmBox .noticeList li a:active::before{width: 100%;}
+.alarmBox .noticeList li a:hover .date,
+.alarmBox .noticeList li a:active .date{color: #fff;}
+.alarmBox .noticeList li a::before{content: ''; position: absolute; top:0; left:0px; bottom: 0; width: 0; transition: all .5s; background: linear-gradient(to right, #77B8F8, #FDB7B7); z-index: -1;}
+.alarmBox .noticeList li a{height: 93px; padding:10px 190px 0 52px; position: relative; display: flex; align-items: center; background-color: #F7F7F8; z-index: 1; transition: all .5s;}
+.alarmBox .noticeList li a .noticeText{flex-shrink: 0; margin-right: 30px; font-size: 28px; color: #F8215E;}
+.alarmBox .noticeList li a p{font-size: 28px; color: #272424; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.alarmBox .noticeList li a .date{position: absolute; top:54%; right:30px; transform: translateY(-50%); font-size: 20px; color: #BBBBBB;}
+.alarmBox .noticeInfoText{display: block; margin-bottom: 22px; font-size: 20px; color: #272424; text-align: center;}
+.alarmBox .noticeInfoText strong{color: #009FE3;}
+.alarmBox .viewTopBox{padding-bottom: 36px; display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
+.alarmBox .viewTopBox .noticeInfoText{font-size: 32px; color: #F8215E;}
+.alarmBox .viewTopBox  h3{font-size: 32px; color: #272424; text-align: center;}
+.alarmBox .viewTopBox .layoutBox{display: flex; gap: 0 10px;}
+.alarmBox .viewTopBox .date{display: block; text-align: center; font-size: 20px; color: #BBBBBB;}
+.alarmBox .viewContentBox{margin:0 0 50px; padding: 48px 50px 20px; height: 1021px; overflow-y: auto; border: 1px solid #223F69; border-width: 1px 0;}
+.alarmBox .viewContentBox p{font-size: 30px;}
+.alarmBox .viewContentBox img{display: block; margin: 0 auto 29px;}
 
 /* 탭 */
 .tab{margin-bottom: 50px; padding: 8px; height: 100px; display: flex; justify-content: center;  background-color: #E9ECF6; border-radius: 100px;}
@@ -121,15 +125,15 @@ main.type02::after{display: none;}
 /* 행복알리미 */
 .happyBox .viewContentBox{height: 1259px; margin: 0 40px 50px;}
 .happyBox .paginationBox{margin: 45px auto 40px;}
-.imgListType01{display: flex; flex-wrap: wrap; gap: 30px 32px;} 
-.imgListType01 li{width: 48%;}
-.imgListType01 li a{display: block; width: 100%;}
-.imgListType01 li a .imgBox{margin-bottom: 31px; width: 100%; height: 321px; overflow: hidden; border-radius: 20px;}
-.imgListType01 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
-.imgListType01 li a .textBox h3{margin-bottom: 10px; font-size: 20px; color: #28498F; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
-.imgListType01 li a .textBox .date{font-size: 18px; color: #333;}
-.imgListType01 li a:hover .imgBox img,
-.imgListType01 li a:active .imgBox img{transform: scale(1.3);}
+.happyBox .imgListType01{display: flex; flex-wrap: wrap; gap: 30px 32px;} 
+.happyBox .imgListType01 li{width: 48%;}
+.happyBox .imgListType01 li a{display: block; width: 100%;}
+.happyBox .imgListType01 li a .imgBox{margin-bottom: 31px; width: 100%; height: 321px; overflow: hidden; border-radius: 20px;}
+.happyBox .imgListType01 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
+.happyBox .imgListType01 li a .textBox h3{margin-bottom: 10px; font-size: 20px; color: #28498F; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.happyBox .imgListType01 li a .textBox .date{font-size: 18px; color: #333;}
+.happyBox .imgListType01 li a:hover .imgBox img,
+.happyBox .imgListType01 li a:active .imgBox img{transform: scale(1.3);}
 
 /* 내곁에춘천 - 여행지추천 */
 .chuncheonBox{height: 100%; display: flex; flex-direction: column;}
@@ -141,36 +145,36 @@ main.type02::after{display: none;}
 .chuncheonBox .tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
 .chuncheonBox .tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
 .chuncheonBox .tab02 li .tabBtn.active{color: #447BD3;}
-.imgListType02{display: flex; flex-wrap: wrap; gap: 20px;}
-.imgListType02 li{width: 49%;}
-.imgListType02 li a{width: 100%; height: 370px; display: block; border-radius: 34px; overflow: hidden; border: 1px solid #AAB4C5;}
-.imgListType02 li a .view{padding: 0 27px; display: flex; align-items: center; justify-content: space-between; height: 60px; border-top: 1px solid #AAB4C5; color: #333333;}
-.imgListType02 li a .view::after{content: ''; width: 27px; height: 27px; background: url(../images/sub/arrow_icon17.svg)no-repeat center;}
-.imgListType02 li a .imgBox{width: 100%; height: 210px; overflow: hidden;}
-.imgListType02 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.imgListType02 li a .textBox{height: 100px; padding: 17px 27px;}
-.imgListType02 li a .textBox h3{font-size: 24px; color: #28498F;}
-.imgListType02 li a .textBox p{font-size: 20px; color: #333333; font-weight: 500; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
-.detailTopBox{margin-bottom: 72px; padding-bottom: 49px; border-bottom: 1px solid #223F69; text-align: center;}
-.detailTopBox h3{font-size: 32px; color: #000;}
-.detailTopBox p{font-size: 20px; color: #BBB;}
-.detailImgBox{margin-bottom: 59px; height: 364px;}
-.detailImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.detailImgBox .container,
-.detailInfoBox .container{padding: 0 77px;}
-.detailInfoBox .container{position: relative;}
-.detailInfoBox .mapBox{position: absolute; top:0; right:77px; width: 325px; height: 165px; border-radius: 20px; overflow: hidden;}
-.detailInfoBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.detailInfoBox h4{margin-bottom: 40px;}
-.detailInfoBox h4 span{display: flex; gap: 0 24px; align-items: center; font-size: 24px; color: #000000;}
-.detailInfoBox h4 span::before{margin-top: -10px; width: 45px; height: 45px; content: ''; background: url(../images/sub/icon11.svg)no-repeat center;}
-.detailInfoBox{padding-bottom: 50px; font-family: 'Pretendard', sans-serif; border-bottom: 1px solid #223F69;}
-.detailInfoBox .list li{display: flex; margin-bottom: 10px;}
-.detailInfoBox .list li:last-child{margin-bottom: 0;}
-.detailInfoBox .list li span{flex-shrink: 0; width: 164px; font-size: 19px; color: #345A8C; font-weight: 700;}
-.detailInfoBox .list li em,
-.detailInfoBox .list li p{font-size: 19px; color: #515151; font-weight: 500;}
-.detailInfoBox .list li p{padding: 30px 36px 20px; height: 196px; border: 1px solid #ABABAB; border-radius: 7px;}
+.chuncheonBox .imgListType02{display: flex; flex-wrap: wrap; gap: 20px;}
+.chuncheonBox .imgListType02 li{width: 49%;}
+.chuncheonBox .imgListType02 li a{width: 100%; height: 370px; display: block; border-radius: 34px; overflow: hidden; border: 1px solid #AAB4C5;}
+.chuncheonBox .imgListType02 li a .view{padding: 0 27px; display: flex; align-items: center; justify-content: space-between; height: 60px; border-top: 1px solid #AAB4C5; color: #333333;}
+.chuncheonBox .imgListType02 li a .view::after{content: ''; width: 27px; height: 27px; background: url(../images/sub/arrow_icon17.svg)no-repeat center;}
+.chuncheonBox .imgListType02 li a .imgBox{width: 100%; height: 210px; overflow: hidden;}
+.chuncheonBox .imgListType02 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonBox .imgListType02 li a .textBox{height: 100px; padding: 17px 27px;}
+.chuncheonBox .imgListType02 li a .textBox h3{font-size: 24px; color: #28498F;}
+.chuncheonBox .imgListType02 li a .textBox p{font-size: 20px; color: #333333; font-weight: 500; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.chuncheonBox .detailTopBox{margin-bottom: 72px; padding-bottom: 49px; border-bottom: 1px solid #223F69; text-align: center;}
+.chuncheonBox .detailTopBox h3{font-size: 32px; color: #000;}
+.chuncheonBox .detailTopBox p{font-size: 20px; color: #BBB;}
+.chuncheonBox .detailImgBox{margin-bottom: 59px; height: 364px;}
+.chuncheonBox .detailImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonBox .detailImgBox .container,
+.chuncheonBox .detailInfoBox .container{padding: 0 77px;}
+.chuncheonBox .detailInfoBox .container{position: relative;}
+.chuncheonBox .detailInfoBox .mapBox{position: absolute; top:0; right:77px; width: 325px; height: 165px; border-radius: 20px; overflow: hidden;}
+.chuncheonBox .detailInfoBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonBox .detailInfoBox h4{margin-bottom: 40px;}
+.chuncheonBox .detailInfoBox h4 span{display: flex; gap: 0 24px; align-items: center; font-size: 24px; color: #000000;}
+.chuncheonBox .detailInfoBox h4 span::before{margin-top: -10px; width: 45px; height: 45px; content: ''; background: url(../images/sub/icon11.svg)no-repeat center;}
+.chuncheonBox .detailInfoBox{padding-bottom: 50px; font-family: 'Pretendard', sans-serif; border-bottom: 1px solid #223F69;}
+.chuncheonBox .detailInfoBox .list li{display: flex; margin-bottom: 10px;}
+.chuncheonBox .detailInfoBox .list li:last-child{margin-bottom: 0;}
+.chuncheonBox .detailInfoBox .list li span{flex-shrink: 0; width: 164px; font-size: 19px; color: #345A8C; font-weight: 700;}
+.chuncheonBox .detailInfoBox .list li em,
+.chuncheonBox .detailInfoBox .list li p{font-size: 19px; color: #515151; font-weight: 500;}
+.chuncheonBox .detailInfoBox .list li p{padding: 30px 36px 20px; height: 196px; border: 1px solid #ABABAB; border-radius: 7px;}
 
 /* 내곁에 춘천 - 춘천시 대표 축제 */
 .chuncheonBox .festivalBox{height: 100%;}
@@ -295,12 +299,12 @@ main.type02::after{display: none;}
 .chuncheonBox .festivalBox .controlBox .nextButton{right:62px; background: url(../images/sub/arrow_icon12.svg) no-repeat center; background-size: contain;} 
 
 /* 내곁에춘천 - 추천코스 */
-.courseBox{height: 100%; position: relative; }
-.courseBox::before{width: 639px; height: 463px; content: ''; position: absolute; right:0; bottom: 138px; background: url(../images/sub/course_bg02.svg)no-repeat bottom right;}
-.courseBox::after{content: ''; width: 517px; height: 617px; position: absolute; top:-47px; left:0; background: url(../images/sub/course_bg01.svg)no-repeat center; z-index: -1;}
-.courseBox .bgIcon01{width: 165px; height: 85px; position: absolute; top:120px; left:40px; background: url(../images/sub/course_icon01.svg)no-repeat center;  animation: driveLeft 3s ease-in-out infinite;}
-.courseBox .bgIcon02{width: 76px; height: 63px; position: absolute; top:101px; left:225px; background: url(../images/sub/course_icon02.svg)no-repeat center;}
-.courseBox .bgIcon03{width: 56px; height: 92px; position: absolute; top:205px; left:69px; background: url(../images/sub/course_icon03.svg)no-repeat center;}
+.chuncheonBox .courseBox{height: 100%; position: relative; }
+.chuncheonBox .courseBox::before{width: 639px; height: 463px; content: ''; position: absolute; right:0; bottom: 138px; background: url(../images/sub/course_bg02.svg)no-repeat bottom right;}
+.chuncheonBox .courseBox::after{content: ''; width: 517px; height: 617px; position: absolute; top:-47px; left:0; background: url(../images/sub/course_bg01.svg)no-repeat center; z-index: -1;}
+.chuncheonBox .courseBox .bgIcon01{width: 165px; height: 85px; position: absolute; top:120px; left:40px; background: url(../images/sub/course_icon01.svg)no-repeat center;  animation: driveLeft 3s ease-in-out infinite;}
+.chuncheonBox .courseBox .bgIcon02{width: 76px; height: 63px; position: absolute; top:101px; left:225px; background: url(../images/sub/course_icon02.svg)no-repeat center;}
+.chuncheonBox .courseBox .bgIcon03{width: 56px; height: 92px; position: absolute; top:205px; left:69px; background: url(../images/sub/course_icon03.svg)no-repeat center;}
 
 @keyframes driveLeft {
   0% {
@@ -325,13 +329,13 @@ main.type02::after{display: none;}
     transform: translateX(-300px) rotate(0deg);
   }
 }
-.courseBox .tabMenu{margin:117px 0 100px; flex-shrink: 0; display: flex; justify-content: flex-end; width: auto; z-index: 999;}
-.courseBox .tabMenu li .tabBtn:hover,
-.courseBox .tabMenu li .tabBtn:active{color: #45A1E3;}
-.courseBox .tabMenu li .tabBtn{position: relative; display: flex; gap: 0 17px; align-items: flex-end; padding: 0 56px 0 0; width: auto; border: 0; font-size: 32px; color: #BFBFC0; line-height: 1; transition: all .5s;}
-.courseBox .tabMenu li .tabBtn.active{position: relative; color: #45A1E3;}
-.courseBox .tabMenu li .tabBtn.active::before{content: ''; width: 58px; height: 3px; background-color: #222;}
-.courseBox .tabMenu li .tabBtn.active::after{content: ''; position: absolute; bottom: 44px; left: auto; right:0; width: 60px; height: 60px; background: url(../images/sub/heart_icon.svg)no-repeat center;  animation: shakeHeart 2s infinite; background-size: contain;}
+.chuncheonBox .courseBox .tabMenu{margin:117px 0 100px; flex-shrink: 0; display: flex; justify-content: flex-end; width: auto; z-index: 999;}
+.chuncheonBox .courseBox .tabMenu li .tabBtn:hover,
+.chuncheonBox .courseBox .tabMenu li .tabBtn:active{color: #45A1E3;}
+.chuncheonBox .courseBox .tabMenu li .tabBtn{position: relative; display: flex; gap: 0 17px; align-items: flex-end; padding: 0 56px 0 0; width: auto; border: 0; font-size: 32px; color: #BFBFC0; line-height: 1; transition: all .5s;}
+.chuncheonBox .courseBox .tabMenu li .tabBtn.active{position: relative; color: #45A1E3;}
+.chuncheonBox .courseBox .tabMenu li .tabBtn.active::before{content: ''; width: 58px; height: 3px; background-color: #222;}
+.chuncheonBox .courseBox .tabMenu li .tabBtn.active::after{content: ''; position: absolute; bottom: 44px; left: auto; right:0; width: 60px; height: 60px; background: url(../images/sub/heart_icon.svg)no-repeat center;  animation: shakeHeart 2s infinite; background-size: contain;}
 
 @keyframes shakeHeart {
   0% { transform: rotate(0deg); }
@@ -341,46 +345,46 @@ main.type02::after{display: none;}
   100% { transform: rotate(0deg); }
 }
 
-.courseBox .slideTabContent{position: relative; padding-bottom: 170px;}
-.courseBox .slideTabContent .slide{position: relative; margin-right: 50px; width: 450px; height: 450px; border-radius: 0;}
-.courseBox .slideTabContentBox{margin-left: 50px;}
-.courseBox .slideTabContent .slickWrap{position: relative; height: 900px;}
-.courseBox .slideTabContent .slick-list{padding: 0 0 183px 50px; margin-left: -50px;}
-.courseBox .slideTabContent .slide .textInfoText{padding: 48px 42px 42px 39px; position: absolute; bottom: 0; right:0; width: 492px; opacity: 0; visibility: hidden; border-radius: 85px 0 0 0; background-color: rgba(255,255,255,.9); box-shadow: 0 20px 20px rgba(0,0,0,10%);}
-.courseBox .slideTabContent .slide .textInfoText h4{margin-bottom: 26px; display: flex; justify-content: flex-end;}
-.courseBox .slideTabContent .slide .textInfoText h4 span{position: relative; display: flex; gap: 0 15px; font-size: 21px; color: #4C3F2C; z-index: 1;}
-.courseBox .slideTabContent .slide .textInfoText h4 span::before{margin-top: -3px; content: ''; width: 26px; height: 26px; background: url(../images/sub/icon04.svg)no-repeat center; background-size: contain;}
-.courseBox .slideTabContent .slide .textInfoText h4 span::after{content: ''; position: absolute; left:49px; right:-3px; bottom: 20px; top:13px; background-color: #FFEFB1; z-index: -1;}
-.courseBox .slideTabContent .slide .textInfoText p{margin-bottom: 37px; font-size: 16px; color: #3A3A3A; text-align: justify;}
-.courseBox .slideTabContent .slide .textInfoText .list{margin-bottom: 21px; display: flex; gap: 10px 6px; flex-wrap: wrap; }
-.courseBox .slideTabContent .slide .textInfoText .list span{padding: 12px 21px 3px; font-size: 13px; color: #272727; box-shadow: 0 4px 4px rgba(0,0,0,10%); background-color: #fff; border-radius: 50px;}
-.courseBox .slideTabContent .slide .textInfoText .view{padding-top: 6px; display: block; height: 42px; line-height: 55px; background-color: #3F4851; border-radius: 6px; text-align: center;}
-.courseBox .slideTabContent .slide .textInfoText .view span{height: 100%; display: flex; align-items: center; justify-content: center; gap: 0 16px; color: #fff; font-size: 13px;}
-.courseBox .slideTabContent .slide .textInfoText .view span::after{margin-top: -5px; width: 14px; height: 15px; content: ''; background: url(../images/sub/arrow_icon13.svg)no-repeat center; background-size: contain;}
-.courseBox .slideTabContent .slide .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
-.courseBox .slideTabContent .slide .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.courseBox .slideTabContent .slide .textBox{position: absolute; bottom: 20px; left:50px; z-index: 9; transition: all .8s;}
-.courseBox .slideTabContent .slide .textBox .number{display: block; font-size: 56px; color: rgba(255,255,255,.8);}
-.courseBox .slideTabContent .slick-track{align-items: flex-start; display: flex; justify-content: flex-start; position: static; margin: 0;}
-.courseBox .slideInfoText{position: relative; width: 656px; display: flex; flex-direction: column; gap: 0 137px; z-index: 99999;}
-.courseBox .slideInfoText .slideInfoList{display: flex; padding-top: 54px;} 
-.courseBox .slideInfoText .slideInfoList li{flex: 1; padding-top: 20px; border-top: 1px solid #ACACAC; }
-.courseBox .slideInfoText .slideInfoList li .slideBtn{display: flex; flex-direction: column; align-items: flex-start; gap: 6px 0; color: #B0B2BA; font-size: 18px;}
-.courseBox .slideInfoText .control{display: flex; gap: 0 66px;}
-.courseBox .slideInfoText .control button{width: 40px; height: 60px;}
-.courseBox .slideInfoText .control button.prev{background: url(../images/sub/arrow_icon11.svg)no-repeat center; background-size: contain;}
-.courseBox .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center; background-size: contain;}
+.chuncheonBox .courseBox .slideTabContent{position: relative; padding-bottom: 170px;}
+.chuncheonBox .courseBox .slideTabContent .slide{position: relative; margin-right: 50px; width: 450px; height: 450px; border-radius: 0;}
+.chuncheonBox .courseBox .slideTabContentBox{margin-left: 50px;}
+.chuncheonBox .courseBox .slideTabContent .slickWrap{position: relative; height: 900px;}
+.chuncheonBox .courseBox .slideTabContent .slick-list{padding: 0 0 183px 50px; margin-left: -50px;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText{padding: 48px 42px 42px 39px; position: absolute; bottom: 0; right:0; width: 492px; opacity: 0; visibility: hidden; border-radius: 85px 0 0 0; background-color: rgba(255,255,255,.9); box-shadow: 0 20px 20px rgba(0,0,0,10%);}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText h4{margin-bottom: 26px; display: flex; justify-content: flex-end;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText h4 span{position: relative; display: flex; gap: 0 15px; font-size: 21px; color: #4C3F2C; z-index: 1;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText h4 span::before{margin-top: -3px; content: ''; width: 26px; height: 26px; background: url(../images/sub/icon04.svg)no-repeat center; background-size: contain;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText h4 span::after{content: ''; position: absolute; left:49px; right:-3px; bottom: 20px; top:13px; background-color: #FFEFB1; z-index: -1;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText p{margin-bottom: 37px; font-size: 16px; color: #3A3A3A; text-align: justify;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText .list{margin-bottom: 21px; display: flex; gap: 10px 6px; flex-wrap: wrap; }
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText .list span{padding: 12px 21px 3px; font-size: 13px; color: #272727; box-shadow: 0 4px 4px rgba(0,0,0,10%); background-color: #fff; border-radius: 50px;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText .view{padding-top: 6px; display: block; height: 42px; line-height: 55px; background-color: #3F4851; border-radius: 6px; text-align: center;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText .view span{height: 100%; display: flex; align-items: center; justify-content: center; gap: 0 16px; color: #fff; font-size: 13px;}
+.chuncheonBox .courseBox .slideTabContent .slide .textInfoText .view span::after{margin-top: -5px; width: 14px; height: 15px; content: ''; background: url(../images/sub/arrow_icon13.svg)no-repeat center; background-size: contain;}
+.chuncheonBox .courseBox .slideTabContent .slide .imgBox{position: absolute; top:0; left:0; right:0; bottom: 0;}
+.chuncheonBox .courseBox .slideTabContent .slide .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonBox .courseBox .slideTabContent .slide .textBox{position: absolute; bottom: 20px; left:50px; z-index: 9; transition: all .8s;}
+.chuncheonBox .courseBox .slideTabContent .slide .textBox .number{display: block; font-size: 56px; color: rgba(255,255,255,.8);}
+.chuncheonBox .courseBox .slideTabContent .slick-track{align-items: flex-start; display: flex; justify-content: flex-start; position: static; margin: 0;}
+.chuncheonBox .courseBox .slideInfoText{position: relative; width: 656px; display: flex; flex-direction: column; gap: 0 137px; z-index: 99999;}
+.chuncheonBox .courseBox .slideInfoText .slideInfoList{display: flex; padding-top: 54px;} 
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li{flex: 1; padding-top: 20px; border-top: 1px solid #ACACAC; }
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li .slideBtn{display: flex; flex-direction: column; align-items: flex-start; gap: 6px 0; color: #B0B2BA; font-size: 18px;}
+.chuncheonBox .courseBox .slideInfoText .control{display: flex; gap: 0 66px;}
+.chuncheonBox .courseBox .slideInfoText .control button{width: 40px; height: 60px;}
+.chuncheonBox .courseBox .slideInfoText .control button.prev{background: url(../images/sub/arrow_icon11.svg)no-repeat center; background-size: contain;}
+.chuncheonBox .courseBox .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center; background-size: contain;}
 
 /* 내곁에춘천 - 활성화 css */
-.courseBox .slideTabContent .slide.active{width: 800px; height: 800px; border-radius: 0 0 200px 0;box-shadow: 0 20px 20px rgba(0,0,0,10%); transition: all 1s;} 
-.courseBox .slideTabContent .slide.active .imgBox{border-radius: 0 0 200px 0; overflow: hidden; transition: all .8s;}
-.courseBox .slideTabContent .slide .textBox .title{opacity: 0; visibility: hidden;}
-.courseBox .slideTabContent .slide.active .textBox{bottom: auto; top:46px; left:60px;}
-.courseBox .slideTabContent .slide.active .textBox .number{font-size: 62px; transition: all .8s; color: #fff;}
-.courseBox .slideTabContent .slide.active .textBox .title{opacity: 1; font-size: 34px; color: #fff; visibility: visible; transition: all .8s;}
-.courseBox .slideTabContent .slide.active .textInfoText{opacity: 1; visibility: visible; transition: all .8s;}
-.courseBox .slideInfoText .slideInfoList li.active{border-top: 2px solid #2A304B;  transition: all .8s;}
-.courseBox .slideInfoText .slideInfoList li.active .slideBtn{color: #2A304B;  transition: all .8s;}
+.chuncheonBox .courseBox .slideTabContent .slide.active{width: 800px; height: 800px; border-radius: 0 0 200px 0;box-shadow: 0 20px 20px rgba(0,0,0,10%); transition: all 1s;} 
+.chuncheonBox .courseBox .slideTabContent .slide.active .imgBox{border-radius: 0 0 200px 0; overflow: hidden; transition: all .8s;}
+.chuncheonBox .courseBox .slideTabContent .slide .textBox .title{opacity: 0; visibility: hidden;}
+.chuncheonBox .courseBox .slideTabContent .slide.active .textBox{bottom: auto; top:46px; left:60px;}
+.chuncheonBox .courseBox .slideTabContent .slide.active .textBox .number{font-size: 62px; transition: all .8s; color: #fff;}
+.chuncheonBox .courseBox .slideTabContent .slide.active .textBox .title{opacity: 1; font-size: 34px; color: #fff; visibility: visible; transition: all .8s;}
+.chuncheonBox .courseBox .slideTabContent .slide.active .textInfoText{opacity: 1; visibility: visible; transition: all .8s;}
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li.active{border-top: 2px solid #2A304B;  transition: all .8s;}
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li.active .slideBtn{color: #2A304B;  transition: all .8s;}
 
 /* 내곁에춘천 - 추천코스(상세) */
 .courseDetailBox::before{display: none;}
