@@ -127,8 +127,9 @@ main.type02::after{display: none;}
 .happyBox .viewContentBox{height: 1265px; margin: 0 40px 50px;}
 .happyBox .paginationBox{margin: 45px auto 40px;}
 .imgListType01{display: flex; flex-wrap: wrap; gap: 30px 32px;} 
-.imgListType01 li a{display: block; width: 312px;}
-.imgListType01 li a .imgBox{margin-bottom: 31px; width: 100%; height: 210px; overflow: hidden; border-radius: 20px;}
+.imgListType01 li{width: 48%;}
+.imgListType01 li a{display: block; width: 100%;}
+.imgListType01 li a .imgBox{margin-bottom: 31px; width: 100%; height: 321px; overflow: hidden; border-radius: 20px;}
 .imgListType01 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
 .imgListType01 li a .textBox h3{margin-bottom: 10px; font-size: 20px; color: #28498F; white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
 .imgListType01 li a .textBox .date{font-size: 18px; color: #333;}
@@ -294,7 +295,8 @@ main.type02::after{display: none;}
 .festivalBox .controlBox .nextButton{right:62px; background: url(../images/sub/arrow_icon12.svg) no-repeat center; background-size: contain;} 
 
 /* 내곁에춘천 - 추천코스 */
-.courseBox{height: 100%; position: relative; background: url(../images/sub/course_bg02.svg)no-repeat bottom right;}
+.courseBox{height: 100%; position: relative; }
+.courseBox::before{width: 639px; height: 463px; content: ''; position: absolute; right:0; bottom: 138px; background: url(../images/sub/course_bg02.svg)no-repeat bottom right;}
 .courseBox::after{content: ''; width: 517px; height: 617px; position: absolute; top:-47px; left:0; background: url(../images/sub/course_bg01.svg)no-repeat center; z-index: -1;}
 .courseBox .bgIcon01{width: 165px; height: 85px; position: absolute; top:120px; left:40px; background: url(../images/sub/course_icon01.svg)no-repeat center;  animation: driveLeft 3s ease-in-out infinite;}
 .courseBox .bgIcon02{width: 76px; height: 63px; position: absolute; top:101px; left:225px; background: url(../images/sub/course_icon02.svg)no-repeat center;}
@@ -323,7 +325,7 @@ main.type02::after{display: none;}
     transform: translateX(-300px) rotate(0deg);
   }
 }
-.courseBox .tabMenu{margin-bottom: 100px; flex-shrink: 0; display: flex; justify-content: flex-end; width: auto; z-index: 999;}
+.courseBox .tabMenu{margin:117px 0 100px; flex-shrink: 0; display: flex; justify-content: flex-end; width: auto; z-index: 999;}
 .courseBox .tabMenu li .tabBtn:hover,
 .courseBox .tabMenu li .tabBtn:active{color: #45A1E3;}
 .courseBox .tabMenu li .tabBtn{position: relative; display: flex; gap: 0 17px; align-items: flex-end; padding: 0 56px 0 0; width: auto; border: 0; font-size: 32px; color: #BFBFC0; line-height: 1; transition: all .5s;}
@@ -339,7 +341,7 @@ main.type02::after{display: none;}
   100% { transform: rotate(0deg); }
 }
 
-.courseBox .slideTabContent{position: relative; padding-bottom: 120px;}
+.courseBox .slideTabContent{position: relative; padding-bottom: 170px;}
 .courseBox .slideTabContent .slide{position: relative; margin-right: 50px; width: 450px; height: 450px; border-radius: 0;}
 .courseBox .slideTabContentBox{margin-left: 50px;}
 .courseBox .slideTabContent .slickWrap{position: relative; height: 900px;}
@@ -391,7 +393,7 @@ main.type02::after{display: none;}
 .courseBox .topTextBox .course02::after{content: '';  position: absolute; left: 49px; right: -3px; bottom: 20px;top: 13px; background-color: #FFEFB1; z-index: -1;}
 
 /* 내곁에춘천 - 추천코스(상세) */
-.courseDetailBox{background: 0;}
+.courseDetailBox::before{display: none;}
 .courseDetailBox .courseBox01{margin-bottom: 182px;}
 .courseDetailBox .courseBox01 .courseDes,
 .courseDetailBox .courseBox01 .courseInfo{margin-bottom: 22px; padding: 35px 45px; background-color: #F5F8FB; border: 1px solid #D0DDEB; border-radius: 27px; }
