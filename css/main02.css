@@ -3,7 +3,9 @@
 #wrap{display: flex; flex-direction: column; width: 1080px; height: 1920px; margin: 0 auto;}
 .container{padding: 0 40px;}
 .effect{animation: effect 5s both;}
-.contentBox{height: 100%; display: flex; flex-direction: column;}
+.contentBox{height: 100%;}
+.layoutBox{height: 100%; display: flex; flex-direction: column;}
+.layoutBox > div{flex: 1;}
 
 @keyframes effect {
   0% {
@@ -100,7 +102,7 @@ main.type02::after{display: none;}
 .tab li .tabBtn:not(.active):active {color: #fff;}
 .tab li .tabBtn:not(.active):hover::before,
 .tab li .tabBtn:not(.active):active::before {width: 100%; background-color: #25477D;}
-.linkBox{display: flex;}
+.linkBox{display: flex; flex: none!important;}
 .linkBox a{position: relative; padding: 46px 0 27px; height: 138px; flex: 1; background-color: #F6F6F6; z-index: 1;} 
 .linkBox a span{gap: 0 40px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: #585151;}
 .linkBox a span::before{content: '';}
@@ -292,5 +294,32 @@ main.type02::after{display: none;}
 .festivalBox .controlBox .nextButton{right:62px; background: url(../images/sub/arrow_icon12.svg) no-repeat center; background-size: contain;} 
 
 /* 내곁에춘천 - 추천코스 */
-.layoutBox{height: 100%; display: flex; flex-direction: column;}
-.layoutBox > div{flex: 1;}
+.courseBox{position: relative; background: url(../images/sub/course_bg02.svg)no-repeat bottom right;}
+.courseBox::after{content: ''; width: 517px; height: 617px; position: absolute; top:-47px; left:0; background: url(../images/sub/course_bg01.svg)no-repeat center; z-index: -1;}
+.courseBox .bgIcon01{width: 165px; height: 85px; position: absolute; top:120px; left:40px; background: url(../images/sub/course_icon01.svg)no-repeat center;  animation: driveLeft 3s ease-in-out infinite;}
+.courseBox .bgIcon02{width: 76px; height: 63px; position: absolute; top:101px; left:225px; background: url(../images/sub/course_icon02.svg)no-repeat center;}
+.courseBox .bgIcon03{width: 56px; height: 92px; position: absolute; top:205px; left:69px; background: url(../images/sub/course_icon03.svg)no-repeat center;}
+
+@keyframes driveLeft {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  10% {
+    transform: translateX(-30px) rotate(-1deg);
+  }
+  20% {
+    transform: translateX(-60px) rotate(1deg);
+  }
+  30% {
+    transform: translateX(-90px) rotate(-1deg);
+  }
+  40% {
+    transform: translateX(-120px) rotate(1deg);
+  }
+  50% {
+    transform: translateX(-150px) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-300px) rotate(0deg);
+  }
+}
