@@ -145,5 +145,23 @@ $(function () {
     $wrap.find('.slick-current').addClass('active');
   }
 
+  //내곁에 춘천 - 추천코스(상세)
+  $('.courseBox .mapContentTabBox .mapContentBox').hide();
+  $('.courseBox .mapContentTabBox .mapContentBox').first().show();
+  $('.courseBox .courseBox02 .box .mapBox button').click(function () {
+
+    $('.courseBox .courseBox02 .box .mapBox button').removeClass('active');
+    $(this).addClass('active');
+
+    const idx = $(this).index();
+
+    $('.courseBox .mapContentTabBox .mapContentBox').hide();
+    $('.courseBox .mapContentTabBox .mapContentBox').eq(idx).fadeIn(1000);
+
+  });
+
+
+
+
 });
 

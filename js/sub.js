@@ -106,27 +106,6 @@ $(function () {
     $wrap.find('.slick-current').addClass('active');
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
   //내곁에 춘천 - 추천코스(상세)
   $('.chuncheonCourseBox .mapContentTabBox .mapContentBox').hide();
   $('.chuncheonCourseBox .mapContentTabBox .mapContentBox').first().show();
@@ -147,19 +126,7 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
   $('.chuncheonBox03 .tabContentBox .tabContent').hide();
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
   $('.chuncheonBox03 .tabMenu li').click(function () {
