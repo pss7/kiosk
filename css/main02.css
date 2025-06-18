@@ -86,6 +86,13 @@ main.type02::after{display: none;}
 .btn{display: block; margin: 40px auto 60px; width: 300px; height: 80px; line-height: 90px; color: #fff; background-color: #363636; text-align: center; font-size: 30px;}
 
 /* 탭 */
+.tab02{display: flex; margin-bottom: 70px;}
+.tab02 li{flex: 1;}
+.tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
+.tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
+.tab02 li .tabBtn.active{color: #447BD3;}
+
+
 .tab{margin-bottom: 50px; padding: 8px; height: 100px; display: flex; justify-content: center;  background-color: #E9ECF6; border-radius: 100px;}
 .tab li{flex: 1;}
 .tab li .tabBtn{position: relative; padding-top: 11px; display: block; width: 100%; height: 100%; border-radius: 100px; font-size: 32px; color: #fff; text-align: center; color: #7A8094; z-index: 1; transition: all .5s;}
@@ -128,3 +135,161 @@ main.type02::after{display: none;}
 .imgListType01 li a:hover .imgBox img,
 .imgListType01 li a:active .imgBox img{transform: scale(1.3);}
 
+/* 내곁에춘천 - 여행지추천 */
+.chuncheonBox{height: 100%; display: flex; flex-direction: column;}
+.chuncheonBox .btn{margin-bottom: 25px;}
+.chuncheonBox > div{flex: 1;}
+.chuncheonBox .tab{margin-bottom: 108px;}
+.chuncheonBox .paginationBox{margin: 60px 0 67px;}
+.listBox02{margin-bottom: 118px;}
+.imgListType02{display: flex; flex-wrap: wrap; gap: 40px 20px;}
+.imgListType02 li a{width: 319px; height: 321px; display: block; border-radius: 24px; overflow: hidden; border: 1px solid #AAB4C5;}
+.imgListType02 li a .view{padding: 0 27px; display: flex; align-items: center; justify-content: space-between; height: 60px; border-top: 1px solid #AAB4C5; color: #333333;}
+.imgListType02 li a .view::after{content: ''; width: 27px; height: 27px; background: url(../images/sub/arrow_icon17.svg)no-repeat center;}
+.imgListType02 li a .imgBox{height: 149px; overflow: hidden;}
+.imgListType02 li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.imgListType02 li a .textBox{height: 112px; padding: 24px 27px;}
+.imgListType02 li a .textBox h3{font-size: 24px; color: #28498F;}
+.imgListType02 li a .textBox p{font-size: 20px; color: #333333; font-weight: 500; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.detailTopBox{margin-bottom: 47px; padding-bottom: 49px; border-bottom: 1px solid #223F69; text-align: center;}
+.detailTopBox h3{font-size: 32px; color: #000;}
+.detailTopBox p{font-size: 20px; color: #BBB;}
+.detailImgBox{margin-bottom: 59px; height: 364px;}
+.detailImgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.detailImgBox .container,
+.detailInfoBox .container{padding: 0 77px;}
+.detailInfoBox .container{position: relative;}
+.detailInfoBox .mapBox{position: absolute; top:0; right:77px; width: 325px; height: 165px; border-radius: 20px; overflow: hidden;}
+.detailInfoBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.detailInfoBox h4{margin-bottom: 40px;}
+.detailInfoBox h4 span{display: flex; gap: 0 24px; align-items: center; font-size: 24px; color: #000000;}
+.detailInfoBox h4 span::before{margin-top: -10px; width: 45px; height: 45px; content: ''; background: url(../images/sub/icon11.svg)no-repeat center;}
+.detailInfoBox{padding-bottom: 50px; font-family: 'Pretendard', sans-serif; border-bottom: 1px solid #223F69;}
+.detailInfoBox .list li{display: flex; margin-bottom: 10px;}
+.detailInfoBox .list li:last-child{margin-bottom: 0;}
+.detailInfoBox .list li span{flex-shrink: 0; width: 164px; font-size: 19px; color: #345A8C; font-weight: 700;}
+.detailInfoBox .list li em,
+.detailInfoBox .list li p{font-size: 19px; color: #515151; font-weight: 500;}
+.detailInfoBox .list li p{padding: 30px 36px 20px; height: 196px; border: 1px solid #ABABAB; border-radius: 7px;}
+
+/* 내곁에 춘천 - 춘천시 대표 축제 */
+.festivalBox{height: 100%; display: flex; flex-direction: column;}
+.festivalBox > div{flex: 1;}
+.festivalBox .tabBox{margin-bottom: 46px;}
+.festivalBox .tabMenu{display: flex;}
+.festivalBox .tabMenu li{flex: 1; text-align: center;}
+.festivalBox .tabMenu li .tabBtn{ font-size: 32px; color: #AFAFAF; transition: all .5s;}
+.festivalBox .tabMenu li .tabBtn span{position: relative;}
+.festivalBox .tabMenu li .tabBtn span::after{content: ''; position: absolute; transition: all .5s;}
+.festivalBox .tabMenu li:nth-child(1) .tabBtn span::after{top: -45px; right: -55px; width: 50px; height: 56px;  animation: sakuraDriftEnhanced 6s ease-in-out infinite; }
+.festivalBox .tabMenu li:nth-child(2) .tabBtn span::after{top:-38px; right:-38px; width: 50px; height: 33px; background: url(../images/sub/season_icon02.svg) no-repeat center; animation: shimmer 1.8s ease-in-out infinite alternate; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(3) .tabBtn span::after{top: -40px; right: -52px; width: 50px; height: 50px; background: url(../images/sub/season_icon03.svg) no-repeat center;  animation: leafFall 3s ease-in-out infinite alternate; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(4) .tabBtn span::after{top:-69px; right:-54px; width: 50px; height: 53px; background: url(../images/sub/season_icon04.svg) no-repeat center; background-size: contain;   animation: snowFloat 4s ease-in-out infinite alternate; }
+
+@keyframes sakuraDriftEnhanced {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-8px, -6px) rotate(6deg) scale(1.08);
+    opacity: 0.95;
+  }
+  40% {
+    transform: translate(4px, -12px) rotate(-8deg) scale(1.12);
+    opacity: 0.9;
+  }
+  60% {
+    transform: translate(-6px, -8px) rotate(4deg) scale(1.1);
+    opacity: 0.95;
+  }
+  80% {
+    transform: translate(6px, -6px) rotate(-6deg) scale(1.05);
+    opacity: 0.98;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  30% { opacity: 1; transform: scale(1.1) rotate(2deg); }
+  60% { opacity: 0.7; transform: scale(0.95) rotate(-2deg); }
+}
+
+@keyframes leafFall {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-10px, 15px) rotate(45deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(10px, 30px) rotate(90deg);
+    opacity: 0.6;
+  }
+}
+
+@keyframes snowFloat {
+  0% { transform: translate(0, 0) rotate(0); opacity: 1; }
+  25% { transform: translate(-5px, 10px) rotate(10deg); opacity: 0.9; }
+  50% { transform: translate(5px, 20px) rotate(-10deg); opacity: 0.8; }
+  75% { transform: translate(-5px, 30px) rotate(10deg); opacity: 0.7; }
+  100% { transform: translate(5px, 40px) rotate(0deg); opacity: 0.6; }
+}
+
+.festivalBox .tabMenu li:nth-child(1):hover .tabBtn span::after,
+.festivalBox .tabMenu li:nth-child(1):active .tabBtn span::after{background: url(../images/sub/season_hover_icon01.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(1) .tabBtn.active span::after{background: url(../images/sub/season_hover_icon01.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(2):hover .tabBtn span::after,
+.festivalBox .tabMenu li:nth-child(2):active .tabBtn span::after{background: url(../images/sub/season_hover_icon02.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(2) .tabBtn.active span::after{background: url(../images/sub/season_hover_icon02.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(3):hover .tabBtn span::after,
+.festivalBox .tabMenu li:nth-child(3):active .tabBtn span::after{background: url(../images/sub/season_hover_icon03.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(3) .tabBtn.active span::after{background: url(../images/sub/season_hover_icon03.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(4):hover .tabBtn span::after,
+.festivalBox .tabMenu li:nth-child(4):active .tabBtn span::after{background: url(../images/sub/season_hover_icon04.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li:nth-child(4) .tabBtn.active span::after{background: url(../images/sub/season_hover_icon04.svg) no-repeat center; background-size: contain;}
+.festivalBox .tabMenu li .tabBtn:hover,
+.festivalBox .tabMenu li .tabBtn:active{color: #FF6969;}
+.festivalBox .tabMenu li .tabBtn.active{color: #FF6969;}
+.festivalBox .infoList{margin: 0 0 50px; padding: 39px 53px; border-radius: 40px; box-shadow: 0 4px 20px rgba(0,0,0,10%);}
+.festivalBox .infoList li{display: flex; gap: 0 41px; margin-bottom: 20px; font-size: 24px; color: #333333;}
+.festivalBox .infoList li::before{content: ''; }
+.festivalBox .infoList li:last-child{margin-bottom: 0;}
+.festivalBox .infoList li:nth-child(1)::before{width: 30px; height: 32px; background: url(../images/sub/list_icon01.svg) no-repeat center; background-size: contain;}
+.festivalBox .infoList li:nth-child(2)::before{width: 30px; height: 29px; background: url(../images/sub/list_icon02.svg) no-repeat center; background-size: contain;}
+.festivalBox .infoList li:nth-child(3)::before{width: 28px; height: 27px; background: url(../images/sub/list_icon03.svg) no-repeat center; background-size: contain;}
+.festivalBox .infoList li:nth-child(4)::before{margin-top: -5px; width: 36px; height: 43px; background: url(../images/sub/list_icon04.svg) no-repeat center; background-size: contain;}
+.festivalBox .infoList li:nth-child(5)::before{width: 30px; height: 29px; background: url(../images/sub/list_icon05.svg) no-repeat center; background-size: contain;}
+.festivalBox .infoList li:nth-child(6)::before{width: 30px; height: 30px; background: url(../images/sub/list_icon06.svg) no-repeat center; background-size: contain;}
+.festivalBox .slide{margin: 0 50px;}
+.festivalBox .slideWrap{padding: 0 0 58px;}
+.festivalBox .slideBox{position: relative; margin: 0 auto; width: 960px; height: 367px; display: flex; align-items: center; justify-content: center; gap: 0 26px; margin-bottom: 61px;}
+.festivalBox .slideBox button{position: absolute; top:131px; width: 116px; height: 118px;}
+.festivalBox .slideBox button.prev{left:20px; background: url(../images/sub/arrow_icon18.svg);}
+.festivalBox .slideBox button.next{right:230px; background: url(../images/sub/arrow_icon19.svg);}
+.festivalBox .slideWrap .slideTopTitleBox{margin: 20px 0 50px;}
+.festivalBox .slideWrap .slideTopTitleBox h3{margin-bottom: 5px; font-size: 42px; color: #3C60BA; text-align: center;}
+.festivalBox .slideWrap .slideTopTitleBox p{font-size: 28px; color: #4D4D4D; text-align: center; }
+.festivalBox .slideBox .slideMain{width: 768px; box-shadow: 0 10px 32px rgba(0,0,0,10%); border-radius: 32px; overflow: hidden}
+.festivalBox .slideBox .slideMain .imgBox{width: 100%; flex-shrink: 0; height: 367px; ;}
+.festivalBox .slideBox .slideMain .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.festivalBox .slideBox .slideNav{width: 166px; }
+.festivalBox .slideBox .slideNav .thumbSlide{margin-bottom: 12px;}
+.festivalBox .slideBox .slideNav .imgBox{width: 166px; height: 114px; border-radius: 15px; overflow: hidden;} 
+.festivalBox .slideBox .slideNav .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.festivalBox .slideBox .slideNav .slick-track{display: flex; flex-direction: column; justify-content: center;}
+.festivalBox .slideBox .slideNav .is-selected .imgBox{border: 4px solid #4580EE;}
+.festivalBox .introduceBox{display: flex; gap: 0 38px;}
+.festivalBox .introduceBox h4{flex-shrink: 0;}
+.festivalBox .introduceBox h4 span{display: flex; flex-direction: column; align-items: center; gap: 27px 0; font-size: 28px; color: #4B7AF1;}
+.festivalBox .introduceBox h4 span::before{content: ''; width: 72px; height: 63px; background: url(../images/sub/heart_icon02.svg) no-repeat center; animation: scaleEffect 1.3s alternate infinite; background-size: contain; }
+.festivalBox .introduceBox p{font-size: 20px; color: #4D4D4D; text-align: justify;}
+.festivalBox .controlBox button{width: 40px; height: 60px; position: absolute; top:371px;}
+.festivalBox .controlBox .prevButton{left:62px; background: url(../images/sub/arrow_icon11.svg) no-repeat center; background-size: contain;} 
+.festivalBox .controlBox .nextButton{right:62px; background: url(../images/sub/arrow_icon12.svg) no-repeat center; background-size: contain;} 
