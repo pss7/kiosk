@@ -255,9 +255,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
 
 /* 내곁에춘천 - 추천코스(상세) */
-.chuncheonCourseBox{display: flex; flex-direction: column; padding: 110px 0 0; overflow: hidden;}
-.chuncheonCourseBox .topTextBox{flex: 1; padding: 0 86px 0 111px; display: flex; align-items: center; margin-bottom: 48px;}
-.chuncheonCourseBox .topTextBox h3{margin-right: 66px; font-size: 64px; color: #2A304B;} 
+.chuncheonCourseBox{padding: 110px 0 0; overflow: hidden;}
+.chuncheonCourseBox .topTextBox{padding: 0 86px 0 111px; display: flex; align-items: center; margin-bottom: 54px;}
+.chuncheonCourseBox .topTextBox h3{margin-right: 66px; font-size: 60px; color: #2A304B;} 
 .chuncheonCourseBox .topTextBox .course01{position: relative; display: flex; gap: 0 10px; margin-right: 118px; color: #1C507E; font-size: 32px; z-index: 99;}
 .chuncheonCourseBox .topTextBox .course01::before{margin-top: -3px; content: ''; width: 40px; height: 40px; background: url(../images/sub/icon05.svg) no-repeat center;}
 .chuncheonCourseBox .topTextBox .course01::after{content: ''; position: absolute; left: 49px;
@@ -266,7 +266,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .topTextBox .course02::before{content: ''; width: 40px; height: 40px; background: url(../images/sub/icon04.svg) no-repeat center;}
 .chuncheonCourseBox .topTextBox .course02::after{content: '';  position: absolute;
     left: 49px; right: -3px; bottom: 20px;top: 13px; background-color: #FFEFB1; z-index: -1;}
-.chuncheonCourseBox  .courseBox01{padding: 0 86px 0 111px; margin-bottom: 117px; display: flex; gap: 0 39px;}
+.chuncheonCourseBox  .courseBox01{padding: 0 86px 0 111px; margin-bottom: 182px; display: flex; gap: 0 39px;}
 .chuncheonCourseBox  .courseBox01 > div{flex:1}
 .chuncheonCourseBox  .courseBox01 .courseDes,
 .chuncheonCourseBox  .courseBox01 .courseInfo{padding: 50px 72px; background-color: #F5F8FB; border: 1px solid #D0DDEB; border-radius: 40px; }
@@ -285,7 +285,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02{padding-right: 86px;}
 .chuncheonCourseBox .courseBox02 .box{display: flex; position: relative; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: 0; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
-.chuncheonCourseBox .courseBox02 .box .mapBox{margin-right: 70px; position: relative; margin-top: -155px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox{width: 1064px; position: relative; margin-top: -155px; margin-left: 276px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button{position: absolute;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button.active{animation: bounce 1.5s infinite;}
 
@@ -298,35 +298,40 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
   }
 }
 
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion01{top: 444px; left: 361px;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion02{top: 514px; left: 424px;}
-.chuncheonCourseBox .courseBox02 .box .mapBox img{display: block;}
-.chuncheonCourseBox .courseBox02 .mapContentBox{margin-top: -163px; padding: 37px; background-color: #fff; border-radius: 40px; border: 1px solid #D0DDEB; box-shadow: 5px 15px 34px rgba(0,0,0,0.07);}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion01{top: 471px; left: 387px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion02{top: 549px; left: 453px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox img{display: block; width: 100%; margin: 0 auto;}
+.chuncheonCourseBox .courseBox02 .mapContentTabBox{width: 1000px;position: absolute; top:-155px; right:700px;}
+.chuncheonCourseBox .courseBox02 .mapContentBox{padding: 37px; background-color: #fff; border-radius: 40px; border: 1px solid #D0DDEB; box-shadow: 5px 15px 34px rgba(0,0,0,0.07);}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox{margin-bottom: 32px; height: 359px; border-radius: 34px; overflow: hidden;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonCourseBox .courseBox02 .mapContentBox h5{margin-bottom: 23px; color: #2F4A65; font-size: 43px;}
-.chuncheonCourseBox .courseBox02 .mapContentBox p{height: 120px; margin-bottom: 93px; font-size: 20px; color: #4F4F4F; overflow-y: auto;}
+.chuncheonCourseBox .courseBox02 .mapContentBox p{height: 106px; margin-bottom: 55px; font-size: 20px; color: #4F4F4F; overflow-y: auto;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li{margin-bottom: 15px; display: flex; gap: 0 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li span{flex-shrink: 0; width: 106px; font-size: 18px; color: #4580EE;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li em,
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li a{color: #4F4F4F; font-size: 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText{padding: 0 9px; display: inline-block; margin-bottom: 30px; position: relative; font-size: 24px; color: #EE4564; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText::after{content: ''; position: absolute; left:0; right:0; bottom: 3px; background-color: #FFECF4; height: 19px; z-index: -1;}
-.chuncheonCourseBox .courseBox02 h4{padding-left: 592px; margin-bottom: 44px; font-size: 48px; color: #323436;}
-.chuncheonCourseBox .courseBox02 .courseListBox{flex-shrink: 0; width: 1290px; height: 905px; position: relative;  overflow-y: auto;}
-.chuncheonCourseBox .courseBox02 .courseList{padding-top: 17px; position: relative; z-index: 1;}
-.chuncheonCourseBox .courseBox02 .courseList::after{content: ''; width: 1px; position: absolute; left:50%; top:50px; bottom: -242px; background-color: #4580EE; z-index: -1;}
-.chuncheonCourseBox .courseBox02 .courseList li{margin-bottom: 186px;}
-.chuncheonCourseBox .courseBox02 .courseList li .postion{display: block; width: 54px;}
-.chuncheonCourseBox .courseBox02 .courseList li .mark01{position: relative; display: block; width: 78px; height: 78px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
-.chuncheonCourseBox .courseBox02 .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 41px; height: 41px; border-radius: 50%; background-color: #4580EE;}
-.chuncheonCourseBox .courseBox02 .courseList li{position: relative; display: flex; align-items: center; justify-content: center;}
-.chuncheonCourseBox .courseBox02 .courseList li:nth-child(even) .text{left: 250px;}
-.chuncheonCourseBox .courseBox02 .courseList li:nth-child(even) .text::after{left: auto; right: -196px;}
-.chuncheonCourseBox .courseBox02 .courseList li .text{ position: absolute; top:50%; transform: translateY(-50%); left: 912px; font-size: 36px; color: #414141;}
-.chuncheonCourseBox .courseBox02 .courseList li .text::after{width: 180px; height: 1px; content: ''; position: absolute; top:50%; left:-206px; bottom: 0; background: url(../images/sub/line.svg)no-repeat center;}
-.chuncheonCourseBox .courseBox02 .courseList li .text{display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
-.chuncheonCourseBox .mark02{position: relative; width: 54px; height: 72px;  background-color: #fff; text-align: center;  z-index: 1; z-index: 1; background: url(../images/sub/icon10.svg)no-repeat top;}
+
+
+.chuncheonCourseBox .courseListBox{display: none!important; padding: 0 86px 0 111px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px 0; margin-bottom: 100px;}
+.chuncheonCourseBox .courseListBox h4{font-size: 38px;}
+.chuncheonCourseBox .courseListBox .box{ width: 100%; padding: 20px 100px 10px 100px; background-color: #F5F8FB; border: 1px solid #D0DDEB;}
+.chuncheonCourseBox .courseList{position: relative; display: flex; gap: 0 250px; text-align: center; }
+.chuncheonCourseBox .courseList::after{content: ''; position: absolute; left:70px; top:47%; right:70px; border: 1px dashed #4580EE;}
+
+
+
+
+.chuncheonCourseBox .courseList li:first-child{position: relative; top: 93px;}
+.chuncheonCourseBox .courseList li{display: flex; flex-direction: column; gap: 20px 0;}
+.chuncheonCourseBox .courseList li .text{font-size: 30px; }
+.chuncheonCourseBox .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
+.chuncheonCourseBox .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #4580EE;}
+
+
+.chuncheonCourseBox .mark02{position: relative; margin: 0 auto; width: 54px; height: 72px;  background-color: #fff; text-align: center;  z-index: 1; z-index: 1; background: url(../images/sub/icon10.svg)no-repeat top;}
 .chuncheonCourseBox .mark02 .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; color: #EE4564;  font-size: 22px;  border-radius: 50px; background-color: #fff;}
 
 /* 내곁에춘천 - 춘천시대표축제 */
