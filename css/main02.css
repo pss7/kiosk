@@ -91,8 +91,6 @@ main.type02::after{display: none;}
 .tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
 .tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
 .tab02 li .tabBtn.active{color: #447BD3;}
-
-
 .tab{margin-bottom: 50px; padding: 8px; height: 100px; display: flex; justify-content: center;  background-color: #E9ECF6; border-radius: 100px;}
 .tab li{flex: 1;}
 .tab li .tabBtn{position: relative; padding-top: 11px; display: block; width: 100%; height: 100%; border-radius: 100px; font-size: 32px; color: #fff; text-align: center; color: #7A8094; z-index: 1; transition: all .5s;}
@@ -103,7 +101,7 @@ main.type02::after{display: none;}
 .tab li .tabBtn:not(.active):hover::before,
 .tab li .tabBtn:not(.active):active::before {width: 100%; background-color: #25477D;}
 .linkBox{display: flex;}
-.linkBox a{position: relative; padding: 41px 0 27px; flex: 1; background-color: #F6F6F6; z-index: 1;} 
+.linkBox a{position: relative; padding: 46px 0 27px; height: 138px; flex: 1; background-color: #F6F6F6; z-index: 1;} 
 .linkBox a span{gap: 0 40px; display: flex; align-items: center; justify-content: center; font-size: 40px; color: #585151;}
 .linkBox a span::before{content: '';}
 .linkBox a:nth-child(1) span::before{margin-top: -15px; content: ''; width: 60px; height: 57px; background: url(/images/common/icon04.svg) no-repeat center; background-size: contain;}
@@ -173,7 +171,6 @@ main.type02::after{display: none;}
 .detailInfoBox .list li p{padding: 30px 36px 20px; height: 196px; border: 1px solid #ABABAB; border-radius: 7px;}
 
 /* 내곁에 춘천 - 춘천시 대표 축제 */
-.festivalBox{height: 100%; display: flex; flex-direction: column;}
 .festivalBox > div{flex: 1;}
 .festivalBox .tabBox{margin-bottom: 46px;}
 .festivalBox .tabMenu{display: flex;}
@@ -258,7 +255,7 @@ main.type02::after{display: none;}
 .festivalBox .tabMenu li .tabBtn:active{color: #FF6969;}
 .festivalBox .tabMenu li .tabBtn.active{color: #FF6969;}
 .festivalBox .infoList{margin: 0 0 50px; padding: 39px 53px; border-radius: 40px; box-shadow: 0 4px 20px rgba(0,0,0,10%);}
-.festivalBox .infoList li{display: flex; gap: 0 41px; margin-bottom: 20px; font-size: 24px; color: #333333;}
+.festivalBox .infoList li{display: flex; gap: 0 41px; margin-bottom: 20px; font-size: 24px; color: #333333; word-break: keep-all;}
 .festivalBox .infoList li::before{content: ''; }
 .festivalBox .infoList li:last-child{margin-bottom: 0;}
 .festivalBox .infoList li:nth-child(1)::before{width: 30px; height: 32px; background: url(../images/sub/list_icon01.svg) no-repeat center; background-size: contain;}
@@ -293,3 +290,7 @@ main.type02::after{display: none;}
 .festivalBox .controlBox button{width: 40px; height: 60px; position: absolute; top:371px;}
 .festivalBox .controlBox .prevButton{left:62px; background: url(../images/sub/arrow_icon11.svg) no-repeat center; background-size: contain;} 
 .festivalBox .controlBox .nextButton{right:62px; background: url(../images/sub/arrow_icon12.svg) no-repeat center; background-size: contain;} 
+
+/* 내곁에춘천 - 추천코스 */
+.layoutBox{height: 100%; display: flex; flex-direction: column;}
+.layoutBox > div{flex: 1;}
