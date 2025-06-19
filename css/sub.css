@@ -139,7 +139,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox img{display: block; margin: 0 auto 50px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox p{font-size: 26px;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox{display: flex; border: 1px solid #4E81A6; border-width: 1px 0 0 0;}
-.notificationBox .notificationDetailBox .notificationDetail .infoBox .box{height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .infoBox .box{flex: 1; height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box:last-child{border-right: 0;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box span{padding-top: 20px; flex-shrink: 0; position: relative; width: 200px; font-size: 34px; color: #7285A3; text-align: center;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box span::after{content: ''; position: absolute; top:-6px; right:0; width: 1px; height: 88px; background-color: #4E81A6;}
