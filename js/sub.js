@@ -120,7 +120,8 @@ $(function () {
     $('.chuncheonCourseBox .mapContentTabBox .mapContentBox').eq(idx).fadeIn(1000);
 
   });
-  
+
+  //내곁에 춘천 - 춘천시 대표축제
   $('.chuncheonBox03 .tabContentBox .tabContent').hide();
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
   $('.chuncheonBox03 .tabMenu li').click(function () {

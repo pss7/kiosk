@@ -1,7 +1,24 @@
 
 $(function () {
 
-  //내곁에 춘천 - 춘천시 대표 축제
+  //내곁에 춘천 - 춘천시 대표축제
+  $('.festivalBox .tabContentBox .tabContent').hide();
+  $('.festivalBox .tabContentBox .tabContent').first().show();
+  $('.festivalBox .tabMenu li').click(function () {
+
+    $('.festivalBox .tabMenu li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    const idx = $(this).index();
+
+    $('.festivalBox .tabContentBox .tabContent').hide();
+    const $target = $('.festivalBox .tabContentBox .tabContent').eq(idx).show();
+
+    $target.find('.slick').slick('setPosition');
+    $target.find('.slideMain').slick('setPosition');
+    $target.find('.slideNav').slick('setPosition').slick('refresh');
+  });
+
   $('.festivalBox .slideWrap .slick').slick({
     autoplay: false,
     arrows: true,
@@ -17,12 +34,12 @@ $(function () {
     speed: 1500,
   });
 
-  $('.festivalBox .slideWrap .controlBox .prevButton').on('click', function () {
-    $('.festivalBox .slideWrap .tabContent:visible .slick').slick('slickPrev');
+  $('.festivalBox .tabContent .controlBox .prevButton').on('click', function () {
+    $('.festivalBox .tabContent:visible .slick').slick('slickPrev');
   });
 
-  $('.festivalBox .slideWrap .controlBox .nextButton').on('click', function () {
-    $('.festivalBox .slideWrap .tabContent:visible .slick').slick('slickNext');
+  $('.festivalBox .tabContent .controlBox .nextButton').on('click', function () {
+    $('.festivalBox .tabContent:visible .slick').slick('slickNext');
   });
 
   $('.festivalBox .mainSlide').each(function () {
@@ -60,6 +77,33 @@ $(function () {
     $thumbSlides.removeClass('is-selected');
     $thumbSlides.eq(0).addClass('is-selected');
   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   //내곁에 춘천 - 추천코스 
   const $tabMenu = $('.courseBox .tabMenu li');
@@ -161,7 +205,7 @@ $(function () {
   });
 
   //내곁에 춘천 - 여행지추천
-    $('.chuncheonBox .detailSlickWrap .slick').slick({
+  $('.chuncheonBox .detailSlickWrap .slick').slick({
     autoplay: true,
     arrows: true,
     prevArrow: ('.chuncheonBox .detailSlickWrap .control .prev'),
