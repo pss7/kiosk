@@ -19,8 +19,8 @@ aside .weatherInfoBox02.effect{animation: none;}
 /* 푸터 */
 #footer{flex-shrink: 0; height: 187px; display: flex; align-items: center; border-top: 1px solid #C2C2C2;}
 #footer .logoBox{flex-shrink: 0; padding: 54px 0; width: 683px; height: 100%; border-right: 1px solid #C2C2C2;}
-#footer .logoBox h1{display: flex; justify-content: center; align-items: center; gap: 0 20px;}
-#footer .logoBox h1 span{padding-top: 10px; font-size: 36px; color: #434451;}
+#footer .logoBox h1 a{display: flex; justify-content: center; align-items: center; gap: 0 20px;}
+#footer .logoBox h1 a span{padding-top: 10px; font-size: 36px; color: #434451;}
 #footer nav{width: 100%;}
 #footer nav,
 #footer nav .depth,
