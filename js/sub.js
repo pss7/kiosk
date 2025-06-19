@@ -120,12 +120,6 @@ $(function () {
     $('.chuncheonCourseBox .mapContentTabBox .mapContentBox').eq(idx).fadeIn(1000);
 
   });
-
-
-
-
-
-
   
   $('.chuncheonBox03 .tabContentBox .tabContent').hide();
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
@@ -203,7 +197,6 @@ $(function () {
     $thumbSlides.eq(0).addClass('is-selected');
   });
 
-
   //청사안내
   $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
   $('.cityHallGuideBox .guideMapBox .guideMapImage').last().show();
@@ -225,17 +218,5 @@ $(function () {
     $('.cityHallGuideBox .tabInfoBox').eq(idx).show();
 
   });
-
-
-
-
-
-
-
-
-
-
-
-
 
 });

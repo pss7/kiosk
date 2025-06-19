@@ -160,6 +160,23 @@ $(function () {
 
   });
 
+  //내곁에 춘천 - 여행지추천
+    $('.chuncheonBox .detailSlickWrap .slick').slick({
+    autoplay: true,
+    arrows: true,
+    prevArrow: ('.chuncheonBox .detailSlickWrap .control .prev'),
+    nextArrow: ('.chuncheonBox .detailSlickWrap .control .next'),
+    accessibility: false,
+    dots: false,
+    draggable: true,
+    infinite: true,
+    slidesToScroll: 1,
+    zIndex: 100,
+    pauseOnHover: false,
+    speed: 1500,
+  });
+
+
 
 
 
