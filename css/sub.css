@@ -313,24 +313,37 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li a{color: #4F4F4F; font-size: 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText{padding: 0 9px; display: inline-block; margin-bottom: 30px; position: relative; font-size: 24px; color: #EE4564; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText::after{content: ''; position: absolute; left:0; right:0; bottom: 3px; background-color: #FFECF4; height: 19px; z-index: -1;}
+.chuncheonCourseBox .courseBox02 .courseBtn{position: absolute; top:140px; right:123px; width: 420px; height: 420px; border-radius: 50%;    background: linear-gradient(135deg, #90CFED 25%, #ffffff 50%, #A9BDE9 75%); background-size: 200% 200%; animation: shimmerSpread 5s ease-in-out infinite; z-index: 1; overflow: hidden; box-shadow: 0 0 20px rgba(144, 207, 237, 0.2);}
+.chuncheonCourseBox .courseBox02 .courseBtn::after{content: ''; width: 347px; height: 347px; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); border-radius: 50%; background: linear-gradient(to right, #2698DB, #4575D1); z-index: -1;}
+.chuncheonCourseBox .courseBox02 .courseBtn span{display: flex; flex-direction: column;
+    gap: 35px 0; align-items: center; position: relative; font-size: 40px; color: #fff; z-index: 1;}
+.chuncheonCourseBox .courseBox02 .courseBtn span::after{width: 33px; height: 33px; content: ''; background: url(../images/sub/arrow_icon22.svg) no-repeat center; }
 
+@keyframes shimmerSpread {
+  0% {
+    background-position: -100% 0;
+    box-shadow: 0 0 0px rgba(144, 207, 237, 0.1);
+  }
+  50% {
+    background-position: 100% 0;
+    box-shadow: 0 0 60px rgba(144, 207, 237, 0.25);
+  }
+  100% {
+    background-position: -100% 0;
+    box-shadow: 0 0 0px rgba(144, 207, 237, 0.1);
+  }
+}
 
 .chuncheonCourseBox .courseListBox{display: none!important; padding: 0 86px 0 111px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px 0; margin-bottom: 100px;}
 .chuncheonCourseBox .courseListBox h4{font-size: 38px;}
 .chuncheonCourseBox .courseListBox .box{ width: 100%; padding: 20px 100px 10px 100px; background-color: #F5F8FB; border: 1px solid #D0DDEB;}
 .chuncheonCourseBox .courseList{position: relative; display: flex; gap: 0 250px; text-align: center; }
 .chuncheonCourseBox .courseList::after{content: ''; position: absolute; left:70px; top:47%; right:70px; border: 1px dashed #4580EE;}
-
-
-
-
 .chuncheonCourseBox .courseList li:first-child{position: relative; top: 93px;}
 .chuncheonCourseBox .courseList li{display: flex; flex-direction: column; gap: 20px 0;}
 .chuncheonCourseBox .courseList li .text{font-size: 30px; }
 .chuncheonCourseBox .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
 .chuncheonCourseBox .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #4580EE;}
-
-
 .chuncheonCourseBox .mark02{position: relative; margin: 0 auto; width: 54px; height: 72px;  background-color: #fff; text-align: center;  z-index: 1; z-index: 1; background: url(../images/sub/icon10.svg)no-repeat top;}
 .chuncheonCourseBox .mark02 .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; color: #EE4564;  font-size: 22px;  border-radius: 50px; background-color: #fff;}
 
