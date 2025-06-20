@@ -7,13 +7,13 @@
 .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
 .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 .contentWrap{ min-width: 3157px; height: 100%;}
-aside{position: relative;}
+aside{position: relative; background-color: #fff;}
 aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
 aside .weatherInfoBox01.effect,
 aside .weatherInfoBox02.effect{animation: none;}
 
 /* 헤더 */
-#header{flex-shrink: 0; padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
+#header{flex-shrink: 0; padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7); z-index: 99;}
 #header h2{padding-top: 15px; color: #fff; font-size: 62px;}
 #header .prev{width: 53px; height: 76px; background: url(../images/common/arrow_icon.svg)no-repeat center;}
 #header .home{width: 77px; height: 76px; background: url(../images/common/home_icon.svg)no-repeat center;}
@@ -192,8 +192,45 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 /* 내곁에춘천 - 추천코스 */
 .chuncheonBox02{padding: 258px 0 0; position: relative;background: url(../images/sub/bg04.svg) no-repeat left top;}
+.chuncheonBox02 .bg01{position: absolute; top:-38px; left:573px; width: 139px; height: 156px; background: url(../images/sub/bg08.svg)no-repeat center;}
+.chuncheonBox02 .bg02{position: absolute; top:145px; left:77px; width: 115px; height: 190px; background: url(../images/sub/bg10.svg)no-repeat center;}
+.chuncheonBox02 .bg03{position: absolute; top:137px; left:0; width: 729px; height: 577px; background: url(../images/sub/bg11.svg)no-repeat center;}
 .chuncheonBox02::before{content: ''; width: 139px; height: 159px; position: absolute; top:58px; right:1171px; background: url(../images/sub/bg08.svg)no-repeat center;}
-.chuncheonBox02::after{content: ''; width: 729px; height: 708px; position: absolute; top:0; left:0; background: url(../images/sub/bg05.svg) no-repeat;}
+.chuncheonBox02::after{content: ''; width: 338px; height: 174px; position: absolute; top:100px; left:166px; background: url(../images/sub/bg05.svg) no-repeat; animation: driveLeft 3s ease-in-out infinite;}
+
+@keyframes driveLeft {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    10% {
+        transform: translateX(-30px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translateX(-60px) rotate(1deg);
+    }
+
+    30% {
+        transform: translateX(-90px) rotate(-1deg);
+    }
+
+    40% {
+        transform: translateX(-120px) rotate(1deg);
+    }
+
+    50% {
+        transform: translateX(-150px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-500px) rotate(0deg);
+    }
+}
+
+
+
+
 .chuncheonBox02 .layoutBox{display: block; position: relative; background: url(../images/sub/bg06.svg) no-repeat right bottom;}
 .chuncheonBox02 .layoutBox::after{content: ''; width: 491px; height: 723px; position: absolute; bottom:110px; right:77px; background: url(../images/sub/bg07.svg) no-repeat; }
 .chuncheonBox02 .tabMenu{padding-left: 175px; position: absolute; top:589px; left:0; flex-shrink: 0; display: block; width: auto; z-index: 999;}
@@ -255,6 +292,31 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText .control button{width: 78px; height: 118px;}
 .chuncheonBox02 .slideInfoText .control button.prev{background: url(../images/sub/arrow_icon11.svg)no-repeat center;}
 .chuncheonBox02 .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 내곁에춘천 - 추천코스(상세) */
 .chuncheonCourseBox{position: relative;}
