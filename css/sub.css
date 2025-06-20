@@ -4,6 +4,8 @@
 #sub{flex: 1; /*position: relative; display: flex; align-items: flex-start;*/ /*justify-content: center;*/ width: 100%; height: 100%;}
 /* #sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
 #sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;} */
+.btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
+.btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 .contentWrap{ min-width: 3157px; height: 100%;}
 aside{position: relative;}
 aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
@@ -255,6 +257,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
 
 /* 내곁에춘천 - 추천코스(상세) */
+.chuncheonCourseBox{position: relative;}
+.chuncheonCourseBox .btn{position: absolute; top:108px; right:88px;}
 .chuncheonCourseBox{padding: 110px 0 0; overflow: hidden;}
 .chuncheonCourseBox .topTextBox{padding: 0 86px 0 111px; display: flex; align-items: center; margin-bottom: 54px;}
 .chuncheonCourseBox .topTextBox h3{margin-right: 66px; font-size: 60px; color: #2A304B;} 
@@ -513,8 +517,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonViewBox .textBox .list li .infoText{height: 314px; padding: 30px 40px; font-size: 26px; font-weight: 500; overflow-y: auto; border: 1px solid #ababab; border-radius: 10px; color: #515151;}
 .chuncheonViewBox .mapBox{margin-bottom: 50px; height: 340px; border-radius: 20px; overflow: hidden; border: 1px solid #ABABAB;}
 .chuncheonViewBox .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.chuncheonViewBox .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
-.chuncheonViewBox .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
 
 /* 행복알리미 */
 .happyBox{padding: 120px 111px 0;}
