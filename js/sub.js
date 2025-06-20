@@ -1,6 +1,10 @@
 $(function () {
 
   $(window).on('load', function () {
+    $('.chuncheonBox03 .tabContent').addClass('effect');
+  });
+
+  $(window).on('load', function () {
     $('.orgInfoBox').addClass('effect');
   });
 
