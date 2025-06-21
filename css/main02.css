@@ -189,7 +189,7 @@ main.type02::after{display: none;}
 .chuncheonBox .festivalBox .tabMenu li .tabBtn{ font-size: 32px; color: #AFAFAF; transition: all .5s;}
 .chuncheonBox .festivalBox .tabMenu li .tabBtn span{position: relative;}
 .chuncheonBox .festivalBox .tabMenu li .tabBtn span::after{content: ''; position: absolute; transition: all .5s;}
-.chuncheonBox .festivalBox .tabMenu li:nth-child(1) .tabBtn span::after{top: -45px; right: -55px; width: 50px; height: 56px;  animation: sakuraDriftEnhanced 6s ease-in-out infinite; }
+.chuncheonBox .festivalBox .tabMenu li:nth-child(1) .tabBtn span::after{top: -45px; right: -55px; width: 50px; height: 56px; background: url(../images/sub/season_icon01.svg) no-repeat center;  animation: sakuraDriftEnhanced 6s ease-in-out infinite; background-size: contain;}
 .chuncheonBox .festivalBox .tabMenu li:nth-child(2) .tabBtn span::after{top:-38px; right:-38px; width: 50px; height: 33px; background: url(../images/sub/season_icon02.svg) no-repeat center; animation: shimmer 1.8s ease-in-out infinite alternate; background-size: contain;}
 .chuncheonBox .festivalBox .tabMenu li:nth-child(3) .tabBtn span::after{top: -40px; right: -52px; width: 50px; height: 50px; background: url(../images/sub/season_icon03.svg) no-repeat center;  animation: leafFall 3s ease-in-out infinite alternate; background-size: contain;}
 .chuncheonBox .festivalBox .tabMenu li:nth-child(4) .tabBtn span::after{top:-69px; right:-54px; width: 50px; height: 53px; background: url(../images/sub/season_icon04.svg) no-repeat center; background-size: contain;   animation: snowFloat 4s ease-in-out infinite alternate; }

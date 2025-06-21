@@ -114,7 +114,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 /* 시정알림 */
 .notificationBox{padding: 90px 120px 64px;}
 .notificationBox .notificationContentBox{display: flex; border-top: 5px solid #4E81A6; border-bottom: 1px solid #4E81A6;}
-.notificationBox .notificationListBox{display: flex; flex-direction: column; width: 829px;}
+.notificationBox .notificationListBox{height: 1596px; display: flex; flex-direction: column; width: 829px;}
 .notificationBox .notificationListBox a{flex: 1; padding: 56px 66px 0 49px; display: block; height: 266px; border: 1px solid #4E81A6; border-width: 0 1px 1px 0; background-color: #F7F7F8; transition: all .5s;}
 .notificationBox .notificationListBox a:last-child{border-bottom: 0;}
 .notificationBox .notificationListBox a h3{position: relative; padding-left: 52px; gap: 0 32px; margin-bottom: 60px; font-size: 42px; color: #6D7686; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all .5s;}
@@ -126,19 +126,19 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationListBox a:active h3{color: #4580EE;}
 .notificationBox .notificationListBox a:hover h3::before,
 .notificationBox .notificationListBox a:active h3::before{background-color: #93CEFF;}
-.notificationBox .notificationDetailBox{flex: 1; padding: 0 47px;}
+.notificationBox .notificationDetailBox{height: 1596px; flex: 1; padding: 0 47px;}
 .notificationBox .notificationDetailBox .notificationDetail{display: flex; flex-direction: column;}
-.notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; min-height: 203px; border-bottom: 1px solid #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; height: 350px; border-bottom: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox h3{font-size: 54px; color: #000;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox .date{margin-top: 12px; font-size: 36px; color: #BBB;}
-.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1244px; overflow-y: auto; font-size: 18px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1097px; overflow-y: auto; font-size: 18px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar {width: 66px; height: 66px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-track{background: #E2E2E2;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-thumb {background: #B2B2B2; border-radius: 50px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button{height: 65px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:decrement {background: #3C3939 url('../images/sub/arrow_icon02.svg') no-repeat center;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:increment{background: #3C3939 url('../images/sub/arrow_icon01.svg') no-repeat center;}
-.notificationBox .notificationDetailBox .notificationDetail .contentBox img{display: block; margin: 0 auto 50px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox img{display: block; width: 100%; margin: 0 auto 50px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox p{font-size: 26px;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox{display: flex; border: 1px solid #4E81A6; border-width: 1px 0 0 0;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box{flex: 1; height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
@@ -421,7 +421,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03 .tabMenu li .tabBtn{ font-size: 64px; color: #AFAFAF; transition: all .5s;}
 .chuncheonBox03 .tabMenu li .tabBtn span{position: relative;}
 .chuncheonBox03 .tabMenu li .tabBtn span::after{content: ''; position: absolute; transition: all .5s;}
-.chuncheonBox03 .tabMenu li:nth-child(1) .tabBtn span::after{top: -84px; right: -114px; width: 120px; height: 106px;  animation: sakuraDriftEnhanced 6s ease-in-out infinite;}
+.chuncheonBox03 .tabMenu li:nth-child(1) .tabBtn span::after{top: -84px; right: -114px; width: 120px; height: 106px; background: url(../images/sub/season_icon01.svg) no-repeat center; animation: sakuraDriftEnhanced 6s ease-in-out infinite;}
 .chuncheonBox03 .tabMenu li:nth-child(2) .tabBtn span::after{top:-63px; right:-87px; width: 106px; height: 70px; background: url(../images/sub/season_icon02.svg) no-repeat center; animation: shimmer 1.8s ease-in-out infinite alternate;}
 .chuncheonBox03 .tabMenu li:nth-child(3) .tabBtn span::after{top: -77px; right: -97px; width: 106px; height: 106px; background: url(../images/sub/season_icon03.svg) no-repeat center;  animation: leafFall 3s ease-in-out infinite alternate;}
 .chuncheonBox03 .tabMenu li:nth-child(4) .tabBtn span::after{top:-91px; right:-90px; width: 84px; height: 90px; background: url(../images/sub/season_icon04.svg) no-repeat center; background-size: contain;   animation: snowFloat 4s ease-in-out infinite alternate;}
