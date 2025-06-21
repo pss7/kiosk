@@ -204,10 +204,10 @@ $(function () {
 
   //청사안내
   $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-  $('.cityHallGuideBox .guideMapBox .guideMapImage').last().show();
+  $('.cityHallGuideBox .guideMapBox .guideMapMainImage').show();
 
   $('.cityHallGuideBox .tabInfoBox').hide();
-  $('.cityHallGuideBox .tabInfoBox').last().show();
+  $('.cityHallGuideBox .tabInfoMainBox').show();
 
   $('.cityHallGuideBox .guideMapList02 > li').click(function () {
 
