@@ -484,7 +484,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03{position: relative; padding: 120px 0 76px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
 .chuncheonBox03 .tabContentBox{padding: 0 250px;}
 .chuncheonBox03::after{content: ''; width: 751px; height: 292px; position: absolute; bottom: 0; right:0; background: url(../images/sub/bg03.svg)no-repeat center; z-index: -1;}
-.chuncheonBox03 .tabContent{padding: 0;}
+.chuncheonBox03 .tabContent{opacity: 0; padding: 0;}
 .chuncheonBox03 .tabMenu li .tabBtn{ font-size: 64px; color: #AFAFAF; transition: all .5s;}
 .chuncheonBox03 .tabMenu li .tabBtn span{position: relative;}
 .chuncheonBox03 .tabMenu li .tabBtn span::after{content: ''; position: absolute; transition: all .5s;}
