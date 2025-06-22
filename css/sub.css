@@ -284,7 +284,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText{display: flex; gap: 0 137px; }
 .chuncheonBox02 .slideInfoText{position: absolute; left:175px; bottom: 120px;}
 .chuncheonBox02 .slideInfoText .slideInfoList{display: flex; padding-top: 59px;} 
-.chuncheonBox02 .slideInfoText .slideInfoList li{padding-top: 40px; min-width: 428px; border-top: 1px solid #ACACAC; }
+.chuncheonBox02 .slideInfoText .slideInfoList li{padding-right: 50px; padding-top: 40px; min-width: 428px; border-top: 1px solid #ACACAC; }
 .chuncheonBox02 .slideInfoText .slideInfoList li .btn{display: flex; flex-direction: column; align-items: flex-start; gap: 15px 0; color: #B0B2BA; font-size: 36px;}
 .chuncheonBox02 .slideInfoText .slideInfoList li.active{border-top: 2px solid #2A304B;  transition: all .8s;}
 .chuncheonBox02 .slideInfoText .slideInfoList li.active .btn{color: #2A304B;  transition: all .8s;}
@@ -341,13 +341,14 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox  .courseBox01 .courseDes p{margin-bottom: 23px; font-size: 24px; color: #3A3A3A;}
 .chuncheonCourseBox  .courseBox01 .courseDes .list{display: flex; gap: 0 5px;}
 .chuncheonCourseBox  .courseBox01 .courseDes .list span{font-size: 22px; color: #5786DC;} 
-.chuncheonCourseBox  .courseBox01 .courseInfo .box{display: flex; gap: 0 48px;}
+.chuncheonCourseBox  .courseBox01 .courseInfo .box{display: flex; gap: 0 48px; margin-bottom: 20px;}
 .chuncheonCourseBox  .courseBox01 .courseInfo h5{font-size: 24px; color: #3A3A3A;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList{display: flex; gap: 0 40px;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li{display: flex; align-items: center; font-size: 24px; color: #3A3A3A;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li:last-child:after{display: none;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li::after{margin-top: -7px; margin-left: 15px; content: ''; width: 26px; height: 20px; background: url(../images/sub/arrow_icon16.svg)no-repeat center;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li span{margin-top: -5px; margin-right: 15px; width: 44px; height: 44px; line-height: 50px; text-align: center; border-radius: 50%; color: #fff; font-size: 24px; background-color: #EE4564;}
+.chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList02 li span{background-color: #199700;}
 .chuncheonCourseBox .courseBox02{padding-right: 86px;}
 .chuncheonCourseBox .courseBox02 .box{display: flex; position: relative; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: 0; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
@@ -364,8 +365,51 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
   }
 }
 
+
+
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion01{top: 471px; left: 387px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion02{top: 549px; left: 453px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion03{top: 665px; left: 414px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion04{top: 649px; left: 468px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion05{top: 835px; left: 150px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion06{top: 550px; left: 371px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion07{top: 300px; left: 268px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion08{top: 384px; left: 460px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion09{top: 652px; left: 428px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion10{top: 540px; left: 452px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion11{top: 486px; left: 483px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion12{top: 572px; left: 430px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion13{top: 406px; left: 460px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion14{top: 490px; left: 460px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion15{top: 650px; left: 428px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion16{top: 650px; left: 80px;}
+
+
+
+
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion17{top: 734px; left: 52px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion18{top: 0; left: 0;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion19{top: 0; left: 0;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion20{top: 0; left: 0;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion21{top: 0; left: 0;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion22{top: 0; left: 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .chuncheonCourseBox .courseBox02 .box .mapBox img{display: block; width: 100%; margin: 0 auto;}
 .chuncheonCourseBox .courseBox02 .mapContentTabBox{width: 1000px;position: absolute; top:-155px; right:700px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox{padding: 37px; background-color: #fff; border-radius: 40px; border: 1px solid #D0DDEB; box-shadow: 5px 15px 34px rgba(0,0,0,0.07);}
@@ -379,6 +423,13 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li a{color: #4F4F4F; font-size: 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText{padding: 0 9px; display: inline-block; margin-bottom: 30px; position: relative; font-size: 24px; color: #EE4564; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText::after{content: ''; position: absolute; left:0; right:0; bottom: 3px; background-color: #FFECF4; height: 19px; z-index: -1;}
+
+
+.chuncheonCourseBox .courseBox02 .mapContentBox .courseText02{color: #199700;}
+.chuncheonCourseBox .courseBox02 .mapContentBox .courseText02::after{background-color: #E8F5E6;}
+
+
+
 .chuncheonCourseBox .courseBox02 .courseBtn{position: absolute; top:140px; right:123px; width: 420px; height: 420px; border-radius: 50%;    background: linear-gradient(135deg, #90CFED 25%, #ffffff 50%, #A9BDE9 75%); background-size: 200% 200%; animation: shimmerSpread 5s ease-in-out infinite; z-index: 1; overflow: hidden; box-shadow: 0 0 20px rgba(144, 207, 237, 0.2);}
 .chuncheonCourseBox .courseBox02 .courseBtn::after{content: ''; width: 347px; height: 347px; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); border-radius: 50%; background: linear-gradient(to right, #2698DB, #4575D1); z-index: -1;}
 .chuncheonCourseBox .courseBox02 .courseBtn span{display: flex; flex-direction: column;
@@ -410,8 +461,24 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseList li .text{font-size: 30px; }
 .chuncheonCourseBox .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
 .chuncheonCourseBox .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #4580EE;}
-.chuncheonCourseBox .mark02{position: relative; margin: 0 auto; width: 54px; height: 72px;  background-color: #fff; text-align: center;  z-index: 1; z-index: 1; background: url(../images/sub/icon10.svg)no-repeat top;}
-.chuncheonCourseBox .mark02 .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; color: #EE4564;  font-size: 22px;  border-radius: 50px; background-color: #fff;}
+
+
+
+
+.chuncheonCourseBox .mark{position: relative; margin: 0 auto; width: 54px; height: 72px;  text-align: center;}
+.chuncheonCourseBox .mark .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; font-size: 22px;  border-radius: 50px; background-color: #fff; z-index: 9;}
+.chuncheonCourseBox .mark::after{content: ''; position: absolute; top:0; left:0; right:0; width: 54px; height: 72px; mask: url(../images/sub/icon10.svg)no-repeat center; -webkit-mask: url(../images/sub/icon10.svg) no-repeat center;}
+
+
+
+
+.chuncheonCourseBox .mark02::after{background-color: #EE4564;}
+.chuncheonCourseBox .mark02 .number{color: #EE4564;}
+.chuncheonCourseBox .mark03::after{background-color: #199700;}
+.chuncheonCourseBox .mark03 .number{color: #199700;}
+
+
+
 
 /* 내곁에춘천 - 춘천시대표축제 */
 .chuncheonBox03{position: relative; padding: 120px 0 76px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
@@ -766,7 +833,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
 .cityHallGuideBox .guideMapBox .guideMapTabContentBox{width: 100%; height: 100%;}
 .cityHallGuideBox .guideMapBox .guideMapImage{position: relative; width: 100%; height: 1756px;   animation: fadeIn 3s cubic-bezier(0.23, 1, 0.32, 1) both;}
-.cityHallGuideBox .guideMapBox .guideMapImage img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.cityHallGuideBox .guideMapBox .guideMapImage img{ display: block; width: 100%; height: 100%; object-fit: cover;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn,
 .cityHallGuideBox .guideMapBox .guideMapImage .mark{padding: 15px 35px; position: absolute; background-color: #4580EE; color: #fff; font-size: 32px; font-family: 'Pretendard', sans-serif; font-weight:600; border-radius: 10px;} 
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow {display: flex; gap: 17px; align-items: center; position: absolute; width: 20px;
@@ -871,110 +938,35 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
   }
 }
 
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow { position: absolute;
+  display: flex; align-items: center; justify-content: flex-end; z-index: 10;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.directional-arrow {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* 화살촉을 막대 끝에 붙임 */
-  z-index: 10;
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow::before {content: '';
+  flex-grow: 1; background-color: red; border-radius: 2px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow::after {content: '';
+  width: 0; height: 0; border-style: solid;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.right {flex-direction: row;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.right::before{height: 5px; width: calc(100% - 10px);}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.right::after{  border-width: 20px 0 20px 20px; border-color: transparent transparent transparent red;
 }
-
-/* 막대기 */
-.directional-arrow::before {
-  content: '';
-  flex-grow: 1;
-  background-color: red;
-  border-radius: 2px;
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.left {flex-direction: row-reverse;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.left::before {height: 5px; width: calc(100% - 10px);}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.left::after { border-width: 8px 10px 8px 0; border-color: transparent red transparent transparent;
 }
-
-/* 화살촉 (삼각형) */
-.directional-arrow::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.up {flex-direction: column-reverse;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.up::before {
+  width: 5px; height: calc(100% - 20px);}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.up::after {
+  border-width: 20px 10px 0 10px; border-color: red transparent transparent transparent;
 }
-
-/* ▶ 방향 (오른쪽) */
-.directional-arrow.right {
-  flex-direction: row;
-}
-.directional-arrow.right::before {
-  height: 5px;
-  width: calc(100% - 10px);
-}
-.directional-arrow.right::after {
-  border-width: 20px 0 20px 20px;
-  border-color: transparent transparent transparent red;
-}
-
-/* ◀ 방향 (왼쪽) */
-.directional-arrow.left {
-  flex-direction: row-reverse;
-}
-.directional-arrow.left::before {
-  height: 5px;
-  width: calc(100% - 10px);
-}
-.directional-arrow.left::after {
-  border-width: 8px 10px 8px 0;
-  border-color: transparent red transparent transparent;
-}
-
-/* ▲ 방향 (위) */
-.directional-arrow.up {
-  flex-direction: column-reverse;
-}
-.directional-arrow.up::before {
-  width: 5px;
-  height: calc(100% - 20px); /* 화살촉 높이 빼기 */
-}
-.directional-arrow.up::after {
-  border-width: 20px 10px 0 10px;
-  border-color: red transparent transparent transparent;
-}
-
-/* ▼ 방향 (아래) */
-.directional-arrow.down {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start; /* 막대 먼저, 끝에 화살촉 붙도록 */
-}
-.directional-arrow.down::before {
-  width: 5px;
-  height: calc(100% - 20px);
-  background-color: red;
-}
-.directional-arrow.down::after {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 20px 0 20px;
-  border-color: red transparent transparent transparent;
-}
-
-
-
-.directional-arrow {
-  animation: pulse-arrow 1s infinite;
-}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.down {
+  display: flex; flex-direction: column; align-items: center; justify-content: flex-start;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.down::before {
+  width: 5px; height: calc(100% - 20px); background-color: red;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow.down::after {
+  content: ''; width: 0; height: 0; border-style: solid; border-width: 20px 20px 0 20px;
+  border-color: red transparent transparent transparent;}
+.cityHallGuideBox .guideMapBox .guideMapImage .directional-arrow {animation: pulse-arrow 1s infinite;}
 
 @keyframes pulse-arrow {
   0%   { opacity: 0.6; transform: scale(1); }
