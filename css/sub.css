@@ -892,6 +892,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn55{bottom: 855px; left: 670px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn195{top: 787px; left:1278px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom07{bottom:370px; left: 1163px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display16{top:633px; left:770px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display17{top:584px; left:720px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display18{bottom:455px; left:1346px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display19{bottom:343px; left:1392px;}
 
 /* 청사안내도 - 6층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn56{top:310px; left: 768px;}
@@ -910,6 +914,11 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn196{top: 774px; left:1291px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom08{bottom:343px; left: 1186px;}
 
+.cityHallGuideBox .guideMapBox .guideMapImage .display20{top:610px; left:770px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display21{top:554px; left:713px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display22{bottom:455px; left:1380px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display23{bottom:343px; left:1392px;}
+
 /* 청사안내도 - 7층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn69{top:332px; left: 692px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn70{top:365px; left: 1051px;}
@@ -925,7 +934,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn80{bottom: 860px; left: 704px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn197{top: 764px; left:1275px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom09{bottom:359px; left: 1144px;}
-
+.cityHallGuideBox .guideMapBox .guideMapImage .display24{top:610px; left:740px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display25{top:554px; left:688px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display26{bottom:455px; left:1335px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display27{bottom:343px; left:1366px;}
 
 /* 청사안내도 - 8층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn81{top:279px; left: 737px;}
@@ -940,6 +952,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn90{bottom: 692px; left: 666px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn91{bottom: 854px; left: 707px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom10{bottom:346px; left: 1160px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display28{top:610px; left:736px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display29{top:554px; left:676px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display30{bottom:455px; left:1351px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display31{bottom:343px; left:1366px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn198{top: 764px; left:1283px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark::after,
 .cityHallGuideBox .guideMapBox .guideMapImage .btn::after {content: ""; position: absolute; top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent;
