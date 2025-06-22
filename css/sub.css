@@ -808,7 +808,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
   100% { transform: translateX(0); opacity: 0.3; }
 }
 
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {position: absolute; display: block;  font-weight: 600; font-size: 40px; color: #000; font-weight: 600; font-family: 'Pretendard', sans-serif; white-space: nowrap;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {position: absolute; display: block;  font-weight: 600; font-size: 40px; color: #000; font-weight: 600; font-family: 'Pretendard', sans-serif; white-space: nowrap; text-align:center;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-label{left: 50%; transform: translateX(-50%); top: 30px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display{padding: 8px 27px 5px; position: absolute; font-size: 26px; border-radius: 10px; background-color: #fff; color: #4580EE;
 font-family: 'Pretendard', sans-serif; font-weight: 600;}
@@ -848,6 +848,7 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark01{left:729px; top:599px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark02{left:934px; top:695px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark03{left:773px; top:239px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .mark.mark04{left:1434px; top:720px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display32{top:589px; left:1061px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display33{top:510px; left:1112px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display34{bottom:823px; left:754px;}
