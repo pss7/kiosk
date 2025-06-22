@@ -388,11 +388,11 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion17{top: 734px; left: 52px;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion18{top: 0; left: 0;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion19{top: 0; left: 0;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion20{top: 0; left: 0;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion21{top: 0; left: 0;}
-.chuncheonCourseBox .courseBox02 .box .mapBox .postion22{top: 0; left: 0;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion18{top: 493px; left: 480px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion19{top: 576px; left: 412px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion20{top: 534px; left: 448px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion21{top: 423px; left: 500px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion22{top: 650px; left: 430px;}
 
 
 
@@ -833,7 +833,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
 .cityHallGuideBox .guideMapBox .guideMapTabContentBox{width: 100%; height: 100%;}
 .cityHallGuideBox .guideMapBox .guideMapImage{position: relative; width: 100%; height: 1756px;   animation: fadeIn 3s cubic-bezier(0.23, 1, 0.32, 1) both;}
-.cityHallGuideBox .guideMapBox .guideMapImage img{ display: block; width: 100%; height: 100%; object-fit: cover;}
+.cityHallGuideBox .guideMapBox .guideMapImage img{margin-top: -82px; display: block; width: 100%; height: 100%; object-fit: cover;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn,
 .cityHallGuideBox .guideMapBox .guideMapImage .mark{padding: 15px 35px; position: absolute; background-color: #4580EE; color: #fff; font-size: 32px; font-family: 'Pretendard', sans-serif; font-weight:600; border-radius: 10px;} 
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow {display: flex; gap: 17px; align-items: center; position: absolute; width: 20px;
