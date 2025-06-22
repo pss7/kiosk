@@ -808,10 +808,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
   100% { transform: translateX(0); opacity: 0.3; }
 }
 
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {position: absolute;
-  left: 50%; transform: translateX(-50%); top: 20px; display: block;
-  white-space: nowrap; font-weight: 600; font-size: 40px; color: #333;
-  font-weight: 600; font-family: 'Pretendard', sans-serif;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {position: absolute; display: block;  font-weight: 600; font-size: 40px; color: #000; font-weight: 600; font-family: 'Pretendard', sans-serif; white-space: nowrap;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-label{left: 50%; transform: translateX(-50%); top: 30px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display{padding: 8px 27px 5px; position: absolute; font-size: 26px; border-radius: 10px; background-color: #fff; color: #4580EE;
 font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom{width: 90px; height: 70px; position: absolute;  font-size: 32px; border-radius: 10px; background: #fff url(../images/sub/restroom.png)no-repeat center; background-size: contain;}
