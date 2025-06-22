@@ -879,6 +879,148 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.directional-arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 화살촉을 막대 끝에 붙임 */
+  z-index: 10;
+}
+
+/* 막대기 */
+.directional-arrow::before {
+  content: '';
+  flex-grow: 1;
+  background-color: red;
+  border-radius: 2px;
+}
+
+/* 화살촉 (삼각형) */
+.directional-arrow::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* ▶ 방향 (오른쪽) */
+.directional-arrow.right {
+  flex-direction: row;
+}
+.directional-arrow.right::before {
+  height: 5px;
+  width: calc(100% - 10px);
+}
+.directional-arrow.right::after {
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent red;
+}
+
+/* ◀ 방향 (왼쪽) */
+.directional-arrow.left {
+  flex-direction: row-reverse;
+}
+.directional-arrow.left::before {
+  height: 5px;
+  width: calc(100% - 10px);
+}
+.directional-arrow.left::after {
+  border-width: 8px 10px 8px 0;
+  border-color: transparent red transparent transparent;
+}
+
+/* ▲ 방향 (위) */
+.directional-arrow.up {
+  flex-direction: column-reverse;
+}
+.directional-arrow.up::before {
+  width: 5px;
+  height: calc(100% - 20px); /* 화살촉 높이 빼기 */
+}
+.directional-arrow.up::after {
+  border-width: 20px 10px 0 10px;
+  border-color: red transparent transparent transparent;
+}
+
+/* ▼ 방향 (아래) */
+.directional-arrow.down {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* 막대 먼저, 끝에 화살촉 붙도록 */
+}
+.directional-arrow.down::before {
+  width: 5px;
+  height: calc(100% - 20px);
+  background-color: red;
+}
+.directional-arrow.down::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  border-color: red transparent transparent transparent;
+}
+
+
+
+.directional-arrow {
+  animation: pulse-arrow 1s infinite;
+}
+
+@keyframes pulse-arrow {
+  0%   { opacity: 0.6; transform: scale(1); }
+  50%  { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 0.6; transform: scale(1); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 청사안내도 - 지하2층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom12{top:533px; left: 989px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display37{top:383px; left:994px;}
@@ -898,11 +1040,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow05{left: 1593px; bottom: 670px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow06{left: 1593px; bottom: 239px;}
 
-
 /* 청사안내도 - 지하1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom11{top:539px; left: 973px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark01{left:729px; top:599px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .mark.mark02{left:934px; top:695px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .mark.mark02{left:896px; top:695px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark03{left:773px; top:239px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .mark.mark04{left:1434px; top:720px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display32{top:589px; left:1061px;}
@@ -912,6 +1053,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display36{top:141px; right:830px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display45{bottom:356px; right:885px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow02{left: 1544px; bottom: 361px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .position{position: absolute; display: flex; align-items: center; gap: 0 10px; font-size: 40px; font-family: 'Pretendard', sans-serif; font-weight: 600;} 
+.cityHallGuideBox .guideMapBox .guideMapImage .position::before{content: ''; width: 20px; height: 20px; border-radius: 50%; background-color: red; }
+
+.cityHallGuideBox .guideMapBox .guideMapImage .position01{left: 1174px; top: 707px;}
 
 /* 청사안내도 - 1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn01{top: 265px; right: 496px;}
