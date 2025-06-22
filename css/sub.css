@@ -842,6 +842,7 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display42{bottom:275px; left:900px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display44{top:659px; left:908px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display44.displayStyle::after{top:-20px;  transform: translateX(-50%) rotate(180deg);}
+.cityHallGuideBox .guideMapBox .guideMapImage .mark.mark05{left:1380px; top:685px;}
 
 /* 청사안내도 - 지하1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom11{top:539px; left: 973px;}
