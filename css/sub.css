@@ -857,9 +857,6 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display36{top:141px; right:830px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display45{bottom:356px; right:885px;}
 
-/* 청사안내도 - 본관 */
-.cityHallGuideBox .guideMapBox .guideMapMainImage img{margin-top: 150px;}
-
 /* 청사안내도 - 1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn01{top: 265px; right: 496px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn02{top: 476px; right: 1009px;}
