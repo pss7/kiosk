@@ -434,8 +434,10 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .box .mapBox img{display: block; width: 100%; margin: 0 auto;}
 .chuncheonCourseBox .courseBox02 .mapContentTabBox{width: 1000px;position: absolute; top:-155px; right:700px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox{padding: 37px; background-color: #fff; border-radius: 40px; border: 1px solid #D0DDEB; box-shadow: 5px 15px 34px rgba(0,0,0,0.07);}
-.chuncheonCourseBox .courseBox02 .mapContentBox .imgBox{margin-bottom: 32px; height: 359px; border-radius: 34px; overflow: hidden;}
+.chuncheonCourseBox .courseBox02 .mapContentBox .imgBox{position: relative; margin-bottom: 32px; height: 359px; border-radius: 34px; overflow: hidden;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonCourseBox .courseBox02 .mapContentBox .imgBox.noImage{background-color: #FAFAFA ;}
+.chuncheonCourseBox .courseBox02 .mapContentBox .imgBox.noImage::after{width: 188px; height: 183px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/sub/no_img.png)no-repeat center;}
 .chuncheonCourseBox .courseBox02 .mapContentBox h5{margin-bottom: 23px; color: #2F4A65; font-size: 43px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox p{height: 106px; margin-bottom: 55px; font-size: 20px; color: #4F4F4F; overflow-y: auto;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li{margin-bottom: 15px; display: flex; gap: 0 18px;}
