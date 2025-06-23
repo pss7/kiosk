@@ -335,7 +335,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox  .courseBox01{padding: 0 86px 0 111px; margin-bottom: 182px; display: flex; gap: 0 39px;}
 .chuncheonCourseBox  .courseBox01 > div{flex:1}
 .chuncheonCourseBox  .courseBox01 .courseDes,
-.chuncheonCourseBox  .courseBox01 .courseInfo{padding: 50px 72px; background-color: #F5F8FB; border: 1px solid #D0DDEB; border-radius: 40px; }
+.chuncheonCourseBox  .courseBox01 .courseInfo{padding: 50px 72px 35px; background-color: #F5F8FB; border: 1px solid #D0DDEB; border-radius: 40px; }
 .chuncheonCourseBox  .courseBox01 .courseDes h4,
 .chuncheonCourseBox  .courseBox01 .courseInfo h4{margin-bottom: 29px; font-size: 32px; color: #323436;}
 .chuncheonCourseBox  .courseBox01 .courseDes p{margin-bottom: 23px; font-size: 24px; color: #3A3A3A;}
@@ -350,9 +350,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li span{margin-top: -5px; margin-right: 15px; width: 44px; height: 44px; line-height: 50px; text-align: center; border-radius: 50%; color: #fff; font-size: 24px; background-color: #EE4564;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList02 li span{background-color: #199700;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList03 li span{background-color: #F07326;}
-.chuncheonCourseBox .courseBox02{padding-right: 86px;}
+.chuncheonCourseBox .courseBox02{height: 956px; padding-right: 86px;}
 .chuncheonCourseBox .courseBox02 .box{display: flex; position: relative; z-index: 1;}
-.chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: 0; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
+.chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: -100%; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
 .chuncheonCourseBox .courseBox02 .box .mapBox{width: 1064px; position: relative; margin-top: -155px; margin-left: 276px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button{position: absolute;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button.active{animation: bounce 1.5s infinite;}
@@ -365,13 +365,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
     transform: translateY(-15px);
   }
 }
-
-
-
-
-
-
-
 
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion01{top: 471px; left: 387px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion02{top: 549px; left: 453px;}
