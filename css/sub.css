@@ -828,7 +828,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.up{flex-direction: column;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-anim{ animation: arrow-up 1s infinite; }
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-icon::after{content: '';     border-width: 0 20px 20px 20px; border-color: transparent transparent red transparent;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.down{flex-direction: column-reverse;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.down .arrow-anim{ animation: arrow-down 1s infinite; }
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.down .arrow-icon::after{content: ''; border-width: 20px 20px 0 20px; border-color: red transparent transparent transparent;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.left .arrow-anim { animation: arrow-left 1s infinite; }
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.left .arrow-icon::after{content: '';   border-width: 20px 20px 20px 0; border-color: transparent red transparent transparent;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.right{flex-direction: row-reverse;}
@@ -836,27 +838,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.right .arrow-icon::after{content: ''; border-width: 20px 0 20px 20px; border-color: transparent transparent transparent red;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-icon{display: flex; align-items: center; opacity: 0.8;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-icon::after{content: ''; width: 0; height: 0; border-style: solid;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-icon{transform: rotate(-135deg); }
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.down .arrow-icon{transform: rotate(45deg); }
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.left .arrow-icon{transform: rotate(135deg); }
-
- .cityHallGuideBox .guideMapBox .guideMapImage .arrow.right .arrow-icon {transform: rotate(-45deg); } */
 
 @keyframes arrow-up {
   0%   { transform: translateY(0); opacity: 0.3; }
@@ -883,28 +864,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 }
 
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {display: block;  font-weight: 600; font-size: 40px; color: #000; font-family: 'Pretendard', sans-serif; white-space: nowrap; text-align:center;}
-
-
-
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.up .arrow-label{}
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.right .arrow-label{}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cityHallGuideBox .guideMapBox .guideMapImage .display{padding: 8px 27px 5px; position: absolute; font-size: 26px; border-radius: 10px; background-color: #fff; color: #4580EE;
 font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom{width: 90px; height: 70px; position: absolute;  font-size: 32px; border-radius: 10px; background: #fff url(../images/sub/restroom.png)no-repeat center; background-size: contain;}
@@ -995,12 +954,11 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow02{left: 1544px; bottom: 361px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .position{position: absolute; display: flex; align-items: center; gap: 0 10px; font-size: 40px; font-family: 'Pretendard', sans-serif; font-weight: 600;} 
 .cityHallGuideBox .guideMapBox .guideMapImage .position::before{content: ''; width: 20px; height: 20px; border-radius: 50%; background-color: red; }
-
 .cityHallGuideBox .guideMapBox .guideMapImage .position01{left: 1175px; top: 685px;}
 
 /* 청사안내도 - 1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn01{top: 265px; right: 496px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn02{top: 476px; right: 1009px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn02{top: 476px; right: 942px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn03{bottom: 296px; right: 995px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn04{bottom: 552px; right: 993px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn05{bottom: 693px; left: 898px;}
@@ -1013,25 +971,39 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn12{top:382px; left: 339px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn13{top:110px; left: 1173px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn92{top:808px; right: 1000px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn93{ bottom: 881px; left: 764px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn94{ bottom: 628px; right:1254px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn95{ bottom: 1010px; left:286px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom01{top:1122px; left:1235px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom02{top:404px; left:1227px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom03{top:153px; right:971px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display01{top:679px; left:1251px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display50{top:661px; left:999px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display51{top:144px; left:781px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display02{top:615px; left:1142px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display03{top:227px; left:760px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow01{left: 764px; bottom: 520px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow02{left: 287px; top: 858px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow07{left: 1473px; top: 218px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow08{left: 1259px; bottom: 349px;}
 
 /* 청사안내도 - 2층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn14{top:222px; left: 925px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn15{top:550px; left: 928px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn16{top:776px; left: 1027px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn16{top:738px; left: 1018px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn17{bottom:639px; left: 977px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn18{bottom: 639px; left: 690px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn96{ bottom: 872px; right:1575px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn97{ bottom: 880px; right:890px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn98{ top:158px; right:770px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn99{ bottom: 390px; right:1260px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom04{top:790px; left: 920px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display04{top:175px; left:1437px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display05{top:240px; left:1299px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display06{top:766px; left:750px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display07{top:810px; left:677px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display52{top:559px; right: 1200px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow09{top:115px; right:1063px;}
 
 /* 청사안내도 - 3층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn19{top:290px; left: 750px;}
@@ -1047,8 +1019,8 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn29{bottom: 458px; left: 641px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn30{bottom: 848px; left: 657px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn193{top: 778px; left:1240px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn199{bottom: 338px; right:825px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom05{bottom:319px; left: 1127px;}
-
 .cityHallGuideBox .guideMapBox .guideMapImage .display08{top:619px; left:695px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display09{top:549px; left:630px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display10{bottom:436px; left:1326px;}
@@ -1058,7 +1030,7 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn31{top:265px; left: 792px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn32{top:236px; left: 1326px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn33{top:236px; left: 1616px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn34{top:341px; left: 1850px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .btn.btn34{top:341px; left: 1828px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn35{top: 750px; right: 699px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn36{top: 950px; right: 699px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn37{top: 1229px; right: 673px;}
@@ -1069,7 +1041,6 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn42{bottom: 855px; left: 737px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn194{top: 759px; left:1292px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom06{bottom:346px; left: 1182px;}
-
 .cityHallGuideBox .guideMapBox .guideMapImage .display12{top:602px; left:757px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display13{top:532px; left:693px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display14{bottom:455px; left:1381px;}
@@ -1112,7 +1083,6 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn68{bottom: 868px; left: 670px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn.btn196{top: 774px; left:1291px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom08{bottom:343px; left: 1186px;}
-
 .cityHallGuideBox .guideMapBox .guideMapImage .display20{top:610px; left:770px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display21{top:554px; left:713px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display22{bottom:455px; left:1380px;}
