@@ -138,7 +138,7 @@ main.type02::after{display: none;}
 /* 내곁에춘천 - 여행지추천 */
 .chuncheonBox{height: 100%; display: flex; flex-direction: column;}
 .chuncheonBox .btn{margin-bottom: 25px;}
-.chuncheonBox .tab{margin-bottom: 70px;}
+.chuncheonBox .tab{margin-bottom: 56px;}
 .chuncheonBox .paginationBox{margin: 60px 0 67px;}
 .chuncheonBox .tab02{display: flex; margin-bottom: 49px;}
 .chuncheonBox .tab02 li{flex: 1;}
@@ -370,10 +370,10 @@ main.type02::after{display: none;}
 .chuncheonBox .courseBox .slideTabContent .slide .textBox{position: absolute; bottom: 20px; left:50px; z-index: 9; transition: all .8s;}
 .chuncheonBox .courseBox .slideTabContent .slide .textBox .number{display: block; font-size: 56px; color: rgba(255,255,255,.8);}
 .chuncheonBox .courseBox .slideTabContent .slick-track{align-items: flex-start; display: flex; justify-content: flex-start; position: static; margin: 0;}
-.chuncheonBox .courseBox .slideInfoText{position: relative; width: 656px; display: flex; flex-direction: column; gap: 0 137px; z-index: 99999;}
-.chuncheonBox .courseBox .slideInfoText .slideInfoList{display: flex; padding-top: 54px;} 
-.chuncheonBox .courseBox .slideInfoText .slideInfoList li{flex: 1; padding-top: 20px; border-top: 1px solid #ACACAC; }
-.chuncheonBox .courseBox .slideInfoText .slideInfoList li .slideBtn{display: flex; flex-direction: column; align-items: flex-start; gap: 6px 0; color: #B0B2BA; font-size: 18px;}
+.chuncheonBox .courseBox .slideInfoText{position: relative; width: 80%; display: flex; flex-direction: column; gap: 0 137px; z-index: 99999;}
+.chuncheonBox .courseBox .slideInfoText .slideInfoList{display: flex; padding-top: 54px; width: 100%;} 
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li{flex: 1;padding-right: 30px; padding-top: 20px; border-top: 1px solid #ACACAC; }
+.chuncheonBox .courseBox .slideInfoText .slideInfoList li .slideBtn{display: flex; flex-direction: column; align-items: flex-start; gap: 6px 0; color: #B0B2BA; font-size: 18px; text-align: left; word-break: keep-all;}
 .chuncheonBox .courseBox .slideInfoText .control{display: flex; gap: 0 66px;}
 .chuncheonBox .courseBox .slideInfoText .control button{width: 40px; height: 60px;}
 .chuncheonBox .courseBox .slideInfoText .control button.prev{background: url(../images/sub/arrow_icon11.svg)no-repeat center; background-size: contain;}
@@ -436,6 +436,79 @@ main.type02::after{display: none;}
 
 .courseDetailBox .courseBox02 .box .mapBox .postion01{top: 243px; left: 193px;}
 .courseDetailBox .courseBox02 .box .mapBox .postion02{top: 278px; left: 230px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion03{top: 665px; left: 414px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion04{top: 649px; left: 468px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion05{top: 835px; left: 150px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion06{top: 550px; left: 371px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion07{top: 300px; left: 268px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion08{top: 384px; left: 460px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion09{top: 652px; left: 428px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion10{top: 540px; left: 452px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion11{top: 486px; left: 483px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion12{top: 572px; left: 430px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion13{top: 406px; left: 460px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion14{top: 490px; left: 460px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion15{top: 650px; left: 428px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion16{top: 650px; left: 80px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion17{top: 734px; left: 52px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion18{top: 493px; left: 480px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion19{top: 576px; left: 412px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion20{top: 534px; left: 448px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion21{top: 423px; left: 500px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion22{top: 650px; left: 430px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion23{top: 552px; left: 432px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion24{top: 377px; left: 472px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion25{top: 313px; left: 418px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion26{top: 441px; left: 382px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion27{top: 257px; left: 517px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion28{top: 360px; left: 486px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion29{top: 406px; left: 450px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion30{top: 288px; left: 279px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion31{top: 733px; left: 60px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion32{top: 543px; left: 449px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion33{top: 270px; left: 510px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion34{top: 180px; left: 358px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion35{top: 488px; left: 472px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion36{top: 570px; left: 437px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion37{top: 639px; left: 73px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion38{top: 722px; left: 248px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion39{top: 652px; left: 430px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion40{top: 326px; left: 547px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion41{top: 400px; left: 459px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion42{top: 732px; left: 57px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion43{top: 534px; left: 454px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion44{top: 572px; left: 403px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion45{top: 379px; left: 480px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion46{top: 317px; left: 421px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion47{top: 235px; left: 329px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion48{top: 442px; left: 385px;}
+.courseDetailBox .courseBox02 .box .mapBox .postion49{top: 600px; left: 546px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .courseDetailBox .courseBox02 .box .mapBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .courseDetailBox .courseBox02 .mapContentBox{padding: 20px; background-color: #fff; border-radius: 20px; border: 1px solid #D0DDEB; box-shadow: 5px 15px 34px rgba(0,0,0,0.07);}
 .courseDetailBox .courseBox02 .mapContentBox .imgBox{margin-bottom: 24px; height: 192px; border-radius: 18px; overflow: hidden;}
@@ -463,5 +536,12 @@ main.type02::after{display: none;}
 .courseDetailBox .courseBox02 .courseList li .text{ position: absolute; top:50%; transform: translateY(-50%); left: 912px; font-size: 36px; color: #414141;}
 .courseDetailBox .courseBox02 .courseList li .text::after{width: 180px; height: 1px; content: ''; position: absolute; top:50%; left:-206px; bottom: 0; background: url(../images/sub/line.svg)no-repeat center;}
 .courseDetailBox .courseBox02 .courseList li .text{display: flex; flex-direction: column; align-items: center; gap: 22px 0;}
-.courseDetailBox .mark02{position: relative; width: 28px; height: 37px;  background-color: #fff; text-align: center;  z-index: 1; z-index: 1; background: url(../images/sub/icon10.svg)no-repeat top; background-size: contain;}
-.courseDetailBox .mark02 .number{width: 21px; height: 21px; line-height: 26px; position: absolute;left:3.9px; top:3px; color: #EE4564;  font-size: 11px;  border-radius: 50px; background-color: #fff;}
+.courseDetailBox .mark{position: relative; margin: 0 auto; width: 54px; height: 72px;  text-align: center;}
+.courseDetailBox .mark .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; font-size: 22px;  border-radius: 50px; background-color: #fff; z-index: 9;}
+.courseDetailBox .mark::after{content: ''; position: absolute; top:0; left:0; right:0; width: 54px; height: 72px; mask: url(../images/sub/icon10.svg)no-repeat center; -webkit-mask: url(../images/sub/icon10.svg) no-repeat center;}
+.courseDetailBox .mark02::after{background-color: #EE4564;}
+.courseDetailBox .mark02 .number{color: #EE4564;}
+.courseDetailBox .mark03::after{background-color: #199700;}
+.courseDetailBox .mark03 .number{color: #199700;}
+.courseDetailBox .mark04::after{background-color: #F07326;}
+.courseDetailBox .mark04 .number{color: #F07326;}
