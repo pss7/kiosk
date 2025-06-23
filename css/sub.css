@@ -470,17 +470,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
     box-shadow: 0 0 0px rgba(144, 207, 237, 0.1);
   }
 }
-
-.chuncheonCourseBox .courseListBox{display: none!important; padding: 0 86px 0 111px; display: flex; flex-direction: column; align-items: flex-start; gap: 10px 0; margin-bottom: 100px;}
-.chuncheonCourseBox .courseListBox h4{font-size: 38px;}
-.chuncheonCourseBox .courseListBox .box{ width: 100%; padding: 20px 100px 10px 100px; background-color: #F5F8FB; border: 1px solid #D0DDEB;}
-.chuncheonCourseBox .courseList{position: relative; display: flex; gap: 0 250px; text-align: center; }
-.chuncheonCourseBox .courseList::after{content: ''; position: absolute; left:70px; top:47%; right:70px; border: 1px dashed #4580EE;}
-.chuncheonCourseBox .courseList li:first-child{position: relative; top: 93px;}
-.chuncheonCourseBox .courseList li{display: flex; flex-direction: column; gap: 20px 0;}
-.chuncheonCourseBox .courseList li .text{font-size: 30px; }
-.chuncheonCourseBox .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
-.chuncheonCourseBox .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #4580EE;}
 .chuncheonCourseBox .mark{position: relative; margin: 0 auto; width: 54px; height: 72px;  text-align: center;}
 .chuncheonCourseBox .mark .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; font-size: 22px;  border-radius: 50px; background-color: #fff; z-index: 9;}
 .chuncheonCourseBox .mark::after{content: ''; position: absolute; top:0; left:0; right:0; width: 54px; height: 72px; mask: url(../images/sub/icon10.svg)no-repeat center; -webkit-mask: url(../images/sub/icon10.svg) no-repeat center;}
@@ -985,37 +974,6 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
   100% { opacity: 0.6; transform: scale(1); }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 청사안내도 - 지하2층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom12{top:533px; left: 989px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display37{top:383px; left:994px;}
@@ -1226,3 +1184,29 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox aside .guideMapList02 > li > .btn{display: block; width: 100%; height: 100px; text-align: center; }
 .cityHallGuideBox aside .guideMapList02 > li > .btn span{font-size: 28px; color: #fff;}
 .cityHallGuideBox aside .guideMapList02 > li > .btn.active span{display: block; margin: 0 auto; width: 100px; height: 100px; line-height: 106px; border-radius: 50px; background-color: #4580EE;}
+
+/* 모달 */
+.couresModalWrap{opacity: 0; position: fixed; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.5); z-index: 999; visibility: hidden; transition: all .7s;}
+.couresModalWrap.active{opacity: 1; visibility: visible;} 
+.couresModalWrap .couresModalBox{padding: 80px 100px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; border-radius: 30px;}
+.couresModalWrap .courseListBox{display: flex; flex-direction: column; align-items: flex-start; gap: 10px 0;}
+.couresModalWrap .couresModalBox .closeBtn{position: absolute; top: 40px; right: 60px; width: 80px; height: 80px; border-radius: 50%; text-align: center;  transition: all 0.25s ease; box-shadow: 0 0 16px rgba(66, 170, 255, 0.5); color: #fff; font-size: 64px; background: #42aaff; font-family: 'Pretendard', sans-serif;}
+.couresModalWrap .couresModalBox .closeBtn em{position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);}
+.couresModalWrap .courseListBox h4{margin-bottom: 20px; font-size: 46px;}
+.couresModalWrap .courseListBox .box{ width: 100%; padding: 60px 100px 50px; background-color: #F5F8FB; border: 1px solid #D0DDEB;}
+.couresModalWrap .courseList{position: relative; display: flex; gap: 0 250px; text-align: center; margin-bottom: 150px;}
+.couresModalWrap .courseListBox .box h5{padding: 15px 40px 5px; display: inline-block; font-size: 36px; margin-bottom: 10px;}
+.couresModalWrap .courseListBox .box .couresTitle01{background-color: #EE4564; color: #fff; border-radius: 10px;}  
+.couresModalWrap .courseListBox .box .couresTitle02{background-color: #199700; color: #fff; border-radius: 10px;}
+.couresModalWrap .courseListBox .box .couresTitle03{background-color: #F07326; color: #fff; border-radius: 10px;}
+.couresModalWrap .courseList:last-child{margin-bottom: 0;}
+.couresModalWrap .courseList::after{content: ''; position: absolute; left:51px; top:56%; right:70px; border: 1px dashed #ddd;}
+.couresModalWrap .courseList li:first-child{min-width: auto; position: relative; top: 93px;}
+.couresModalWrap .courseList li{min-width: 350px; display: flex; flex-direction: column; gap: 20px 0;}
+.couresModalWrap .courseList li .text{font-size: 30px; white-space: nowrap;}
+.couresModalWrap .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(238, 69, 100, 0.27); border-radius: 50%; z-index: 2;}
+.couresModalWrap .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #EE4564;}
+.couresModalWrap .courseList li .markType02::after{background-color: #199700;}
+.couresModalWrap .courseList li .markType02{background-color: rgba(25, 151, 0, 0.27);}
+.couresModalWrap .courseList li .markType03::after{background-color: #F07326;}
+.couresModalWrap .courseList li .markType03{background-color: rgba(240, 115, 38, 0.27);}

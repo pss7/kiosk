@@ -224,4 +224,13 @@ $(function () {
 
   });
 
+  //코스 모달
+  $('.chuncheonCourseBox .courseBtn').click(function () {
+    $('.couresModalWrap').addClass('active');
+  });
+  $('.couresModalWrap .closeBtn').click(function () {
+    $('.couresModalWrap').removeClass('active');
+  });
+
+
 });
