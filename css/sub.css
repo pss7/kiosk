@@ -349,6 +349,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li::after{margin-top: -7px; margin-left: 15px; content: ''; width: 26px; height: 20px; background: url(../images/sub/arrow_icon16.svg)no-repeat center;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li span{margin-top: -5px; margin-right: 15px; width: 44px; height: 44px; line-height: 50px; text-align: center; border-radius: 50%; color: #fff; font-size: 24px; background-color: #EE4564;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList02 li span{background-color: #199700;}
+.chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList03 li span{background-color: #F07326;}
 .chuncheonCourseBox .courseBox02{padding-right: 86px;}
 .chuncheonCourseBox .courseBox02 .box{display: flex; position: relative; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: 0; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
@@ -364,6 +365,11 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
     transform: translateY(-15px);
   }
 }
+
+
+
+
+
 
 
 
@@ -383,29 +389,44 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion14{top: 490px; left: 460px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion15{top: 650px; left: 428px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion16{top: 650px; left: 80px;}
-
-
-
-
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion17{top: 734px; left: 52px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion18{top: 493px; left: 480px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion19{top: 576px; left: 412px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion20{top: 534px; left: 448px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion21{top: 423px; left: 500px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox .postion22{top: 650px; left: 430px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion23{top: 552px; left: 432px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion24{top: 377px; left: 472px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion25{top: 313px; left: 418px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion26{top: 441px; left: 382px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion27{top: 257px; left: 517px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion28{top: 360px; left: 486px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion29{top: 406px; left: 450px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion30{top: 288px; left: 279px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion31{top: 733px; left: 60px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion32{top: 543px; left: 449px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion33{top: 270px; left: 510px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion34{top: 180px; left: 358px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion35{top: 488px; left: 472px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion36{top: 570px; left: 437px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion37{top: 639px; left: 73px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion38{top: 722px; left: 248px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion39{top: 652px; left: 430px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion40{top: 326px; left: 547px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion41{top: 400px; left: 459px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion42{top: 732px; left: 57px;}
 
 
 
 
 
-
-
-
-
-
-
-
-
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion43{top: 534px; left: 454px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion44{top: 572px; left: 403px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion45{top: 379px; left: 480px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion46{top: 317px; left: 421px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion47{top: 235px; left: 329px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion48{top: 0; left: 57px;}
+.chuncheonCourseBox .courseBox02 .box .mapBox .postion49{top: 0; left: 57px;}
 
 
 
@@ -423,13 +444,10 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li a{color: #4F4F4F; font-size: 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText{padding: 0 9px; display: inline-block; margin-bottom: 30px; position: relative; font-size: 24px; color: #EE4564; z-index: 1;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText::after{content: ''; position: absolute; left:0; right:0; bottom: 3px; background-color: #FFECF4; height: 19px; z-index: -1;}
-
-
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText02{color: #199700;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .courseText02::after{background-color: #E8F5E6;}
-
-
-
+.chuncheonCourseBox .courseBox02 .mapContentBox .courseText03{color: #F07326;}
+.chuncheonCourseBox .courseBox02 .mapContentBox .courseText03::after{background-color: #FEF2EA;}
 .chuncheonCourseBox .courseBox02 .courseBtn{position: absolute; top:140px; right:123px; width: 420px; height: 420px; border-radius: 50%;    background: linear-gradient(135deg, #90CFED 25%, #ffffff 50%, #A9BDE9 75%); background-size: 200% 200%; animation: shimmerSpread 5s ease-in-out infinite; z-index: 1; overflow: hidden; box-shadow: 0 0 20px rgba(144, 207, 237, 0.2);}
 .chuncheonCourseBox .courseBox02 .courseBtn::after{content: ''; width: 347px; height: 347px; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); border-radius: 50%; background: linear-gradient(to right, #2698DB, #4575D1); z-index: -1;}
 .chuncheonCourseBox .courseBox02 .courseBtn span{display: flex; flex-direction: column;
@@ -461,24 +479,15 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseList li .text{font-size: 30px; }
 .chuncheonCourseBox .courseList li .mark01{position: relative; display: block; margin: 0 auto; width: 50px; height: 50px; background-color: rgba(69, 128, 238, 0.27); border-radius: 50%; z-index: 2;}
 .chuncheonCourseBox .courseList li .mark01::after{content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 25px; height: 25px; border-radius: 50%; background-color: #4580EE;}
-
-
-
-
 .chuncheonCourseBox .mark{position: relative; margin: 0 auto; width: 54px; height: 72px;  text-align: center;}
 .chuncheonCourseBox .mark .number{width: 40px; height: 40px; line-height: 46px; position: absolute;left:6px; top:6px; font-size: 22px;  border-radius: 50px; background-color: #fff; z-index: 9;}
 .chuncheonCourseBox .mark::after{content: ''; position: absolute; top:0; left:0; right:0; width: 54px; height: 72px; mask: url(../images/sub/icon10.svg)no-repeat center; -webkit-mask: url(../images/sub/icon10.svg) no-repeat center;}
-
-
-
-
 .chuncheonCourseBox .mark02::after{background-color: #EE4564;}
 .chuncheonCourseBox .mark02 .number{color: #EE4564;}
 .chuncheonCourseBox .mark03::after{background-color: #199700;}
 .chuncheonCourseBox .mark03 .number{color: #199700;}
-
-
-
+.chuncheonCourseBox .mark04::after{background-color: #F07326;}
+.chuncheonCourseBox .mark04 .number{color: #F07326;}
 
 /* 내곁에춘천 - 춘천시대표축제 */
 .chuncheonBox03{position: relative; padding: 120px 0 76px; background: url(../images/sub/bg01.svg)no-repeat center top; z-index: 1;}
