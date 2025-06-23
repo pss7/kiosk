@@ -159,7 +159,7 @@ main.type02::after{display: none;}
 .chuncheonBox .tab02 li .tabBtn{position: relative; width: 100%; padding-bottom: 20px; border-bottom: 1px solid #000; font-size: 25px; color: #666666;}
 .chuncheonBox .tab02 li .tabBtn.active::after{content: ''; position: absolute; left:0; right:0; bottom: 0; height: 5px; background-color: #447BD3;}
 .chuncheonBox .tab02 li .tabBtn.active{color: #447BD3;}
-.chuncheonBox .imgListType02{display: flex; flex-wrap: wrap; gap: 20px;}
+.chuncheonBox .imgListType02{display: flex; flex-wrap: wrap; gap: 20px 2%;}
 .chuncheonBox .imgListType02 li{width: 49%;}
 .chuncheonBox .imgListType02 li a{width: 100%; height: 370px; display: block; border-radius: 34px; overflow: hidden; border: 1px solid #AAB4C5;}
 .chuncheonBox .imgListType02 li a .view{padding: 0 27px; display: flex; align-items: center; justify-content: space-between; height: 60px; border-top: 1px solid #AAB4C5; color: #333333;}
