@@ -293,31 +293,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText .control button.prev{background: url(../images/sub/arrow_icon11.svg)no-repeat center;}
 .chuncheonBox02 .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* 내곁에춘천 - 추천코스(상세) */
 .chuncheonCourseBox{position: relative;}
 .chuncheonCourseBox .btn{position: absolute; top:108px; right:88px;}
