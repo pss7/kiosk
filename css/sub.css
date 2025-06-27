@@ -780,7 +780,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 /* 청사안내 */
 .cityHallGuideBox{height: 100%; display: flex;}
 .cityHallGuideBox .leftBox{position: relative; flex-shrink: 0; padding: 180px 0 0 146px; display: flex; flex-direction: column; width: 894px;}
-.cityHallGuideBox .leftBox::after{content: ''; position: absolute; top: 0; right: -32px; bottom: 0; background: rgba(255, 255, 255, .8); width: 74px; z-index: 9999;}
 .cityHallGuideBox .leftBox::before{width: 751px; height: 729px; content: ''; position: absolute; top:0; left:0; background: url(../images/sub/bg_icon06.svg)no-repeat center; z-index: -1;}
 .cityHallGuideBox .infoTextBox{position: relative; }
 .cityHallGuideBox .infoTextBox span{display: block; font-size: 120px; color: #25477D;}
