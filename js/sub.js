@@ -157,6 +157,7 @@ $(function () {
     zIndex: 100,
     pauseOnHover: false,
     speed: 1500,
+    adaptiveHeight: true,
   });
 
   $('.chuncheonBox03 .controlBox .prevButton').on('click', function () {
@@ -189,6 +190,7 @@ $(function () {
       arrows: true,
       prevArrow: $mainSlideWrap.find('.control .prev'),
       nextArrow: $mainSlideWrap.find('.control .next'),
+      adaptiveHeight: true,
     });
 
     $slideMain.on('afterChange', function (event, slick, currentSlide) {
