@@ -224,6 +224,25 @@ $(function () {
 
   });
 
+  $('.cityHallGuideBox .location116').click(function () {
+    $('.cityHallGuideBox .tabInfoBox').hide();
+    $('.cityHallGuideBox .tabInfoBox99').show();
+    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
+    $('.cityHallGuideBox .guideMapImage99').show();
+  });
+  $('.cityHallGuideBox .location117').click(function () {
+    $('.cityHallGuideBox .tabInfoBox').hide();
+    $('.cityHallGuideBox .tabInfoBox01').show();
+    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
+    $('.cityHallGuideBox .guideMapImage01').show();
+  });
+  $('.cityHallGuideBox .location118').click(function () {
+    $('.cityHallGuideBox .tabInfoBox').hide();
+    $('.cityHallGuideBox .tabInfoBox01').show();
+    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
+    $('.cityHallGuideBox .guideMapImage01').show();
+  });
+
   //코스 모달
   $('.chuncheonCourseBox .courseBtn').click(function () {
     $('.couresModalWrap').addClass('active');

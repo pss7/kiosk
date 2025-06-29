@@ -1,12 +1,11 @@
 @charset "UTF-8";
 
 #wrap{display: flex; flex-direction: column; padding: 0;}
-#sub{flex: 1; /*position: relative; display: flex; align-items: flex-start;*/ /*justify-content: center;*/ width: 100%; height: 100%;}
-/* #sub::after{width: 848px; height: 713px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon01.svg)no-repeat center;}
-#sub::before{width: 342px; height: 566px; content: ''; position: absolute; top:273px; left:0; background: url(../images/sub/bg_icon02.svg)no-repeat center;} */
+#sub{flex: 1; width: 100%; height: 100%;}
+
 .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
 .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
-.contentWrap{ min-width: 3157px; height: 100%;}
+.contentWrap{min-width: 3157px; height: 1756px; overflow-y: auto;}
 aside{position: relative; background-color: #fff;}
 aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
 aside .weatherInfoBox01.effect,
@@ -14,7 +13,7 @@ aside .weatherInfoBox02.effect{animation: none;}
 
 /* 헤더 */
 #header{flex-shrink: 0; padding: 51px 94px; height: 217px; display: flex; align-items: center; justify-content: space-between; text-align: center; background: linear-gradient(to right, #77B8F8, #FDB7B7); z-index: 99;}
-#header h2{padding-top: 15px; color: #fff; font-size: 62px;}
+#header h2{padding-top: 15px; color: #fff; font-size: 62px; font-weight: 500;}
 #header .prev{width: 53px; height: 76px; background: url(../images/common/arrow_icon.svg)no-repeat center;}
 #header .home{width: 77px; height: 76px; background: url(../images/common/home_icon.svg)no-repeat center;}
 
@@ -22,7 +21,8 @@ aside .weatherInfoBox02.effect{animation: none;}
 #footer{flex-shrink: 0; height: 187px; display: flex; align-items: center; border-top: 1px solid #C2C2C2;}
 #footer .logoBox{flex-shrink: 0; width: 683px; height: 100%; border-right: 1px solid #C2C2C2;}
 #footer .logoBox h1 a{padding: 58px 0 40px; display: flex; justify-content: center; align-items: center; gap: 0 20px;}
-#footer .logoBox h1 a span{padding-top: 10px; font-size: 36px; color: #434451;}
+#footer .logoBox h1 a img{display: block; margin-top: -3px;}
+#footer .logoBox h1 a span{padding-top: 3px; font-size: 36px; color: #434451;}
 #footer nav{width: 100%;}
 #footer nav,
 #footer nav .depth,
@@ -30,7 +30,7 @@ aside .weatherInfoBox02.effect{animation: none;}
 #footer nav .depth {display: flex;}
 #footer nav .depth li{flex:1; border-right: 1px solid #C2C2C2;}
 #footer nav .depth li:last-child{border-right: 0;}
-#footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 100%; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s;}
+#footer nav .depth li h2 a{position: relative; display: block; padding: 69px 0; height: 100%; background-color: #F6F6F6; text-align: center; z-index: 1; transition: all .5s; font-weight: 500;}
 #footer nav .depth li h2 a::before{content: ''; position: absolute; top:0; left:0; bottom: 0; width: 0; background: linear-gradient(to right, #63ACDA, #BE7086); transition: all .5s; z-index: -1;}
 #footer nav .depth li h2 a:not(.active):hover span,
 #footer nav .depth li h2 a:not(.active):active span{color: #fff;}
@@ -117,7 +117,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationListBox{height: 1596px; display: flex; flex-direction: column; width: 829px;}
 .notificationBox .notificationListBox a{flex: 1; padding: 56px 66px 0 49px; display: block; height: 266px; border: 1px solid #4E81A6; border-width: 0 1px 1px 0; background-color: #F7F7F8; transition: all .5s;}
 .notificationBox .notificationListBox a:last-child{border-bottom: 0;}
-.notificationBox .notificationListBox a h3{position: relative; padding-left: 52px; gap: 0 32px; margin-bottom: 60px; font-size: 42px; color: #6D7686; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all .5s;}
+.notificationBox .notificationListBox a h3{position: relative; padding-left: 52px; gap: 0 32px; margin-bottom: 60px; font-size: 42px; color: #6D7686; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; transition: all .5s; font-weight: 500;}
 .notificationBox .notificationListBox a h3::before{content: ''; position: absolute; top:6px; left:0; width: 28px; height: 28px; border-radius: 7px; background-color: #A3BDD2; transition: all .5s;}
 .notificationBox .notificationListBox a .date{padding-left: 52px; display: block; font-size: 30px; color: #BBBBBB;}
 .notificationBox .notificationListBox a:hover,
@@ -127,11 +127,11 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationListBox a:hover h3::before,
 .notificationBox .notificationListBox a:active h3::before{background-color: #93CEFF;}
 .notificationBox .notificationDetailBox{height: 1596px; flex: 1; padding: 0 47px;}
-.notificationBox .notificationDetailBox .notificationDetail{display: flex; flex-direction: column;}
-.notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; height: 350px; border-bottom: 1px solid #4E81A6;}
+.notificationBox .notificationDetailBox .notificationDetail{height: 100%; display: flex; flex-direction: column;}
+.notificationBox .notificationDetailBox .notificationDetail .topBox{gap: 0 30px; display: flex; justify-content: space-between; flex-wrap: wrap; padding: 65px 50px 54px 68px; border-bottom: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox h3{font-size: 54px; color: #000;}
 .notificationBox .notificationDetailBox .notificationDetail .topBox .date{margin-top: 12px; font-size: 36px; color: #BBB;}
-.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex-shrink: 0; padding: 50px 107px; height: 1097px; overflow-y: auto; font-size: 18px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox{flex: 1; flex-shrink: 0; padding: 50px 107px; overflow-y: auto; font-size: 18px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar {width: 66px; height: 66px;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-track{background: #E2E2E2;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-thumb {background: #B2B2B2; border-radius: 50px;}
@@ -139,7 +139,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:decrement {background: #3C3939 url('../images/sub/arrow_icon02.svg') no-repeat center;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox::-webkit-scrollbar-button:single-button:increment{background: #3C3939 url('../images/sub/arrow_icon01.svg') no-repeat center;}
 .notificationBox .notificationDetailBox .notificationDetail .contentBox img{display: block; width: 100%; margin: 0 auto 50px;}
-.notificationBox .notificationDetailBox .notificationDetail .contentBox p{font-size: 26px;}
+.notificationBox .notificationDetailBox .notificationDetail .contentBox p{font-size: 42px;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox{display: flex; border: 1px solid #4E81A6; border-width: 1px 0 0 0;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box{flex: 1; height: 148px; display: flex; align-items: center; border-right: 1px solid #4E81A6;}
 .notificationBox .notificationDetailBox .notificationDetail .infoBox .box:last-child{border-right: 0;}
@@ -149,20 +149,20 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 /* 내곁에춘천 */
 .chuncheonBox01{background: url(../images/sub/bg.svg)no-repeat top; }
-.chuncheonBox{height: 100%; padding: 130px 111px 90px; }
+.chuncheonBox{padding: 130px 111px 90px; }
 .chuncheonBox .paginationBox{margin: 60px auto 30px;}
 .tabMenu{width: 100%; display: flex; margin-bottom: 100px;}
 .tabMenu li{flex: 1; text-align: center;}
 .tabContent{padding: 0 60px;}
-.tabContentList{display: flex; flex-wrap: wrap; gap: 0 40px;}
-.tabContentList li{width: 528px; margin-bottom: 40px;}
+.tabContentList{display: flex; flex-wrap: wrap; gap: 0 1.42%;}
+.tabContentList li{width: 18.86%; margin-bottom: 40px;}
 .tabContentList li a{position: relative; display: block; height: 538px;}
 .tabContentList li a .imgBox{height: 250px; border-radius: 40px 40px 0 0; overflow: hidden;}
 .tabContentList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
 .tabContentList li a:hover .imgBox img,
 .tabContentList li a:active .imgBox img{transform: scale(1.3);}
 .tabContentList li a .textBox{height: 288px; padding: 33px 46px 0; border: 1px solid #AAB4C5; border-radius:  0 0 40px 40px;} 
-.tabContentList li a .textBox h3{margin-bottom: 5px; font-size: 40px; color: #28498F; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.tabContentList li a .textBox h3{margin-bottom: 5px; font-size: 40px; color: #28498F; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; font-weight: 500;}
 .tabContentList li a .textBox p{font-size: 34px; font-weight: 500; color: #333; font-family: 'Pretendard', sans-serif; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
 .tabContentList li a .textBox .view{padding-top: 12px; display: flex; justify-content: space-between; align-items: center; margin-top: 32px; height: 100px; color: #333; font-size: 28px; border-top: 1px solid #AAB4C5;}
 .tabContentList li a .textBox .view::after{content: ''; margin-top: -5px; width: 45px; height: 45px; background: url(../images/sub/arrow_icon03.svg)no-repeat center;}
@@ -191,7 +191,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox01 .tabMenu li .tabBtn:active::after{width: 100%;}
 
 /* 내곁에춘천 - 추천코스 */
-.chuncheonBox02{padding: 258px 0 0; position: relative;background: url(../images/sub/bg04.svg) no-repeat left top;}
+.chuncheonBox02{height: 100%; padding: 258px 0 0; position: relative;background: url(../images/sub/bg04.svg) no-repeat left top;}
 .chuncheonBox02 .bg01{position: absolute; top:-38px; left:573px; width: 139px; height: 156px; background: url(../images/sub/bg08.svg)no-repeat center;}
 .chuncheonBox02 .bg02{position: absolute; top:145px; left:77px; width: 115px; height: 190px; background: url(../images/sub/bg10.svg)no-repeat center;}
 .chuncheonBox02 .bg03{position: absolute; top:137px; left:0; width: 729px; height: 577px; background: url(../images/sub/bg11.svg)no-repeat center;}
@@ -227,9 +227,6 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
         transform: translateX(-500px) rotate(0deg);
     }
 }
-
-
-
 
 .chuncheonBox02 .layoutBox{display: block; position: relative; background: url(../images/sub/bg06.svg) no-repeat right bottom;}
 .chuncheonBox02 .layoutBox::after{content: ''; width: 491px; height: 723px; position: absolute; bottom:110px; right:77px; background: url(../images/sub/bg07.svg) no-repeat; }
@@ -269,7 +266,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideTabContent .slide .textBox .title{opacity: 0; visibility: hidden;}
 .chuncheonBox02 .slideTabContent .slide.active .textBox{bottom: auto; top:70px; left:90px;}
 .chuncheonBox02 .slideTabContent .slide.active .textBox .number{font-size: 96px; transition: all .8s;}
-.chuncheonBox02 .slideTabContent .slide.active .textBox .title{opacity: 1; font-size: 54px; color: #fff; visibility: visible; transition: all .8s;}
+.chuncheonBox02 .slideTabContent .slide.active .textBox .title{opacity: 1; font-size: 54px; color: #fff; visibility: visible; transition: all .8s; font-weight: 500;}
 .chuncheonBox02 .slideTabContent .slide.active .textInfoText{opacity: 1; visibility: visible; transition: all .8s;}
 .chuncheonBox02 .slideTabContent .slide.active{margin-top: 0;}
 .chuncheonBox02 .slideTabContent .slide.active + .slide + .slide{margin-top: -59px;  transition: all 1s;}
@@ -294,11 +291,10 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox02 .slideInfoText .control button.next{background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
 
 /* 내곁에춘천 - 추천코스(상세) */
-.chuncheonCourseBox{position: relative;}
 .chuncheonCourseBox .btn{position: absolute; top:108px; right:88px;}
-.chuncheonCourseBox{padding: 110px 0 0; overflow: hidden;}
+.chuncheonCourseBox{height: 100%; position: relative; padding: 110px 0 0;}
 .chuncheonCourseBox .topTextBox{padding: 0 86px 0 111px; display: flex; align-items: center; margin-bottom: 54px;}
-.chuncheonCourseBox .topTextBox h3{margin-right: 66px; font-size: 60px; color: #2A304B;} 
+.chuncheonCourseBox .topTextBox h3{margin-right: 66px; font-size: 60px; color: #2A304B; font-weight: 500;} 
 .chuncheonCourseBox .topTextBox .course01{position: relative; display: flex; gap: 0 10px; margin-right: 118px; color: #1C507E; font-size: 32px; z-index: 99;}
 .chuncheonCourseBox .topTextBox .course01::before{margin-top: -3px; content: ''; width: 40px; height: 40px; background: url(../images/sub/icon05.svg) no-repeat center;}
 .chuncheonCourseBox .topTextBox .course01::after{content: ''; position: absolute; left: 49px;
@@ -307,7 +303,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .topTextBox .course02::before{content: ''; width: 40px; height: 40px; background: url(../images/sub/icon04.svg) no-repeat center;}
 .chuncheonCourseBox .topTextBox .course02::after{content: '';  position: absolute;
     left: 49px; right: -3px; bottom: 20px;top: 13px; background-color: #FFEFB1; z-index: -1;}
-.chuncheonCourseBox  .courseBox01{padding: 0 86px 0 111px; margin-bottom: 182px; display: flex; gap: 0 39px;}
+.chuncheonCourseBox  .courseBox01{padding: 0 86px 0 111px; margin-bottom: 233px; display: flex; gap: 0 39px;}
 .chuncheonCourseBox  .courseBox01 > div{flex:1}
 .chuncheonCourseBox  .courseBox01 .courseDes,
 .chuncheonCourseBox  .courseBox01 .courseInfo{padding: 50px 72px 35px; background-color: #F5F8FB; border: 1px solid #D0DDEB; border-radius: 40px; }
@@ -325,9 +321,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList li span{margin-top: -5px; margin-right: 15px; width: 44px; height: 44px; line-height: 50px; text-align: center; border-radius: 50%; color: #fff; font-size: 24px; background-color: #EE4564;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList02 li span{background-color: #199700;}
 .chuncheonCourseBox  .courseBox01 .courseInfo .courseInfoList03 li span{background-color: #F07326;}
-.chuncheonCourseBox .courseBox02{height: 956px; padding-right: 86px;}
+.chuncheonCourseBox .courseBox02{padding-right: 86px;}
 .chuncheonCourseBox .courseBox02 .box{display: flex; position: relative; z-index: 1;}
-.chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left:0; bottom: -100%; right:-100%; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
+.chuncheonCourseBox .courseBox02 .box::after{content: ''; position: absolute; top:0; left: 0; bottom: 0; right:-86px; background-color: #F7F8F9; border-radius: 600px 0 0 0; z-index: -1;} 
 .chuncheonCourseBox .courseBox02 .box .mapBox{width: 1064px; position: relative; margin-top: -155px; margin-left: 276px;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button{position: absolute;}
 .chuncheonCourseBox .courseBox02 .box .mapBox button.active{animation: bounce 1.5s infinite;}
@@ -397,7 +393,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox.noImage{background-color: #FAFAFA ;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .imgBox.noImage::after{width: 188px; height: 183px; content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/sub/no_img.png)no-repeat center;}
-.chuncheonCourseBox .courseBox02 .mapContentBox h5{margin-bottom: 23px; color: #2F4A65; font-size: 43px;}
+.chuncheonCourseBox .courseBox02 .mapContentBox h5{margin-bottom: 23px; color: #2F4A65; font-size: 43px; font-weight: 500;}
 .chuncheonCourseBox .courseBox02 .mapContentBox p{height: 106px; margin-bottom: 55px; font-size: 20px; color: #4F4F4F; overflow-y: auto;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li{margin-bottom: 15px; display: flex; gap: 0 18px;}
 .chuncheonCourseBox .courseBox02 .mapContentBox .infoList li span{flex-shrink: 0; width: 106px; font-size: 18px; color: #4580EE;}
@@ -412,7 +408,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonCourseBox .courseBox02 .courseBtn{position: absolute; top:140px; right:123px; width: 420px; height: 420px; border-radius: 50%;    background: linear-gradient(135deg, #90CFED 25%, #ffffff 50%, #A9BDE9 75%); background-size: 200% 200%; animation: shimmerSpread 5s ease-in-out infinite; z-index: 1; overflow: hidden; box-shadow: 0 0 20px rgba(144, 207, 237, 0.2);}
 .chuncheonCourseBox .courseBox02 .courseBtn::after{content: ''; width: 347px; height: 347px; position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%); border-radius: 50%; background: linear-gradient(to right, #2698DB, #4575D1); z-index: -1;}
 .chuncheonCourseBox .courseBox02 .courseBtn span{display: flex; flex-direction: column;
-    gap: 35px 0; align-items: center; position: relative; font-size: 40px; color: #fff; z-index: 1;}
+    gap: 35px 0; align-items: center; position: relative; font-size: 40px; color: #fff; z-index: 1; font-weight: 500;}
 .chuncheonCourseBox .courseBox02 .courseBtn span::after{width: 33px; height: 33px; content: ''; background: url(../images/sub/arrow_icon22.svg) no-repeat center; }
 
 @keyframes shimmerSpread {
@@ -527,14 +523,14 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03 .textBox{width: 1229px; flex-shrink: 0;}
 .chuncheonBox03 .slideWrap{position: relative;}
 .chuncheonBox03 .slideWrap .mainSlide{margin: 0 80px;}
-.chuncheonBox03 .slideWrap .controlBox button{width: 78px; height: 118px; position: absolute; top: 50%; transform: translateY(-50%);}
+.chuncheonBox03 .slideWrap .controlBox button{width: 78px; height: 118px; position: absolute; top: 50%; transform: translateY(-80%);}
 .chuncheonBox03 .slideWrap .controlBox button.prevButton{left:-110px; background: url(../images/sub/arrow_icon11.svg)no-repeat center;}
 .chuncheonBox03 .slideWrap .controlBox button.nextButton{right:-110px; background: url(../images/sub/arrow_icon12.svg)no-repeat center;}
 .chuncheonBox03 .slideWrap .slick-list{padding: 0 50px;}
 .chuncheonBox03 .slideWrap .textBox .titleBox{margin-bottom: 44px;}
-.chuncheonBox03 .slideWrap .textBox .titleBox h3{margin-bottom: 15px; font-size: 64px; color: #3C60BA;}
+.chuncheonBox03 .slideWrap .textBox .titleBox h3{margin-bottom: 15px; font-size: 64px; color: #3C60BA; font-weight: 500;}
 .chuncheonBox03 .slideWrap .textBox .titleBox p{font-size: 36px; color: #4D4D4D;}
-.chuncheonBox03 .slideWrap .textBox .infoBox{height: 657px; padding: 57px 72px 50px 70px; border-radius: 40px 200px 40px 40px; background-color: #fff; box-shadow: 0 12px 40px rgba(0,0,0, 10%); overflow-y: auto;} 
+.chuncheonBox03 .slideWrap .textBox .infoBox{padding: 57px 72px 50px 70px; border-radius: 40px 200px 40px 40px; background-color: #fff; box-shadow: 0 12px 40px rgba(0,0,0, 10%);} 
 .chuncheonBox03 .slideWrap .textBox .infoBox .list li{margin-bottom: 34px; display: flex; gap: 0 28px; font-size: 32px; color: #333333; line-height: 1.7}
 .chuncheonBox03 .slideWrap .textBox .infoBox .list li:last-child{margin-bottom: 0;}
 .chuncheonBox03 .slideWrap .textBox .infoBox .list li::before{content: ''; flex-shrink: 0;}
@@ -559,9 +555,9 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03 .introduceBox{display: flex; gap: 0 97px;}
 .chuncheonBox03 .introduceBox h4::before{content: ''; width: 98px; height: 86px; background: url(../images/sub/heart_icon02.svg)no-repeat center; animation: scaleEffect 1.3s alternate infinite;}
 .chuncheonBox03 .introduceBox h4{ flex-shrink: 0; display: flex; flex-direction: column; gap: 35px 0; align-items: center;}
-.chuncheonBox03 .introduceBox h4 span{padding: 0 22px; position: relative; font-size: 50px; color: #4B7AF1; z-index: 1;}
+.chuncheonBox03 .introduceBox h4 span{padding: 0 22px; position: relative; font-size: 50px; color: #4B7AF1; z-index: 1; font-weight: 500;}
 .chuncheonBox03 .introduceBox h4 span::after{content: ''; position: absolute; left:0; bottom: 13px; right:0; height: 33px; background-color: #E4EDFF; z-index: -1;}
-.chuncheonBox03 .introduceBox p{height: 210px; overflow-y: auto; padding-top: 76px; font-size: 28px; color: #4D4D4D; line-height: 1.6;}
+.chuncheonBox03 .introduceBox p{/* height: 210px; overflow-y: auto;*/ padding-top: 76px; font-size: 28px; color: #4D4D4D; line-height: 1.6;}
 
 @keyframes scaleEffect {
 
@@ -576,15 +572,15 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 }
 
 /* 내곁에춘천 - 상세 */
-.chuncheonViewBox{position: relative; padding: 120px 126px 50px; height: 100%;}
+.chuncheonViewBox{position: relative; padding: 120px 126px 50px;}
 .chuncheonViewBox::after{width: 936px; height: 786px; content: ''; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon05.svg)no-repeat center; z-index: -1;}
 .chuncheonViewBox .topTitleBox{padding-bottom: 38px; display: flex; align-items: flex-end; gap: 0 51px; margin-bottom: 60px; border-bottom: 1px solid #000000;}
-.chuncheonViewBox .topTitleBox h3{ text-align: center; font-size: 62px; color: #28498F; line-height: 1;}
+.chuncheonViewBox .topTitleBox h3{ text-align: center; font-size: 62px; color: #28498F; line-height: 1; font-weight: 500;}
 .chuncheonViewBox .topTitleBox p{text-align: center; font-size: 40px; font-weight: 500;  font-family: 'Pretendard', sans-serif;}
 .chuncheonViewBox .layoutBox{display: flex; gap: 0 103px;}
 .chuncheonViewBox .leftBox{width: 1768px; flex-shrink: 0;}
 .chuncheonViewBox .rightBox{flex: 1;}
-.chuncheonViewBox .slickBox{position: relative;}
+.chuncheonViewBox .slickBox{position: relative; width: 100%; height: 100%;}
 .chuncheonViewBox .slickBox button{width: 116px; height: 120px; position: absolute; top: 50%; transform: translateY(-50%); background-color: rgba(0, 0, 0, 0.55);}
 .chuncheonViewBox .slickBox button.prev{left:0;}
 .chuncheonViewBox .slickBox button.next{right:0;}
@@ -618,13 +614,13 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .noticeList li a:active .imgBox img{transform: scale(1.3);}
 .noticeList li a .imgBox{margin-bottom: 56px; height: 484px; border-radius: 40px; overflow: hidden; transition: all 1s;}
 .noticeList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
-.noticeList li a .textBox h3{margin-bottom: 20px; font-size: 40px; color: #28498F; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.noticeList li a .textBox h3{margin-bottom: 20px; font-size: 40px; color: #28498F; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 500;}
 .noticeList li a .textBox .date{display: block; font-size: 36px; color: #333;}
 
 /* 행복알리미 - 상세 */
 .happyViewBox{padding: 100px 126px 86px;}
 .happyViewBox .topBox{padding-bottom: 30px; display: flex; align-items: flex-end; gap: 0 0; justify-content: space-between; }
-.happyViewBox .topBox h3{color: #000; font-size: 62px;}
+.happyViewBox .topBox h3{color: #000; font-size: 62px; font-weight: 500;}
 .happyViewBox .topBox span{color: #BBB; font-size: 36px;}
 .happyViewBox .detailBox{margin-bottom: 35px; padding: 65px 100px 65px 44px; height: 1318px; overflow-y: auto; border: 1px solid #223F69; border-width: 1px 0;}
 .happyViewBox .detailBox::-webkit-scrollbar {width: 66px; height: 66px;}
@@ -783,7 +779,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .leftBox::before{width: 751px; height: 729px; content: ''; position: absolute; top:0; left:0; background: url(../images/sub/bg_icon06.svg)no-repeat center; z-index: -1;}
 .cityHallGuideBox .infoTextBox{position: relative; }
 .cityHallGuideBox .infoTextBox span{display: block; font-size: 120px; color: #25477D;}
-.cityHallGuideBox .infoTextBox h3{margin-bottom: 20px; font-size: 96px; color: #4580EE;}
+.cityHallGuideBox .infoTextBox h3{margin-bottom: 20px; font-size: 96px; color: #4580EE; line-height: 1.3; font-weight: 500; letter-spacing: -1px;}
 .cityHallGuideBox .infoTextBox p{font-size: 32px; color: #4D4D4D; font-weight: 600; font-family: 'Pretendard', sans-serif; word-break: keep-all;}
 .cityHallGuideBox .infoImgBox{margin-top: auto; }
 .cityHallGuideBox .infoImgBox p{position: relative; display: inline-block; color: #50596B; font-size: 24px; text-align: center;}
@@ -791,13 +787,12 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .infoImgBox img{display: block;}
 .cityHallGuideBox .guideMapBox{display: flex; align-items: center; justify-content: center; flex: 1;}
 .cityHallGuideBox .guideMapBox .guideMapTabContentBox{width: 100%; height: 100%;}
-.cityHallGuideBox .guideMapBox .guideMapImage.guideMapMainImage img{object-fit: contain;}
 .cityHallGuideBox .guideMapBox .guideMapImage{position: relative; width: 100%; height: 1756px;   animation: fadeIn 3s cubic-bezier(0.23, 1, 0.32, 1) both;}
 .cityHallGuideBox .guideMapBox .guideMapImage::before{content:''; position: absolute; top:0; left:0; bottom: 0;}
 .cityHallGuideBox .guideMapBox .guideMapImage img{/*margin-top: -82px;*/ display: block; width: 100%; height: 100%; object-fit: cover;}
 .cityHallGuideBox .guideMapBox .guideMapImage .location,
 .cityHallGuideBox .guideMapBox .guideMapImage .btn,
-.cityHallGuideBox .guideMapBox .guideMapImage .mark{padding: 15px 35px; position: absolute; background-color: #4580EE; color: #fff; font-size: 32px; font-family: 'Pretendard', sans-serif; font-weight:600; border-radius: 10px; text-align: center;} 
+.cityHallGuideBox .guideMapBox .guideMapImage .mark{padding: 10px 20px; position: absolute; background-color: #4580EE; color: #fff; font-size: 28px; font-family: 'Pretendard', sans-serif; font-weight:600; border-radius: 5px; text-align: center;} 
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow {display: flex; gap: 17px; align-items: center; position: absolute; width: 20px;
   height: 20px; z-index: 10;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-anim{display: block;}
@@ -842,11 +837,11 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {display: block;  font-weight: 600; font-size: 40px; color: #000; font-family: 'Pretendard', sans-serif; white-space: nowrap; text-align:center;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display{padding: 8px 27px 5px; position: absolute; font-size: 26px; border-radius: 10px; background-color: #fff; color: #4580EE;
 font-family: 'Pretendard', sans-serif; font-weight: 600;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom{width: 90px; height: 70px; position: absolute;  font-size: 32px; border-radius: 10px; background: #fff url(../images/sub/restroom.png)no-repeat center; background-size: contain;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom{width: 80px; height: 50px; position: absolute;  font-size: 32px; border-radius: 5px; background: #fff url(../images/sub/restroom.png)no-repeat center; background-size: contain;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display::after,
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom::after {content: ""; position: absolute;
-  top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent;
-  border-right: 20px solid transparent; border-top: 20px solid #fff;}
+  top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 15px solid transparent;
+  border-right: 15px solid transparent; border-top: 15px solid #fff;}
 
 @keyframes fadeIn {
   0% {
@@ -896,10 +891,10 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 }
 
 /* 청사안내도 - 지하2층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom12{top:533px; left: 989px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom12{top:533px; left: 993px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display37{top:367px; left:994px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display37.displayStyle::after{left: 87%}
-.cityHallGuideBox .guideMapBox .guideMapImage .display43{top:336px; left:1150px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display43{top:342px; left:1150px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display43.displayStyle::after{left: 25%; top: 98%;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display38{bottom:855px; left:902px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display39{top:525px; left:899px;}
@@ -917,203 +912,214 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 
 /* 청사안내도 - 지하1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom11{top:539px; left: 973px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location150{left:729px; top:599px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location151{left:896px; top:706px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location152{left:773px; top:239px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location150{left:756px; top:654px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location151{left:999px; top:701px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location152{left:794px; top:275px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .location153{left:1434px; top:720px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location155{left:939px; top:986px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location155{left:939px; top:1020px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display32{top:624px; left:1207px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display32::after{top: 50%;left: -39px; 
   transform: translateY(-50%); border-top: 20px solid transparent; border-bottom: 20px solid transparent; border-right: 20px solid #fff;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display33{top:498px; left:1112px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display34{bottom:880px; left:769px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display34{bottom:870px; left:769px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display35{bottom:869px; left:698px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display36{top:120px; right:830px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display45{bottom:356px; right:885px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display46{bottom:646px; left:555px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display45{bottom:345px; right:885px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display46{bottom:656px; left:572px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display46::after{left: auto; border-left: 20px solid transparent; border-right: 20px solid transparent;border-bottom: 20px solid #fff;border-top: 0; right: 2px; top: -17px;transform: none;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow02{left: 1544px; bottom: 361px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .position{position: absolute; display: flex; align-items: center; gap: 0 10px; font-size: 40px; font-family: 'Pretendard', sans-serif; font-weight: 600;} 
 .cityHallGuideBox .guideMapBox .guideMapImage .position::before{content: ''; width: 20px; height: 20px; border-radius: 50%; background-color: red; }
 .cityHallGuideBox .guideMapBox .guideMapImage .position01{left: 1175px; top: 685px;}
 
+/* 청사안내도 - 외관 */
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location110{top:690px; left: 697px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location111{top:876px; left: 1015px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location112{top:792px; left: 1405px; }
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location113{top:1021px; left: 846px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location114{bottom:492px; left: 1361px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location115{bottom:593px; left: 1263px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location116{bottom:751px; left: 1363px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location117{bottom:1170px; right: 736px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location118{top:347px; left: 1045px;}
+
 /* 청사안내도 - 1층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location01{top: 336px; right: 565px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location02{top: 524px; right: 980px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location03{bottom: 255px; right: 1033px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location04{bottom: 508px; right: 1030px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location05{bottom: 646px; left: 898px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location06{bottom: 646px; left: 1099px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location07{bottom: 646px; left: 468px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location08{bottom: 646px; left: 337px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location09{top:528px; left: 710px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location10{top:220px; left: 964px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location11{top:222px; left: 598px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location12{top:482px; left: 361px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location13{top:195px; left: 1152px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location92{top:868px; right: 943px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location93{ bottom: 825px; left: 668px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location94{ bottom: 563px; right:1288px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location95{ bottom: 946px; left:286px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location01{top: 372px; right: 583px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location02{top: 556px; right: 1008px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location03{bottom: 253px; right: 1065px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location04{bottom: 497px; right: 1061px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location05{bottom: 640px; left: 898px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location06{bottom: 640px; left: 1137px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location07{bottom: 640px; left: 500px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location08{bottom: 640px; left: 373px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location09{top:550px; left: 742px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location10{top:249px; left: 964px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location11{top:243px; left: 615px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location12{top:504px; left: 384px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location13{top:223px; left: 1171px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location92{top:879px; right: 975px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location93{ bottom: 812px; left: 765px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location94{ bottom: 547px; right:1305px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location95{ bottom: 946px; left:313px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom01{top:1174px; left:1207px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom02{top:493px; left:1207px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom03{top:153px; right:971px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display01{top:700px; left:1240px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display01{top:717px; left:1251px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display50{top:690px; left:999px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display51{top:225px; left:781px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display02{top:643px; left:1142px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display03{top:307px; left:779px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display02{top:660px; left:1146px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display03{top:298px; left:795px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow01{left: 760px; bottom: 493px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow10{left: 287px; top: 915px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow07{left: 1452px; top: 300px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow08{left: 1227px; bottom: 317px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow10{left: 295px; top: 920px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow07{left: 1446px; top: 307px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow08{left: 1227px; bottom: 310px;}
 
 /* 청사안내도 - 2층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location14{top:251px; left: 856px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location15{top:550px; left: 856px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location16{top:716px; left: 984px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location17{bottom:639px; left: 963px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location18{bottom: 591px; left: 661px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location96{ bottom: 876px; right:1575px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location97{ bottom: 1207px; right:1278px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location98{ top:158px; right:770px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location99{ bottom: 359px; right:1323px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom04{top:790px; left: 909px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display04{top:117px; left:1382px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display05{top:241px; left:1264px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display06{top:721px; left:735px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display07{top:720px; left:623px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display52{top:554px; right: 1176px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow09{top:115px; right:1063px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location14{top:433px; left: 1666px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location15{top:433px; left: 1450px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location16{top:534px; left: 1218px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location17{bottom:1194px; left: 1009px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location18{top: 262px; left: 1000px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location96{ bottom: 1109px; right:1412px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location97{ bottom: 967px; right:1106px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location98{ bottom:563px; right:825px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location99{ top: 772px; left:800px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom04{top:453px; left: 1242px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display04{top:227px; left:1309px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display05{top:348px; left:1286px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display06{top:751px; right:883px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display07{top:805px; right:797px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display52{top:875px; right: 1102px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .arrow.arrow09{bottom:670px; right:766px;}
 
 /* 청사안내도 - 3층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location19{top:290px; left: 750px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location20{top:290px; left: 1000px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location21{top:290px; left: 1400px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location22{top:290px; left: 1700px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location23{top: 582px; right: 750px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location24{top: 745px; right: 698px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location25{top: 919px; right: 698px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location26{bottom: 522px; right: 692px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location27{bottom: 380px; right: 989px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location28{bottom: 386px; left: 826px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location29{bottom: 458px; left: 641px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location30{bottom: 848px; left: 657px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location193{top: 778px; left:1240px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location199{bottom: 338px; right:825px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom05{bottom:319px; left: 1127px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display08{top:567px; left:695px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display09{top:505px; left:581px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display10{bottom:461px; left:1253px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display11{bottom:316px; left:1287px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location19{bottom:450px; right: 831px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location20{bottom:450px; right: 1111px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location21{bottom:450px; right: 1500px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location22{bottom:450px; right: 1797px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location23{bottom: 745px; left: 727px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location24{top: 790px; left: 677px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location25{top: 611px; left: 679px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location26{top: 387px; left: 669px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location27{top: 268px; left: 968px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location28{top: 331px; right: 890px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location29{top: 326px; right: 711px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location30{bottom:1023px; right: 745px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location193{top: 753px; left:1300px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location199{top: 338px; left:825px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom05{top:296px; left: 1437px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display08{top:318px; left:1233px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display09{top:144px; left:1246px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display10{bottom:810px; right:712px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display11{bottom:744px; right:634px;}
 
 /* 청사안내도 - 4층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location31{top:265px; left: 792px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location32{top:236px; left: 1326px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location31{bottom:410px; right: 792px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location32{bottom:391px; left: 1279px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .location33{top:236px; left: 1616px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location34{top:341px; left: 1828px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location35{top: 750px; right: 699px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location36{top: 950px; right: 699px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location37{top: 1229px; right: 673px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location38{bottom: 400px; right: 937px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location39{bottom: 413px; left: 911px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location40{bottom: 343px; left: 718px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location41{bottom: 642px; left: 642px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location42{bottom: 855px; left: 737px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location194{top: 759px; left:1292px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom06{bottom:346px; left: 1182px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display12{top:554px; left:757px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display13{top:493px; left:656px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display14{bottom:479px; left:1308px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display15{bottom:325px; left:1341px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location34{bottom:481px; left: 721px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location35{top: 850px; left: 785px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location36{top: 650px; left: 785px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location37{top: 330px; left: 750px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location38{top: 334px; left: 999px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location39{top: 333px; right: 911px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location40{top: 307px; right: 751px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location41{top: 491px; right: 666px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location42{bottom: 988px; right: 731px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location194{top: 784px; left:1330px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom06{top:340px; left: 1461px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display12{bottom:784px; right:696px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display13{top:196px; left:1276px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display14{top:344px; left:1259px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display15{bottom:705px; right:618px;}
 
 /* 청사안내도 - 5층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location43{top:351px; left: 768px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location44{top:400px; left: 1080px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location45{top:400px; left: 1395px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location46{top:400px; left: 1700px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location47{top: 660px; right: 761px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location48{top: 910px; right: 736px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location49{bottom: 448px; right: 736px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location50{bottom: 448px; right: 990px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location51{bottom: 480px; left: 954px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location52{bottom: 385px; left: 783px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location53{bottom: 645px; left: 680px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location54{bottom: 758px; left: 809px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location55{bottom: 855px; left: 670px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location195{top: 787px; left:1278px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom07{bottom:370px; left: 1163px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display16{top:596px; left:770px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display17{top:533px; left:677px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display18{bottom:481px; left:1281px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display19{bottom:341px; left:1315px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location43{bottom:398px; right: 768px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location44{bottom:440px; right: 1080px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location45{bottom:452px; right: 1425px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location46{bottom:461px; right: 1757px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location47{bottom: 753px; left: 743px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location48{bottom: 1019px; left: 728px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location49{top: 314px; left: 714px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location50{top: 303px; left: 990px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location51{top: 268px; right: 939px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location52{top: 270px; right: 759px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location53{top: 443px; right: 660px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location54{top: 581px; right: 711px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location55{top: 721px; right: 707px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location195{top: 787px; left:1314px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom07{top:324px; left: 1467px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display16{top:326px; left:1259px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display17{top:170px; left:1277px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display18{bottom:780px; right:671px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display19{bottom:704px; right:587px;}
 
 /* 청사안내도 - 6층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location56{top:310px; left: 768px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location57{top:310px; left: 1040px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location58{top:310px; left: 1370px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location59{top:310px; left: 1700px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location60{top: 600px; right: 730px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location61{top: 890px; right: 710px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location62{bottom: 461px; right: 683px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location63{bottom: 404px; right: 937px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location64{bottom: 360px; left: 937px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location65{bottom: 365px; left: 747px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location66{bottom: 638px; left: 643px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location67{bottom: 771px; left: 736px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location68{bottom: 868px; left: 670px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location196{top: 774px; left:1291px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom08{bottom:343px; left: 1186px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display20{top:553px; left:770px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display21{top:503px; left:666px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display22{bottom:484px; left:1311px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display23{bottom:343px; left:1342px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location56{bottom:412px; right: 768px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location57{bottom:412px; right: 1040px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location58{bottom:412px; right: 1370px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location59{bottom:412px; right: 1700px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location60{bottom: 775px; left: 758px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location61{bottom: 1079px; left: 741px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location62{top: 299px; left: 736px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location63{top: 295px; left: 981px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location64{top: 262px; right: 909px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location65{top: 268px; right: 751px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location66{top: 455px; right: 643px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location67{top: 611px; right: 707px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location68{top: 715px; right: 657px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location196{top: 788px; right:1291px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom08{top:320px; right: 1149px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display20{bottom:775px; right:673px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display21{top:1000px; right:595px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display22{top:321px; right:1273px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display23{top:165px; right:1308px;}
 
 /* 청사안내도 - 7층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location69{top:332px; left: 692px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location70{top:365px; left: 1051px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location71{top:365px; left: 1350px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location72{top:365px; left: 1700px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location73{top: 663px; right: 768px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location74{top: 890px; right: 730px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location75{bottom: 466px; right: 718px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location76{bottom: 411px; right: 990px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location77{bottom: 386px; left: 928px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location78{bottom: 358px; left: 684px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location79{bottom: 694px; left: 651px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location80{bottom: 860px; left: 704px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location197{top: 764px; left:1275px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom09{bottom:359px; left: 1144px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display24{top:601px; left:740px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display25{top:514px; left:649px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display26{bottom:475px; left:1264px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display27{bottom:343px; left:1301px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location69{bottom:417px; right: 684px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location70{bottom:433px; right: 1051px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location71{bottom:450px; right: 1350px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location72{bottom:460px; right: 1749px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location73{bottom: 755px; left: 768px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location74{bottom: 1006px; left: 743px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location75{top: 380px; left: 738px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location76{top: 312px; left: 997px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location77{top: 275px; right: 948px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location78{top: 248px; right: 762px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location79{top: 555px; right: 668px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location80{top: 708px; right: 704px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location197{bottom: 898px; right:1299px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom09{top:332px; right: 1156px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display24{bottom:785px; right:693px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display25{bottom:711px; right:611px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display26{top:342px; right:1273px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display27{top:196px; right:1309px;}
 
 /* 청사안내도 - 8층 */
-.cityHallGuideBox .guideMapBox .guideMapImage .location81{top:279px; left: 737px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location82{top:250px; left: 1330px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location83{top: 250px; right: 699px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location84{top:458px; right: 708px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location85{top: 630px; right: 718px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location86{top: 860px; right: 732px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location87{bottom: 475px; right: 686px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location88{bottom: 411px; right: 972px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location89{bottom: 411px; left: 773px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location90{bottom: 692px; left: 666px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location91{bottom: 854px; left: 707px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .restroom10{bottom:346px; left: 1160px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display28{top:542px; left:736px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display29{top:506px; left:633px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display30{bottom:460px; left:1279px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .display31{bottom:343px; left:1319px;}
-.cityHallGuideBox .guideMapBox .guideMapImage .location198{top: 764px; left:1283px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location81{bottom:399px; right: 773px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location82{bottom:389px; right: 1358px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location83{bottom: 393px; left: 741px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location84{bottom:596px; left: 732px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location85{bottom: 774px; left: 745px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location86{bottom: 1005px; left: 758px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location87{top: 370px; left: 722px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location88{top: 312px; left: 1000px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location89{top: 321px; right: 778px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location90{top: 567px; right: 679px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location91{top: 713px; right: 707px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .restroom10{top:340px; right: 1153px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display28{bottom:776px; right:698px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display29{bottom:705px; right:623px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display30{top:343px; right:1270px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .display31{top:198px; right:1303px;}
+.cityHallGuideBox .guideMapBox .guideMapImage .location198{top: 793px; left:1312px;}
 .cityHallGuideBox .guideMapBox .guideMapImage .location::after,
 .cityHallGuideBox .guideMapBox .guideMapImage .mark::after,
-.cityHallGuideBox .guideMapBox .guideMapImage .location::after {content: ""; position: absolute; top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 20px solid transparent;
-  border-right: 20px solid transparent; border-top: 20px solid #4580EE; }
+.cityHallGuideBox .guideMapBox .guideMapImage .location::after {content: ""; position: absolute; top: 99%;  left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 15px solid transparent;
+  border-right: 15px solid transparent; border-top: 15px solid #4580EE; }
   .cityHallGuideBox .guideMapBox .guideMapImage .location::before,
 .cityHallGuideBox .guideMapBox .guideMapImage .mark::before,
-.cityHallGuideBox .guideMapBox .guideMapImage .btn::before {content: ""; position: absolute; top: calc(100% + 24px); left: 50%; transform: translateX(-50%); width: 40px; height: 40px; border-radius: 50%; background: radial-gradient(circle, #4580EE 10%, rgba(69, 128, 238, 0.15) 70%);z-index: 1;
+.cityHallGuideBox .guideMapBox .guideMapImage .btn::before {content: ""; position: absolute; top: calc(100% + 24px); left: 50%; transform: translateX(-50%); width: 25px; height: 25px; border-radius: 50%; background: radial-gradient(circle, #4580EE 10%, rgba(69, 128, 238, 0.15) 70%);z-index: 1;
 }
 .cityHallGuideBox aside{ width: 246px; background-color: #24252E;}
 .cityHallGuideBox aside .guideMapList01 > li > .btn{position: relative; display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; line-height: 130px; text-align: center;}

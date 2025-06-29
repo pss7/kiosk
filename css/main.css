@@ -5,7 +5,7 @@
 
 /* 공통 */
 .title h2{color: #202020; font-size: 54px;}
-.title h2 strong{color: #42AAFF;}
+.title h2 strong{color: #42AAFF; font-weight: 500;}
 a.view{padding: 19px 0 0 42px; width: 168px; height: 64px; border-radius: 50px; background-color: #F4F5F6; z-index: 1;}
 a.view span{display: flex; align-items: center; gap: 0 6px; font-size: 20px; color: #535353;}
 a.view span::after{content: ''; margin-top: -5px; width: 19px; height: 19px; background: url(../images/main/plus_icon.svg)no-repeat center;}
@@ -16,14 +16,14 @@ a.view:hover::before,
 a.view:active::before{width: 100%;}
 a.view:hover span,
 a.view:active span{color: #fff;}
-#section01.effect{animation-delay: 1s;}
-#section02.effect{animation-delay: 1.5s;}
-#section03.effect{animation-delay: 2s;}
+#section01.effect{animation-delay: .7s; animation-duration: 2s;}
+#section02.effect{animation-delay: 1s; animation-duration: 2s;}
+#section03.effect{animation-delay: 1.3s; animation-duration: 2s;}
 
 /* 영역01 */
 #section01{display: flex; gap: 0 114px; margin-bottom: 91px;}
 #section01 .noticeBox{display: flex; gap: 0 30px;}
-#section01 .noticeBox h2{position: relative; display: flex; gap: 0 15px; margin-bottom: 35px; font-size: 34px; color: #3F4260;}
+#section01 .noticeBox h2{position: relative; display: flex; gap: 0 15px; margin-bottom: 35px; font-size: 34px; color: #3F4260; font-weight: 500;}
 #section01 .noticeBox h2::before{flex-shrink: 0; content: ''; margin-top: -5px; width: 57px; height: 50px; border-radius: 8px; background-color: #EFEFEF;}
 #section01 .noticeBox .box h2::after{content: ''; position: absolute; }
 #section01 .noticeBox .box:nth-child(1) h2::after{width: 30px; height: 33px; top:5px; left:11px; background: url(../images/main/notice_icon01.svg)no-repeat center;}
@@ -57,7 +57,7 @@ a.view:active span{color: #fff;}
 
 #section02 .infoLinkList li:nth-child(1) a::after{background: url(../images/main/link_hover_bg01.png)no-repeat center; }
 #section02 .infoLinkList li a::after{ content: ''; opacity: 0; visibility: hidden; position: absolute; top:0; left:0; right:0; bottom: 0; transition: all 1s; z-index: -1;}
-#section02 .infoLinkList li a h2{margin-bottom: 5px; color: #fff; font-size: 40px; transition: all 1s;}
+#section02 .infoLinkList li a h2{margin-bottom: 5px; color: #fff; font-size: 40px; transition: all 1s; font-weight: 500;}
 #section02 .infoLinkList li a p{font-family: 'Pretendard', sans-serif; font-size: 28px; color: #DFE7EE; font-weight: 600; line-height: 1.8; transition: all 1s;}
 #section02 .infoLinkList li a .view{position: absolute; bottom: 7px; right:6px; width: 96px; height: 96px; border-radius: 50%; background-color: #000;}
 #section02 .infoLinkList li a .view::after{width: 21px; height: 23px; content: ''; position: absolute; top:50%; left: 50%; transform: translate(-50%, -50%); background: url(../images/main/arrow_icon03.svg)no-repeat center; background-size: contain; animation: arrowMove 2s infinite ease-in-out; }
@@ -85,7 +85,7 @@ a.view:active span{color: #fff;}
 #section02 .infoLinkList li:nth-child(2) a:hover p,
 #section02 .infoLinkList li:nth-child(2) a:active p{color: #DFE7EE;}
 #section02 .noticeBox .title{margin-bottom: 54px;}
-#section02 .noticeBox .title h2{display: inline-block; position: relative; padding-right: 189px;}
+#section02 .noticeBox .title h2{display: inline-block; position: relative; padding-right: 189px; font-weight: 500;}
 #section02 .noticeBox .title h2::after{content: ''; position: absolute; right: 0; top:-63px; width: 149px; height: 153px; background: url(../images/main/icon01.svg)no-repeat center; animation: rotateEffectStyle01 1.3s alternate infinite;}
 
 @keyframes rotateEffectStyle01 {
@@ -111,7 +111,7 @@ a.view:active span{color: #fff;}
 #section02 .noticeBox .noticeList li a .imgBox{margin-bottom: 53px; width: 100%; height: 322px; border-radius: 18px; overflow: hidden;}
 #section02 .noticeBox .noticeList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
 #section02 .noticeBox .noticeList li a .textBox{padding: 0 0 0 26px;}
-#section02 .noticeBox .noticeList li a .textBox h3{margin-bottom: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 32px; color: #33393F;}
+#section02 .noticeBox .noticeList li a .textBox h3{margin-bottom: 22px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 32px; color: #33393F; font-weight: 500;}
 #section02 .noticeBox .noticeList li a .textBox p{font-weight: 500; color: #616161; font-size: 30px; font-family: 'Pretendard', sans-serif; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
 /* 영역03 */
@@ -119,7 +119,7 @@ a.view:active span{color: #fff;}
 #section03 .noticeBox{position: relative; margin-right: 106px;}
 #section03 .noticeBox a.view{position: absolute; top:5px; right:0;}
 #section03 .noticeBox .title{margin-bottom: 53px;}
-#section03 .noticeBox .title h2{display: inline-block; position: relative; padding-right: 160px;}
+#section03 .noticeBox .title h2{display: inline-block; position: relative; padding-right: 160px; font-weight: 500;}
 #section03 .noticeBox .title h2::after{content: ''; position: absolute; right: 0; top:-66px; width: 149px; height: 153px; background: url(../images/main/icon02.svg)no-repeat center; animation: scaleEffect 2s alternate infinite;}
 
 @keyframes scaleEffect {
@@ -144,12 +144,12 @@ a.view:active span{color: #fff;}
 #section03 .noticeBox .noticeList li a .imgBox{margin-bottom: 50px; width: 100%; height: 406px; border-radius: 18px; overflow: hidden;}
 #section03 .noticeBox .noticeList li a .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover; transition: all 1s;}
 #section03 .noticeBox .noticeList li a .textBox{padding: 0 0 0 26px;}
-#section03 .noticeBox .noticeList li a .textBox h3{margin-bottom: 20px; color: #33393F; font-size: 32px;}
+#section03 .noticeBox .noticeList li a .textBox h3{margin-bottom: 20px; color: #33393F; font-size: 32px; font-weight: 500;}
 #section03 .noticeBox .noticeList li a .textBox p{color: #616161; font-weight: 500; font-size: 30px; font-family: 'Pretendard', sans-serif; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
 #section03 .linkList{margin-top: 20px; margin-right: 62px;}
 #section03 .linkList li{margin-bottom: 34px;}
 #section03 .linkList li a{position: relative; padding-top: 150px; display: block; width: 304px; height: 216px; border: 3px solid #DDE3F0; line-height: 1; border-radius: 40px; overflow: hidden;}
-#section03 .linkList li a h3{font-size: 29px; color: #464C58; text-align: center;}
+#section03 .linkList li a h3{font-size: 29px; color: #464C58; text-align: center; font-weight: 500;}
 #section03 .linkList li a::after{content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 35px; }
 #section03 .linkList li a::before{content: ''; width: 173px; height: 150px; position: absolute; bottom: 0; right: -15px; background: url(../images/main/icon06.svg)no-repeat center; z-index: -1;}
 #section03 .linkList li:nth-child(1) a::after{width: 81px; height: 86px; background: url(../images/main/icon05.svg) no-repeat center;}

@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 /* 공통 */
-#wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; padding: 130px;}
+#wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; padding: 130px; overflow: hidden;}
 .layoutBox{height: 100%; display: flex;}
-.effect{animation: effect 5s both;}
+.effect{animation: effect 1.5s 0.09s ease-in-out both;}
 @keyframes effect {
   0% {
     opacity: 0;
@@ -64,7 +64,7 @@ aside .weatherInfoBox02 .box .state02.good{color: #0178FF;}
 aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 
 /* 모달 */
-#modalWrap {position: fixed; inset: 0; display: flex; justify-content: center; align-items: center; z-index: 9999; animation: fadeInBg 0.3s ease-in-out; background: rgba(255,255,255,0.65); backdrop-filter: blur(10px);}
+#modalWrap {position: fixed; inset: 0; display: flex; justify-content: center; align-items: center; z-index: 9999; animation: fadeInBg 0.3s ease-in-out; background: rgba(0,0,0,.7); backdrop-filter: blur(10px);}
 #modalWrap .modalContent { display: flex; flex-direction: column; max-height: 80%; position: absolute; left: 150px; right: 150px;  top:217px; padding: 64px 80px; background: #ffffff; border-radius: 24px; box-shadow: 0 12px 32px rgba(66, 170, 255, 0.3); font-family: 'Pretendard', sans-serif; color: #222; animation: slideFadeIn 0.4s ease-out; border: 2px solid #e3f2fd; overflow: hidden;}
 #modalWrap .modalContent h2{margin-bottom: 40px; padding-bottom: 20px; display: flex; align-items: center; gap: 16px; font-weight: 700; font-size: 64px; border-bottom: 4px solid #cbe9ff; color: #0077cc;}
 #modalWrap .modalContent h2::before {content: "🏷️"; font-size: 64px;}
