@@ -126,22 +126,62 @@ $(function () {
   });
 
   //내곁에 춘천 - 춘천시 대표축제
+
   $('.chuncheonBox03 .tabContentBox .tabContent').hide();
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
+
+  let isSliding = false;
+  let currentTabIndex = -1; // 현재 선택된 탭 인덱스 저장용
+
   $('.chuncheonBox03 .tabMenu li').click(function () {
+    const idx = $(this).index();
+
+    // 현재 선택된 탭이면 무시
+    if (idx === currentTabIndex) return;
+    if (isSliding) return; // 슬라이드 동작 중이면 무시
+
+    isSliding = true;
+    currentTabIndex = idx;
 
     $('.chuncheonBox03 .tabMenu li').children().removeClass('active');
     $(this).children().addClass('active');
 
-    const idx = $(this).index();
-
     $('.chuncheonBox03 .tabContentBox .tabContent').hide();
     const $target = $('.chuncheonBox03 .tabContentBox .tabContent').eq(idx).show();
 
-    $target.find('.slick').slick('setPosition');
-    $target.find('.slideMain').slick('setPosition');
-    $target.find('.slideNav').slick('setPosition');
+    $target.find('.slideMain').each(function () {
+      const $slider = $(this);
 
+      if ($slider.hasClass('slick-initialized')) {
+        const slick = $slider.slick('getSlick');
+        const current = slick.currentSlide;
+        const total = slick.slideCount;
+
+        $slider.slick('setPosition');
+
+        if (total > 1) {
+          const next = (current + 1) % total;
+
+          $slider.slick('slickGoTo', next, false);
+
+          setTimeout(() => {
+            $slider.slick('slickGoTo', current, false);
+            isSliding = false;
+          }, 50);
+        } else {
+          isSliding = false;
+        }
+      } else {
+        isSliding = false;
+      }
+    });
+
+    $target.find('.slideNav, .slick').each(function () {
+      const $slider = $(this);
+      if ($slider.hasClass('slick-initialized')) {
+        $slider.slick('setPosition');
+      }
+    });
   });
 
   $('.chuncheonBox03 .slideWrap .slick').slick({
