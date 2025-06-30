@@ -126,19 +126,17 @@ $(function () {
   });
 
   //내곁에 춘천 - 춘천시 대표축제
-
   $('.chuncheonBox03 .tabContentBox .tabContent').hide();
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
 
   let isSliding = false;
-  let currentTabIndex = -1; // 현재 선택된 탭 인덱스 저장용
+  let currentTabIndex = -1; 
 
   $('.chuncheonBox03 .tabMenu li').click(function () {
     const idx = $(this).index();
 
-    // 현재 선택된 탭이면 무시
     if (idx === currentTabIndex) return;
-    if (isSliding) return; // 슬라이드 동작 중이면 무시
+    if (isSliding) return; 
 
     isSliding = true;
     currentTabIndex = idx;

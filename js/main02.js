@@ -32,6 +32,7 @@ $(function () {
     zIndex: 100,
     pauseOnHover: false,
     speed: 1500,
+        adaptiveHeight: true,
   });
 
   $('.festivalBox .tabContent .controlBox .prevButton').on('click', function () {
