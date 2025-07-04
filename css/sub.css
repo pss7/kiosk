@@ -549,9 +549,33 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03 .slideWrap .slideMain .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonBox03 .slideWrap .slideNav{margin-left: 18px; overflow: hidden;}
 .chuncheonBox03 .slideWrap .slideNav .is-selected .imgBox{border: 6px solid #4580EE;}
-.chuncheonBox03 .slideWrap .slideNav .imgBox{margin: 50px 25px; width: 273px; height: 185px; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 23px rgba(0,0,0, 10%); } 
+.chuncheonBox03 .slideWrap .slideNav .imgBox{margin: 50px 25px; width: 306px; height: 196px; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 23px rgba(0,0,0, 10%); } 
 .chuncheonBox03 .slideWrap .slideNav .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
+.chuncheonBox03 .noImgBox{background-color: #fff;}
+.chuncheonBox03 .noImgBox img{object-fit: contain!important;}
 .chuncheonBox03 .slideWrap .mainSlide{width: 100%;}
+/* disableNav인 경우 썸네일 정렬 */
+.slideNav.no-slick {
+  display: flex;
+
+}
+
+.slideNav.no-slick .thumbSlide {
+  flex: 0 0 auto;
+}
+
+/* 컨트롤 버튼 비활성 스타일 */
+.chuncheonBox03 .control .prev[disabled],
+.chuncheonBox03 .control .next[disabled],
+.chuncheonBox03 .controlBox button:disabled {
+  opacity: 0.4 !important;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  transition: opacity 0.3s ease;
+}
+
+
+
 .chuncheonBox03 .introduceBox{display: flex; gap: 0 97px;}
 .chuncheonBox03 .introduceBox h4::before{content: ''; width: 98px; height: 86px; background: url(../images/sub/heart_icon02.svg)no-repeat center; animation: scaleEffect 1.3s alternate infinite;}
 .chuncheonBox03 .introduceBox h4{ flex-shrink: 0; display: flex; flex-direction: column; gap: 35px 0; align-items: center;}

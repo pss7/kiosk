@@ -27,12 +27,12 @@ $(function () {
     accessibility: false,
     dots: false,
     draggable: true,
-    infinite: true,
+    infinite: false,
     slidesToScroll: 1,
     zIndex: 100,
     pauseOnHover: false,
     speed: 1500,
-        adaptiveHeight: true,
+    adaptiveHeight: true,
   });
 
   $('.festivalBox .tabContent .controlBox .prevButton').on('click', function () {

@@ -130,13 +130,11 @@ $(function () {
   $('.chuncheonBox03 .tabContentBox .tabContent').first().show();
 
   let isSliding = false;
-  let currentTabIndex = -1; 
+  let currentTabIndex = -1;
 
   $('.chuncheonBox03 .tabMenu li').click(function () {
     const idx = $(this).index();
-
-    if (idx === currentTabIndex) return;
-    if (isSliding) return; 
+    if (idx === currentTabIndex || isSliding) return;
 
     isSliding = true;
     currentTabIndex = idx;
@@ -147,51 +145,56 @@ $(function () {
     $('.chuncheonBox03 .tabContentBox .tabContent').hide();
     const $target = $('.chuncheonBox03 .tabContentBox .tabContent').eq(idx).show();
 
-    $target.find('.slideMain').each(function () {
-      const $slider = $(this);
+    requestAnimationFrame(() => {
+      $target.find('.slideMain').each(function () {
+        const $slider = $(this);
 
-      if ($slider.hasClass('slick-initialized')) {
-        const slick = $slider.slick('getSlick');
-        const current = slick.currentSlide;
-        const total = slick.slideCount;
-
-        $slider.slick('setPosition');
-
-        if (total > 1) {
-          const next = (current + 1) % total;
-
-          $slider.slick('slickGoTo', next, false);
+        if ($slider.hasClass('slick-initialized')) {
+          $slider.slick('setPosition');
 
           setTimeout(() => {
-            $slider.slick('slickGoTo', current, false);
+            $slider.slick('slickGoTo', 0, true);
+
+            const $mainSlideWrap = $slider.closest('.mainSlide');
+            const $thumbSlides = $mainSlideWrap.find('.thumbSlide');
+            const $prevBtn = $mainSlideWrap.find('.control .prev');
+            const $nextBtn = $mainSlideWrap.find('.control .next');
+
+            $thumbSlides.removeClass('is-selected');
+            $thumbSlides.eq(0).addClass('is-selected');
+
+            const totalSlides = $slider.slick('getSlick').slideCount;
+            $prevBtn.prop('disabled', true);
+            $nextBtn.prop('disabled', totalSlides <= 1);
+
             isSliding = false;
-          }, 50);
+          }, 0);
         } else {
           isSliding = false;
         }
-      } else {
-        isSliding = false;
-      }
-    });
+      });
 
-    $target.find('.slideNav, .slick').each(function () {
-      const $slider = $(this);
-      if ($slider.hasClass('slick-initialized')) {
-        $slider.slick('setPosition');
-      }
+      $target.find('.slideNav, .slick').each(function () {
+        const $slider = $(this);
+        if ($slider.hasClass('slick-initialized')) {
+          $slider.slick('setPosition');
+        }
+      });
     });
   });
 
   $('.chuncheonBox03 .slideWrap .slick').slick({
     autoplay: false,
     arrows: true,
-    prevArrow: ('.chuncheonBox03 .controlBox .prevButton'),
-    nextArrow: ('.chuncheonBox03 .controlBox .nextButton'),
+    prevArrow: '.chuncheonBox03 .controlBox .prevButton',
+    nextArrow: '.chuncheonBox03 .controlBox .nextButton',
     accessibility: false,
     dots: false,
     draggable: true,
     infinite: true,
+    centerMode: true,
     slidesToScroll: 1,
+    swipe: false,
     zIndex: 100,
     pauseOnHover: false,
     speed: 1500,
@@ -211,35 +214,100 @@ $(function () {
     const $slideMain = $mainSlideWrap.find('.slideMain');
     const $sliderNav = $mainSlideWrap.find('.slideNav');
     const $thumbSlides = $sliderNav.find('.thumbSlide');
+    const $prevBtn = $mainSlideWrap.find('.control .prev');
+    const $nextBtn = $mainSlideWrap.find('.control .next');
+    const thumbCount = $thumbSlides.length;
+    const disableNavSlide = thumbCount <= 3;
 
-    $sliderNav.slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: $slideMain,
-      variableWidth: true,
-      focusOnSelect: true,
-      arrows: false,
-    });
+    let isSlidingInner = false;
+
+    if (disableNavSlide) {
+      $sliderNav.addClass('no-slick');
+    } else {
+      $sliderNav.slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: $slideMain,
+        variableWidth: false,
+        focusOnSelect: true,
+        arrows: false,
+        swipe: true,
+        infinite: false,
+        centerMode: false,
+        speed: 1500,
+      });
+    }
 
     $slideMain.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      asNavFor: $sliderNav,
+      asNavFor: disableNavSlide ? null : $sliderNav,
       arrows: true,
-      prevArrow: $mainSlideWrap.find('.control .prev'),
-      nextArrow: $mainSlideWrap.find('.control .next'),
+      prevArrow: $prevBtn,
+      nextArrow: $nextBtn,
       adaptiveHeight: true,
+      swipe: true,
+      infinite: false,
+      speed: 1500,
+      easing: 'ease',
+    });
+
+    function updateMainSlideButtons(current, total) {
+      const isFirst = current === 0;
+      const isLast = current === total - 1;
+      $prevBtn.prop('disabled', isFirst);
+      $nextBtn.prop('disabled', isLast);
+    }
+
+    $slideMain.on('beforeChange', function () {
+      isSlidingInner = true;
     });
 
     $slideMain.on('afterChange', function (event, slick, currentSlide) {
+      isSlidingInner = false;
       $thumbSlides.removeClass('is-selected');
       $thumbSlides.eq(currentSlide).addClass('is-selected');
 
-      $sliderNav.slick('slickGoTo', currentSlide);
+      if (!disableNavSlide) {
+        $sliderNav.slick('slickGoTo', currentSlide);
+      }
+
+      updateMainSlideButtons(currentSlide, slick.slideCount);
     });
 
+    $prevBtn.on('click', function (e) {
+      e.preventDefault();
+
+      if (isSlidingInner) return;
+
+      const slick = $slideMain.slick('getSlick');
+      if (slick.currentSlide === 0) {
+        return;
+      }
+
+      $slideMain.slick('slickPrev');
+    });
+
+    $nextBtn.on('click', function (e) {
+      e.preventDefault();
+
+      if (isSlidingInner) return;
+
+      const slick = $slideMain.slick('getSlick');
+      if (slick.currentSlide === slick.slideCount - 1) {
+        return;
+      }
+
+      $slideMain.slick('slickNext');
+    });
+
+    const initialIndex = $slideMain.slick('slickCurrentSlide');
+    const totalSlides = $slideMain.slick('getSlick').slideCount;
+    updateMainSlideButtons(initialIndex, totalSlides);
+
     $thumbSlides.removeClass('is-selected');
-    $thumbSlides.eq(0).addClass('is-selected');
+    $thumbSlides.eq(initialIndex).addClass('is-selected');
+
   });
 
   //청사안내
