@@ -4,6 +4,10 @@
 #wrap{position: relative; width: 3840px; height: 2160px; margin: 0 auto; padding: 130px; overflow: hidden;}
 .layoutBox{height: 100%; display: flex;}
 .effect{animation: effect 1.5s 0.09s ease-in-out both;}
+.text-left {
+  text-align: left!important;
+}
+
 @keyframes effect {
   0% {
     opacity: 0;
@@ -82,9 +86,8 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #modalWrap .infoTable th {font-weight: 700;}
 #modalWrap .infoTable td {background-color: #ffffff; color: #333; border-bottom: 2px solid #eef5fc;
 }
-#modalWrap .infoTable td:nth-child(2)::before {content: "📞 ";}
-#modalWrap .infoTable td:nth-child(3){text-align: left;}
-#modalWrap .infoTable td:nth-child(3)::before {content: "🛠 ";}
+#modalWrap .infoTable td.phone::before {content: "📞 ";}
+#modalWrap .infoTable td.work::before {content: "🛠 ";}
 
 @keyframes fadeInBg {
   from { opacity: 0; }
