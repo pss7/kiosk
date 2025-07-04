@@ -226,7 +226,7 @@ $(function () {
     } else {
       $sliderNav.slick({
         slidesToShow: 3,
-        slidesToScroll: 1,
+        slidesToScroll: 3,
         asNavFor: $slideMain,
         variableWidth: false,
         focusOnSelect: true,
@@ -308,6 +308,17 @@ $(function () {
     $thumbSlides.removeClass('is-selected');
     $thumbSlides.eq(initialIndex).addClass('is-selected');
 
+  });
+  $('.chuncheonBox03 .thumbSlide').on('click', function (e) {
+    e.preventDefault();
+
+    const $mainSlideWrap = $(this).closest('.mainSlide');
+    const $slideMain = $mainSlideWrap.find('.slideMain');
+    const index = $(this).index();
+
+    if (!$slideMain.hasClass('slick-initialized')) return;
+
+    $slideMain.slick('slickGoTo', index);
   });
 
   //청사안내
