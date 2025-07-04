@@ -83,7 +83,7 @@ aside .weatherInfoBox02 .box .state02.normal{color: #41BA00;}
 #modalWrap .infoTable thead {background: linear-gradient(to right, #77B8F8, #FDB7B7); color: white;}
 #modalWrap .infoTable th,
 #modalWrap .infoTable td { padding: 45px 50px 36px; text-align: center; font-size: 42px; word-break: keep-all;}
-#modalWrap .infoTable th {font-weight: 700;}
+#modalWrap .infoTable th {font-weight: 500;}
 #modalWrap .infoTable td {background-color: #ffffff; color: #333; border-bottom: 2px solid #eef5fc;
 }
 #modalWrap .infoTable td.phone::before {content: "📞 ";}
