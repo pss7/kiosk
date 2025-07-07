@@ -68,7 +68,7 @@ main.type02::after{display: none;}
 /* 시정알림  */
 .alarmBox h2{margin-top: -34px; position: relative; padding: 52px 0 32px; font-size: 46px; font-weight: 500;}
 .alarmBox h2::after{content: '';width: 506px; height: 428px; position: absolute; top:0; right:0; background: url(../images/sub/bg_icon03.svg) no-repeat center; z-index: -1; background-size: contain;} 
-.alarmBox .topTitleBox{padding-top: 20px; margin-bottom: 34px; position: relative; display: flex; flex-direction: column; justify-content: center; padding-left: 65px; height: 300px; border-radius: 20px; overflow: hidden;}
+.alarmBox .topTitleBox{padding-top: 27px; margin-bottom: 34px; position: relative; display: flex; flex-direction: column; justify-content: center; padding-left: 65px; height: 300px; border-radius: 20px; overflow: hidden;}
 .alarmBox .topTitleBox::after{content: ''; position: absolute; top:0; left:0; right:0; bottom: 0; background: url(../images/main/main02/bg01.png)no-repeat center; background-size: cover; z-index: -1; transform: scale(1.5); transition: all 3s;}
 .alarmBox .topTitleBox.effect::after{transform: scale(1);}
 .alarmBox .topTitleBox h2{padding: 0; margin:0 0 20px; color: #07DAFF; font-size: 32px; font-weight: 500;}
