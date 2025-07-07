@@ -206,24 +206,6 @@ $(function () {
     $slideMain.slick('slickGoTo', index);
   });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   //내곁에 춘천 - 추천코스 
   const $tabMenu = $('.courseBox .tabMenu li');
   const $tabContents = $('.courseBox .slideTabContentBox .slideTabContent');
@@ -339,6 +321,21 @@ $(function () {
     speed: 1500,
   });
 
+  //시정알림
+  $('.alarmBox .alarmSlideBox .slick').slick({
+    autoplay: true,
+    arrows: true,
+    prevArrow: ('.alarmBox .alarmSlideBox .control .prev'),
+    nextArrow: ('.alarmBox .alarmSlideBox .control .next'),
+    accessibility: false,
+    dots: false,
+    draggable: true,
+    infinite: true,
+    slidesToScroll: 1,
+    zIndex: 100,
+    pauseOnHover: false,
+    speed: 1500,
+  });
 
 
 
