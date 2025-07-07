@@ -541,41 +541,25 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 .chuncheonBox03 .slideWrap .textBox .infoBox .list li:nth-child(5)::before{width: 43px; height: 42px; background: url(../images/sub/list_icon05.svg) no-repeat center;}
 .chuncheonBox03 .slideWrap .textBox .infoBox .list li:nth-child(6)::before{width: 43px; height: 43px; background: url(../images/sub/list_icon06.svg) no-repeat center;}
 .chuncheonBox03 .slideWrap .slideBox{position: relative; width: 1200px; overflow: hidden;}
+.chuncheonBox03 .slideWrap .slideBox .slideMain{margin: 0 30px; border-radius: 40px; overflow: hidden; box-shadow: 0 12px 23px rgba(0,0,0, 10%);}
 .chuncheonBox03 .slideWrap .slideBox .slick-list{padding: 0; overflow: visible;}
-.chuncheonBox03 .slideWrap .slideBox .control button{position: absolute; top:352px; width: 120px; height: 120px;}
+.chuncheonBox03 .slideWrap .slideBox .control button{position: absolute; top:325px; width: 120px; height: 120px;}
 .chuncheonBox03 .slideWrap .slideBox .control button.prev{left:76px; background: url(../images/sub/arrow_icon09.svg)no-repeat center; background-size: cover;}
 .chuncheonBox03 .slideWrap .slideBox .control button.next{right:76px; background: url(../images/sub/arrow_icon10.svg)no-repeat center; background-size: cover;}
-.chuncheonBox03 .slideWrap .slideMain .imgBox{position: relative; margin:40px 40px 0; height: 709px; border-radius: 40px; overflow: hidden; box-shadow: 0 12px 40px rgba(0,0,0, 10%);}
+.chuncheonBox03 .slideWrap .slideMain .imgBox{position: relative; /*margin:40px 40px 0;*/ height: 709px;}
 .chuncheonBox03 .slideWrap .slideMain .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
-.chuncheonBox03 .slideWrap .slideNav{margin-left: 18px; overflow: hidden;}
+.chuncheonBox03 .slideWrap .slideNav{justify-content: center; overflow: hidden;}
 .chuncheonBox03 .slideWrap .slideNav .is-selected .imgBox{border: 6px solid #4580EE;}
-.chuncheonBox03 .slideWrap .slideNav .imgBox{margin: 50px 25px; width: 306px; height: 196px; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 23px rgba(0,0,0, 10%); } 
+.chuncheonBox03 .slideWrap .slideNav .imgBox{margin: 50px 25px; width: 319px; height: 196px; border-radius: 20px; overflow: hidden; box-shadow: 0 12px 23px rgba(0,0,0, 10%);} 
 .chuncheonBox03 .slideWrap .slideNav .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonBox03 .noImgBox{background-color: #fff;}
 .chuncheonBox03 .noImgBox img{object-fit: contain!important;}
 .chuncheonBox03 .slideWrap .mainSlide{width: 100%;}
-/* disableNav인 경우 썸네일 정렬 */
-.slideNav.no-slick {
-  display: flex;
-
-}
-
-.slideNav.no-slick .thumbSlide {
-  flex: 0 0 auto;
-}
-
-/* 컨트롤 버튼 비활성 스타일 */
+.chuncheonBox03 .slideNav.no-slick {display: flex;}
+.chuncheonBox03 .slideNav.no-slick .thumbSlide {flex: 0 0 auto;}
 .chuncheonBox03 .control .prev[disabled],
 .chuncheonBox03 .control .next[disabled],
-.chuncheonBox03 .controlBox button:disabled {
-  opacity: 0.4 !important;
-  cursor: not-allowed !important;
-  pointer-events: none !important;
-  transition: opacity 0.3s ease;
-}
-
-
-
+.chuncheonBox03 .controlBox button:disabled {opacity: 0.4 !important; cursor: not-allowed !important; pointer-events: none !important; transition: opacity 0.3s ease;}
 .chuncheonBox03 .introduceBox{display: flex; gap: 0 97px;}
 .chuncheonBox03 .introduceBox h4::before{content: ''; width: 98px; height: 86px; background: url(../images/sub/heart_icon02.svg)no-repeat center; animation: scaleEffect 1.3s alternate infinite;}
 .chuncheonBox03 .introduceBox h4{ flex-shrink: 0; display: flex; flex-direction: column; gap: 35px 0; align-items: center;}

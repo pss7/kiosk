@@ -226,7 +226,7 @@ $(function () {
     } else {
       $sliderNav.slick({
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         asNavFor: $slideMain,
         variableWidth: false,
         focusOnSelect: true,
@@ -241,7 +241,6 @@ $(function () {
     $slideMain.slick({
       slidesToShow: 1,
       slidesToScroll: 1,
-      asNavFor: disableNavSlide ? null : $sliderNav,
       arrows: true,
       prevArrow: $prevBtn,
       nextArrow: $nextBtn,
@@ -259,19 +258,27 @@ $(function () {
       $nextBtn.prop('disabled', isLast);
     }
 
-    $slideMain.on('beforeChange', function () {
+    $slideMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
       isSlidingInner = true;
+
+      // 🔥 액티브 클래스를 먼저 적용
+      $thumbSlides.removeClass('is-selected');
+      $thumbSlides.eq(nextSlide).addClass('is-selected');
+
+      if (!disableNavSlide) {
+        const visibleStart = $sliderNav.slick('slickCurrentSlide');
+        const visibleEnd = visibleStart + 2;
+
+        if (nextSlide < visibleStart) {
+          $sliderNav.slick('slickGoTo', nextSlide, true);
+        } else if (nextSlide > visibleEnd) {
+          $sliderNav.slick('slickGoTo', nextSlide - 2, true);
+        }
+      }
     });
 
     $slideMain.on('afterChange', function (event, slick, currentSlide) {
       isSlidingInner = false;
-      $thumbSlides.removeClass('is-selected');
-      $thumbSlides.eq(currentSlide).addClass('is-selected');
-
-      if (!disableNavSlide) {
-        $sliderNav.slick('slickGoTo', currentSlide);
-      }
-
       updateMainSlideButtons(currentSlide, slick.slideCount);
     });
 
