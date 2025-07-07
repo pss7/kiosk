@@ -5,10 +5,8 @@
 #wrap::after{content: ''; height: 26px; position: absolute; left:0; bottom: 0; right:0; background: linear-gradient(to right, #77B8F8, #FDB7B7);}
 .container{padding: 0 40px;}
 .effect{animation: effect 5s both;}
-main{position: relative; padding: 47px 0 25px; height: 1768px; overflow-x: hidden; overflow-y: auto;} 
-
-
-
+main{position: relative; padding: 47px 0 25px; height: 1768px; overflow-x: hidden; overflow-y: auto; scrollbar-width: none;} 
+main::-webkit-scrollbar {display: none;}
 .contentBox .container,
 .contentBox,
 .courseBox,
@@ -17,10 +15,6 @@ main{position: relative; padding: 47px 0 25px; height: 1768px; overflow-x: hidde
 .courseDetailBox,
 .festivalBox,
 .alarmBox{min-height: 100%;}
-
-
-
-
 main.type02::after{display: none;}
 .paginationBox {margin: 60px 0 30px; gap: 10px 15px;  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
 .paginationBox .pageLink{padding-top: 8px; position: relative; display: flex; align-items: center; justify-content: center; width: 58px; height: 58px; color: #fff; border-radius: 50px; background-color: #2D3D3A; font-size: 24px;}
@@ -207,6 +201,14 @@ main.type02::after{display: none;}
 .chuncheonBox .detailInfoBox .list li p{padding: 30px 36px 20px; height: 196px; border: 1px solid #ABABAB; border-radius: 7px;}
 
 /* 내곁에 춘천 - 춘천시 대표 축제 */
+.chuncheonBox .noImgBox{background-color: #fff;}
+.chuncheonBox .noImgBox img{object-fit: contain!important;}
+.chuncheonBox .slideWrap .mainSlide{width: 100%;}
+.chuncheonBox .slideNav.no-slick {display: flex;}
+.chuncheonBox .slideNav.no-slick .thumbSlide {flex: 0 0 auto;}
+.chuncheonBox .control .prev[disabled],
+.chuncheonBox .control .next[disabled],
+.chuncheonBox .controlBox button:disabled {opacity: 0.4 !important; cursor: not-allowed !important; pointer-events: none !important; transition: opacity 0.3s ease;}
 .chuncheonBox .festivalBox .tabMenuBox{margin-bottom: 48px;}
 .chuncheonBox .festivalBox .tab{margin-bottom: 90px;}
 .chuncheonBox .festivalBox .tabMenu{display: flex;}
@@ -300,16 +302,16 @@ main.type02::after{display: none;}
 .chuncheonBox .festivalBox .infoList li:nth-child(4)::before{margin-top: -5px; width: 36px; height: 43px; background: url(../images/sub/list_icon04.svg) no-repeat center; background-size: contain;}
 .chuncheonBox .festivalBox .infoList li:nth-child(5)::before{width: 30px; height: 29px; background: url(../images/sub/list_icon05.svg) no-repeat center; background-size: contain;}
 .chuncheonBox .festivalBox .infoList li:nth-child(6)::before{width: 30px; height: 30px; background: url(../images/sub/list_icon06.svg) no-repeat center; background-size: contain;}
-.chuncheonBox .festivalBox .slide{margin: 0 35px;}
+.chuncheonBox .festivalBox .slide{width: 900px; margin: 0 35px;}
 .chuncheonBox .festivalBox .slideWrap{padding: 0 0 58px;}
-.chuncheonBox .festivalBox .slideBox{position: relative; margin: 0 auto; width: 960px; height: 367px; display: flex; align-items: center; justify-content: center; gap: 0 26px; margin-bottom: 61px;}
+.chuncheonBox .festivalBox .slideBox{position: relative; margin: 0 auto; /* width: 960px; */ height: 367px; display: flex; align-items: center; gap: 0 26px; margin-bottom: 61px;}
 .chuncheonBox .festivalBox .slideBox button{position: absolute; top:131px; width: 116px; height: 118px;}
 .chuncheonBox .festivalBox .slideBox button.prev{left:20px; background: url(../images/sub/arrow_icon18.svg);}
 .chuncheonBox .festivalBox .slideBox button.next{right:230px; background: url(../images/sub/arrow_icon19.svg);}
 .chuncheonBox .festivalBox .slideWrap .slideTopTitleBox{margin: 20px 0 50px;}
 .chuncheonBox .festivalBox .slideWrap .slideTopTitleBox h3{padding: 0 56px; margin-bottom: 5px; font-size: 42px; color: #3C60BA; text-align: center; font-weight: 500;}
 .chuncheonBox .festivalBox .slideWrap .slideTopTitleBox p{padding: 0 48px; font-size: 28px; color: #4D4D4D; text-align: center; }
-.chuncheonBox .festivalBox .slideBox .slideMain{width: 768px; box-shadow: 0 10px 32px rgba(0,0,0,10%); border-radius: 32px; overflow: hidden}
+.chuncheonBox .festivalBox .slideBox .slideMain{flex-shrink: 0; width: 709px; box-shadow: 0 10px 32px rgba(0,0,0,10%); border-radius: 32px; overflow: hidden}
 .chuncheonBox .festivalBox .slideBox .slideMain .imgBox{width: 100%; flex-shrink: 0; height: 367px; ;}
 .chuncheonBox .festivalBox .slideBox .slideMain .imgBox img{display: block; width: 100%; height: 100%; object-fit: cover;}
 .chuncheonBox .festivalBox .slideBox .slideNav{width: 166px; }

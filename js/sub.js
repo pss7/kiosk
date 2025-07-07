@@ -261,7 +261,6 @@ $(function () {
     $slideMain.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
       isSlidingInner = true;
 
-      // 🔥 액티브 클래스를 먼저 적용
       $thumbSlides.removeClass('is-selected');
       $thumbSlides.eq(nextSlide).addClass('is-selected');
 

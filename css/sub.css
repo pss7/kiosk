@@ -5,7 +5,8 @@
 
 .btnBox{display: flex; gap: 0 33px; justify-content: flex-end;}
 .btnBox a{display: block; width: 300px; height: 80px; line-height: 90px; color: #fff; font-size: 30px; background-color: #2D3D3A; text-align: center; border-radius: 15px;}
-.contentWrap{ min-width: 3157px; height: 1756px; overflow-y: auto;}
+.contentWrap{ min-width: 3157px; height: 1756px; overflow-y: auto; scrollbar-width: none;}
+.contentWrap::-webkit-scrollbar {display: none;}
 aside{position: relative; background-color: #fff;}
 aside .weatherInfoBox{position: absolute; left: 50%; transform: translateX(-50%); bottom: 67px;}
 aside .weatherInfoBox01.effect,
