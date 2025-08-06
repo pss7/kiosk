@@ -1171,3 +1171,12 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .searchBox .inputTextBox input{padding:0 30px 0 30px; width: 700px; height: 90px; border: 1px solid #ddd; font-size: 30px; font-weight: 500; font-family: 'Pretendard', sans-serif; box-shadow: 0 5px 10px rgba(0, 0, 0, .1); border-radius: 10px; font-size: 40px;}
 .searchBox .inputTextBox input::placeholder{color: #a8a8a8;}
 .searchBox .btn{display: block; width: 160px; height: 90px; background-color: #4580EE; text-align: center; color: #fff; font-family: 'Pretendard', sans-serif; font-size: 40px; font-weight: 700; text-align: center; border-radius: 10px;}
+
+/* 첨부파일 */
+.fileBox{margin: 50px 0; display: flex; align-items: center; border: 1px solid #ddd; border-width: 1px 0; font-family: 'Pretendard', sans-serif;}
+.fileBox .fileTextBox{border-right: 1px solid #ddd; flex-shrink: 0; display: flex; align-items: center; justify-content: center; width: 300px; height: 100%; text-align: center; background-color: #F7F7F8;}
+.fileBox .fileTextBox span{display: block; font-size: 36px; font-weight: 700;}
+.fileBox .fileDownBox{display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; height: 100%; padding: 20px 20px 20px 50px; gap: 18px 0;}
+.fileBox .fileDownBox .fileBtn{display: block; font-size: 32px; font-family: 'Pretendard', sans-serif;  font-weight: 500;}
+.fileBox .fileDownBox .fileBtnBox{display: flex; align-items: center; gap: 0 20px;}
+.fileBox .fileDownBox .fileBtnBox span{font-size: 32px; font-weight: 500;}
