@@ -1180,3 +1180,5 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .fileBox .fileDownBox .fileBtn{display: block; font-size: 32px; font-family: 'Pretendard', sans-serif;  font-weight: 500;}
 .fileBox .fileDownBox .fileBtnBox{display: flex; align-items: center; gap: 0 20px;}
 .fileBox .fileDownBox .fileBtnBox span{font-size: 32px; font-weight: 500;}
+.fileBox .fileDownBox .fileBtnBox .view{padding:6px 0 0 25px; display: flex; align-items: center; width: 200px; height: 70px; font-size: 32px; font-weight: 500; border: 1px solid #ddd; border-radius: 7px;}
+.fileBox .fileDownBox .fileBtnBox .view::after {content: ''; display: inline-block; margin-left: 12px; width: 13px; height: 13px; border-right: 5px solid #222; border-bottom: 5px solid #222; transform: rotate(-45deg);}
