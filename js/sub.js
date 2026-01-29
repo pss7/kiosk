@@ -328,44 +328,145 @@ $(function () {
   });
 
   //청사안내
-  $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-  $('.cityHallGuideBox .guideMapBox .guideMapMainImage').show();
 
-  $('.cityHallGuideBox .tabInfoBox').hide();
-  $('.cityHallGuideBox .tabInfoMainBox').show();
+  //공통 이동 함수
+  // buildingIdx : 0=본관, 1=별관, 2=문화원동
+  // floorIdx    : 해당 건물의 층 index
+  function goToBuildingAndFloor(buildingIdx, floorIdx) {
 
-  $('.cityHallGuideBox .guideMapList02 > li').click(function () {
+    // 건물 탭 이동
+    $('.cityHallGuideBox aside .guideMapList01 > li')
+      .eq(buildingIdx)
+      .trigger('click');
 
-    $('.cityHallGuideBox .guideMapList02 > li').children().removeClass('active');
-    $(this).children().addClass('active');
+    // 층 탭 이동
+    if (buildingIdx === 0) {
+      $('.guideMapList02.mainBuildingList > li').eq(floorIdx).trigger('click');
+    }
+
+    if (buildingIdx === 1) {
+      $('.guideMapList02.annexList > li').eq(floorIdx).trigger('click');
+    }
+
+    if (buildingIdx === 2) {
+      $('.guideMapList02.culturalCenterList > li').eq(floorIdx).trigger('click');
+    }
+  }
+
+  //초기 상태
+  // 본관 : 외관
+  $('.mainBuildingBox .guideMapImage').hide();
+  $('.mainBuildingBox .guideMapMainImage').show();
+  $('.mainBuildingBox .tabInfoBox').hide();
+  $('.mainBuildingBox .tabInfoMainBox').show();
+
+  // 별관 : 3F
+  $('.annexBox .guideMapImage').hide().first().show();
+  $('.annexBox .tabInfoBox').hide().first().show();
+
+  // 문화원동 : 1F
+  $('.culturalCenterBox .guideMapImage').hide().first().show();
+  $('.culturalCenterBox .tabInfoBox').hide().first().show();
+
+  //건물 탭 (본관/별관/문화원동)
+  $('.cityHallGuideBox aside .guideMapList01 > li').click(function () {
 
     const idx = $(this).index();
 
-    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-    $('.cityHallGuideBox .guideMapBox .guideMapImage').eq(idx).show();
+    $('.cityHallGuideBox .tabBox .box').hide().eq(idx).show();
 
-    $('.cityHallGuideBox .tabInfoBox').hide();
-    $('.cityHallGuideBox .tabInfoBox').eq(idx).show();
+    $('.cityHallGuideBox aside .guideMapList01 > li').removeClass('active');
+    $(this).addClass('active');
 
+    // 본관
+    if ($('.mainBuildingBox').is(':visible')) {
+      $('.guideMapList02 > li > .btn').removeClass('active');
+      $('.guideMapList02 > li:nth-child(9) > .btn').addClass('active'); // 외관
+
+      $('.mainBuildingBox .tabInfoBox').hide();
+      $('.mainBuildingBox .tabInfoMainBox').show();
+      $('.mainBuildingBox .guideMapImage').hide();
+      $('.mainBuildingBox .guideMapMainImage').show();
+    }
+
+    // 별관
+    if ($('.annexBox').is(':visible')) {
+      $('.guideMapList02 > li > .btn').removeClass('active');
+      $('.guideMapList02 > li:first-child > .btn').addClass('active');
+
+      $('.annexBox .tabInfoBox').hide().first().show();
+      $('.annexBox .guideMapImage').hide().first().show();
+    }
+
+    // 문화원동
+    if ($('.culturalCenterBox').is(':visible')) {
+      $('.guideMapList02 > li > .btn').removeClass('active');
+      $('.guideMapList02 > li:first-child > .btn').addClass('active');
+
+      $('.culturalCenterBox .tabInfoBox').hide().first().show();
+      $('.culturalCenterBox .guideMapImage').hide().first().show();
+    }
   });
 
+  // 층 탭 클릭 시 이벤트 전파 방지
+  $('.cityHallGuideBox aside .guideMapList02 > li').click(function (e) {
+    e.stopPropagation();
+  });
+
+  // 층 탭 클릭
+  // 본관
+  $('.guideMapList02.mainBuildingList > li').click(function () {
+    const idx = $(this).index();
+
+    $('.guideMapList02.mainBuildingList > li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    $('.mainBuildingBox .guideMapImage').hide().eq(idx).show();
+    $('.mainBuildingBox .tabInfoBox').hide().eq(idx).show();
+  });
+
+  // 별관
+  $('.guideMapList02.annexList > li').click(function () {
+    const idx = $(this).index();
+
+    $('.guideMapList02.annexList > li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    $('.annexBox .guideMapImage').hide().eq(idx).show();
+    $('.annexBox .tabInfoBox').hide().eq(idx).show();
+  });
+
+  // 문화원동
+  $('.guideMapList02.culturalCenterList > li').click(function () {
+    const idx = $(this).index();
+
+    $('.guideMapList02.culturalCenterList > li').children().removeClass('active');
+    $(this).children().addClass('active');
+
+    $('.culturalCenterBox .guideMapImage').hide().eq(idx).show();
+    $('.culturalCenterBox .tabInfoBox').hide().eq(idx).show();
+  });
+
+  //본관 외관 버튼 → 이동 처리
+
+  // 지하주차장 입구 → 본관 B1 (index 9)
   $('.cityHallGuideBox .location116').click(function () {
-    $('.cityHallGuideBox .tabInfoBox').hide();
-    $('.cityHallGuideBox .tabInfoBox99').show();
-    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-    $('.cityHallGuideBox .guideMapImage99').show();
+    goToBuildingAndFloor(0, 9);
   });
-  $('.cityHallGuideBox .location117').click(function () {
-    $('.cityHallGuideBox .tabInfoBox').hide();
-    $('.cityHallGuideBox .tabInfoBox01').show();
-    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-    $('.cityHallGuideBox .guideMapImage01').show();
+
+  // 본관 청사 / 시의회 청사 → 본관 1층 (index 7)
+  $('.cityHallGuideBox .location117, .cityHallGuideBox .location118').click(function () {
+    goToBuildingAndFloor(0, 7);
   });
-  $('.cityHallGuideBox .location118').click(function () {
-    $('.cityHallGuideBox .tabInfoBox').hide();
-    $('.cityHallGuideBox .tabInfoBox01').show();
-    $('.cityHallGuideBox .guideMapBox .guideMapImage').hide();
-    $('.cityHallGuideBox .guideMapImage01').show();
+
+  // 문화원동 > 문화원동 1층
+  $('.cityHallGuideBox .location200').click(function () {
+    goToBuildingAndFloor(2, 0);
+  });
+
+  // 별관 > 별관 3층
+  $('.cityHallGuideBox .location201').click(function () {
+    goToBuildingAndFloor(1, 0);
   });
 
   //코스 모달
@@ -375,6 +476,5 @@ $(function () {
   $('.couresModalWrap .closeBtn').click(function () {
     $('.couresModalWrap').removeClass('active');
   });
-
 
 });

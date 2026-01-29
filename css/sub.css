@@ -784,6 +784,8 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 /* 청사안내 */
 .cityHallGuideBox{height: 100%; display: flex;}
+.cityHallGuideBox .tabBox{width: 100%;}
+.cityHallGuideBox .box{display: flex; flex: 1;}
 .cityHallGuideBox .leftBox{position: relative; flex-shrink: 0; padding: 180px 0 0 146px; display: flex; flex-direction: column; width: 894px;}
 .cityHallGuideBox .leftBox::before{width: 751px; height: 729px; content: ''; position: absolute; top:0; left:0; background: url(../images/sub/bg_icon06.svg)no-repeat center; z-index: -1;}
 .cityHallGuideBox .infoTextBox{position: relative; }
@@ -845,7 +847,7 @@ aside nav .infoList li a.active::after{opacity: 1; overflow: visible;}
 
 .cityHallGuideBox .guideMapBox .guideMapImage .arrow-label {display: block;  font-weight: 600; font-size: 40px; color: #000; font-family: 'Pretendard', sans-serif; white-space: nowrap; text-align:center;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display{padding: 8px 27px 5px; position: absolute; font-size: 26px; border-radius: 10px; background-color: #fff; color: #4580EE;
-font-family: 'Pretendard', sans-serif; font-weight: 600;}
+font-family: 'Pretendard', sans-serif; font-weight: 600; text-align: center;}
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom{width: 80px; height: 50px; position: absolute;  font-size: 32px; border-radius: 5px; background: #fff url(../images/sub/restroom.png)no-repeat center; background-size: contain;}
 .cityHallGuideBox .guideMapBox .guideMapImage .display::after,
 .cityHallGuideBox .guideMapBox .guideMapImage .restroom::after {content: ""; position: absolute;
@@ -942,15 +944,17 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .position01{left: 1175px; top: 685px;}
 
 /* 청사안내도 - 외관 */
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location110{top:690px; left: 697px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location111{top:876px; left: 1015px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location112{top:806px; left: 1359px; }
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location113{top:1021px; left: 846px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location114{bottom:525px; left: 1522px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location115{bottom:610px; left: 1340px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location116{bottom:772px; left: 1374px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location117{bottom:1180px; right: 829px;}
-.cityHallGuideBox .guideMapBox .guideMapMainImage .location118{top:368px; left: 979px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location110{top:744px; left: 671px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location111{top:906px; left: 943px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location112{top:860px; left: 1322px; }
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location113{top:1021px; left: 743px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location114{bottom:487px; left: 1285px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location115{bottom:571px; left: 1140px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location116{bottom:729px; left: 1247px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location117{bottom:1091px; right: 829px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location118{top:398px; left: 979px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location200{top:548px; left: 1450px;}
+.cityHallGuideBox .guideMapBox .guideMapMainImage .location201{top:508px; right:663px;}
 
 /* 청사안내도 - 1층 */
 .cityHallGuideBox .guideMapBox .guideMapImage .location01{top: 372px; right: 583px;}
@@ -1132,13 +1136,78 @@ font-family: 'Pretendard', sans-serif; font-weight: 600;}
 .cityHallGuideBox .guideMapBox .guideMapImage .btn::before {content: ""; position: absolute; top: calc(100% + 24px); left: 50%; transform: translateX(-50%); width: 25px; height: 25px; border-radius: 50%; background: radial-gradient(circle, #4580EE 10%, rgba(69, 128, 238, 0.15) 70%);z-index: 1;
 }
 .cityHallGuideBox aside{ width: 246px; background-color: #24252E;}
+.cityHallGuideBox aside .guideMapList01 > li{border-bottom: 1px solid #5d5d5d;}
 .cityHallGuideBox aside .guideMapList01 > li > .btn{position: relative; display: block; width: 100%; font-size: 32px; color: #FFF; height: 120px; line-height: 130px; text-align: center;}
-.cityHallGuideBox aside .guideMapList01 > li > .btn::after{width: 30px; height: 17px; content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -16px; background: url(../images/sub/icon03.svg)no-repeat center;}
-.cityHallGuideBox aside .guideMapList02{padding: 40px 0; background-color: #393A45;}
+.cityHallGuideBox aside .guideMapList01 > li > .btn::after{display: none; width: 30px; height: 17px; content: ''; position: absolute; left: 50%; transform: translateX(-50%); bottom: -16px; background: url(../images/sub/icon03.svg)no-repeat center;}
+.cityHallGuideBox aside .guideMapList01 > li.active > .btn::after,
+.cityHallGuideBox aside .guideMapList01 > li.active .guideMapList02{display: block;}
+.cityHallGuideBox aside .guideMapList02{display: none; padding: 40px 0; background-color: #393A45;}
 .cityHallGuideBox aside .guideMapList02 > li{margin-bottom: 12px;}
+.cityHallGuideBox aside .guideMapList02 > li:last-child{margin-bottom: 0;}
 .cityHallGuideBox aside .guideMapList02 > li > .btn{display: block; width: 100%; height: 100px; text-align: center; }
 .cityHallGuideBox aside .guideMapList02 > li > .btn span{font-size: 28px; color: #fff;}
 .cityHallGuideBox aside .guideMapList02 > li > .btn.active span{display: block; margin: 0 auto; width: 100px; height: 100px; line-height: 106px; border-radius: 50px; background-color: #4580EE;}
+
+/* 청사안내도 - 문화원동1층 */
+.culturalCenterBox .location300{top:247px; right:958px;}
+.culturalCenterBox .location301{top:455px; left:1160px;}
+.culturalCenterBox .location302{top:448px; left:835px;}
+.culturalCenterBox .location303{top:543px; right:958px;}
+.culturalCenterBox .location304{top:796px; right:849px;}
+.culturalCenterBox .location305{bottom: 812px; right:1038px;}
+.culturalCenterBox .location306{bottom: 619px; right:1020px;}
+.culturalCenterBox .location307{bottom: 314px; right:1310px;}
+.culturalCenterBox .location308{bottom: 254px; right:1077px;}
+.culturalCenterBox .location309{bottom: 930px; left:585px;}
+.culturalCenterBox .restroom300{bottom: 805px; left: 1068px;}
+.culturalCenterBox .display300{bottom: 665px; left: 1303px;}
+
+/* 청사안내도 - 문화원동2층 */
+.culturalCenterBox .location310{top:308px; right:847px;}
+.culturalCenterBox .location311{top:717px; right:761px;}
+.culturalCenterBox .location312{top:635px; left:1092px;}
+.culturalCenterBox .location313{top:852px; left:980px;}
+.culturalCenterBox .restroom300{bottom: 805px; left: 1068px;}
+.culturalCenterBox .display301{bottom: 523px; right: 677px;}
+
+/* 청사안내도 - 별관3층 */
+.annexBox .location300{top:270px; left:659px;}
+.annexBox .location301{top:270px; left:829px;}
+.annexBox .location302{top:270px; left:1005px;}
+.annexBox .location303{top:270px; left:1170px;}
+.annexBox .location304{top:270px; left:1345px;}
+.annexBox .location305{top:270px; left:1518px;}
+.annexBox .location306{top:270px; left:1690px;}
+.annexBox .location307{top:249px; left:1896px;}
+.annexBox .location308{top:650px; left:700px;}
+.annexBox .location309{top:512px; left:1330px;}
+.annexBox .location310{top:659px; left:1077px;}
+.annexBox .location311{top:704px; right:962px;}
+.annexBox .location312{top:662px; right:694px;}
+.annexBox .location313{bottom: 577px; left:817px;}
+.annexBox .location314{bottom: 360px; left:817px;}
+.annexBox .location315{bottom: 523px; left:1198px;}
+.annexBox .location316{bottom: 523px; left:1430px;}
+.annexBox .location317{bottom: 530px; right:785px;}
+.annexBox .restroom300{top:650px; left:1168px;}
+.annexBox .display300{top:676px; left:1293px;}
+.annexBox .display301{top:552px; right:935px}
+
+/* 청사안내도 - 별관4층 */
+.annexBox .location318{top:318px; left:844px;}
+.annexBox .location319{top:620px; left:775px;}
+.annexBox .location320{top:792px; left:852px;}
+.annexBox .location321{top:748px; left:716px;}
+.annexBox .location322{bottom:502px; right:902px;}
+.annexBox .location323{top:363px; right:1109px;}
+.annexBox .location324{top:535px; right:1287px;}
+.annexBox .location325{top:704px; left: 1134px;}
+.annexBox .location326{top:824px; left: 1325px;}
+.annexBox .location327{top:568px; right: 1047px;}
+.annexBox .location328{top:747px; right: 720px;}
+.annexBox .display302{top:709px; left:1300px;}
+
+
 
 /* 모달 */
 .couresModalWrap{opacity: 0; position: fixed; top:0; left:0; right:0; bottom: 0; background-color: rgba(0,0,0,.5); z-index: 999; visibility: hidden; transition: all .7s;}
