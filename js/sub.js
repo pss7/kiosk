@@ -328,7 +328,6 @@ $(function () {
   });
 
   //청사안내
-
   //공통 이동 함수
   // buildingIdx : 0=본관, 1=별관, 2=문화원동
   // floorIdx    : 해당 건물의 층 index
@@ -353,6 +352,10 @@ $(function () {
     }
   }
 
+  $('.cityHallGuideBox .tabBox .box').hide();
+  $('.cityHallGuideBox .tabBox .box').eq(0).css('display', 'flex'); // 본관만 표시(레이아웃 flex 유지)
+  $('.cityHallGuideBox aside .guideMapList01 > li').removeClass('active').eq(0).addClass('active');
+
   //초기 상태
   // 본관 : 외관
   $('.mainBuildingBox .guideMapImage').hide();
@@ -368,12 +371,14 @@ $(function () {
   $('.culturalCenterBox .guideMapImage').hide().first().show();
   $('.culturalCenterBox .tabInfoBox').hide().first().show();
 
+
   //건물 탭 (본관/별관/문화원동)
   $('.cityHallGuideBox aside .guideMapList01 > li').click(function () {
 
     const idx = $(this).index();
 
-    $('.cityHallGuideBox .tabBox .box').hide().eq(idx).show();
+    // ✅ [수정] show() 대신 flex 유지해서 표시 (block으로 뜨는 꼬임 방지)
+    $('.cityHallGuideBox .tabBox .box').hide().eq(idx).css('display', 'flex');
 
     $('.cityHallGuideBox aside .guideMapList01 > li').removeClass('active');
     $(this).addClass('active');
@@ -408,10 +413,12 @@ $(function () {
     }
   });
 
+
   // 층 탭 클릭 시 이벤트 전파 방지
   $('.cityHallGuideBox aside .guideMapList02 > li').click(function (e) {
     e.stopPropagation();
   });
+
 
   // 층 탭 클릭
   // 본관
@@ -447,6 +454,7 @@ $(function () {
     $('.culturalCenterBox .tabInfoBox').hide().eq(idx).show();
   });
 
+
   //본관 외관 버튼 → 이동 처리
 
   // 지하주차장 입구 → 본관 B1 (index 9)
@@ -468,6 +476,7 @@ $(function () {
   $('.cityHallGuideBox .location201').click(function () {
     goToBuildingAndFloor(1, 0);
   });
+
 
   //코스 모달
   $('.chuncheonCourseBox .courseBtn').click(function () {
