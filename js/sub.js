@@ -377,7 +377,6 @@ $(function () {
 
     const idx = $(this).index();
 
-    // ✅ [수정] show() 대신 flex 유지해서 표시 (block으로 뜨는 꼬임 방지)
     $('.cityHallGuideBox .tabBox .box').hide().eq(idx).css('display', 'flex');
 
     $('.cityHallGuideBox aside .guideMapList01 > li').removeClass('active');
